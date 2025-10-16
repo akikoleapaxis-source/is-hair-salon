@@ -197,7 +197,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="aspect-[3/4] md:aspect-auto overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600" 
+                  src="/images/harry-stylist.jpg" 
                   alt="Harry" 
                   className="w-full h-full object-cover"
                 />
