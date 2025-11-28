@@ -1,72 +1,96 @@
-import { Link } from "wouter";
-import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
+import { APP_LOGO, SALON_NAME } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* About */}
-          <div>
-            <h3 className="text-xl font-bold text-white mb-4">i's Hair Salon</h3>
-            <p className="text-sm mb-4">
-              バンクーバーの日系美容室。ショートヘア＆ストレートパーマに特化し、
-              日本の最新技術とサービスをお届けします。
+    <footer className="bg-muted/50 border-t border-border">
+      <div className="container py-12">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Logo & Description */}
+          <div className="md:col-span-2">
+            <img src={APP_LOGO} alt={SALON_NAME} className="h-16 w-auto mb-4" />
+            <p className="text-muted-foreground leading-relaxed max-w-md">
+              バンクーバーで日本の最新技術を提供する、プレミアムな日系美容室・アイラッシュサロンです。
             </p>
-            <div className="flex space-x-4">
-              <a href="https://www.instagram.com/harry_hairstylist/" target="_blank" rel="noopener noreferrer" className="hover:text-amber-500">
-                <Instagram size={20} />
+            <div className="flex gap-4 mt-6">
+              <a
+                href="https://www.instagram.com/is.japanese_hair.eyelash_salon/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-primary" />
               </a>
-              <a href="#" className="hover:text-amber-500">
-                <Facebook size={20} />
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5 text-primary" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="hover:text-amber-500">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-amber-500">Services</Link></li>
-              <li><Link href="/stylists" className="hover:text-amber-500">Stylists</Link></li>
-              <li><Link href="/styles" className="hover:text-amber-500">Hair Styles</Link></li>
+            <h3 className="font-bold mb-4">クイックリンク</h3>
+            <ul className="space-y-2 text-muted-foreground">
+              <li>
+                <a href="/#about" className="hover:text-primary transition-colors">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/#services" className="hover:text-primary transition-colors">
+                  サービス
+                </a>
+              </li>
+              <li>
+                <a href="/#staff" className="hover:text-primary transition-colors">
+                  スタッフ
+                </a>
+              </li>
+              <li>
+                <a href="/#gallery" className="hover:text-primary transition-colors">
+                  ギャラリー
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* More Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="hover:text-amber-500">Cut & Style</li>
-              <li className="hover:text-amber-500">Hair Color</li>
-              <li className="hover:text-amber-500">Straightening</li>
-              <li className="hover:text-amber-500">Perm</li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start space-x-2">
-                <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>Vancouver, BC, Canada</span>
+            <h3 className="font-bold mb-4">その他</h3>
+            <ul className="space-y-2 text-muted-foreground">
+              <li>
+                <a href="/menu" className="hover:text-primary transition-colors">
+                  メニュー・料金
+                </a>
               </li>
-              <li className="flex items-center space-x-2">
-                <Phone size={16} />
-                <span>+1 (604) XXX-XXXX</span>
+              <li>
+                <a href="/news" className="hover:text-primary transition-colors">
+                  News
+                </a>
               </li>
-              <li className="flex items-center space-x-2">
-                <Mail size={16} />
-                <span>info@ishairsalon.com</span>
+              <li>
+                <a href="/recruit" className="hover:text-primary transition-colors">
+                  リクルート
+                </a>
+              </li>
+              <li>
+                <a href="/products" className="hover:text-primary transition-colors">
+                  商品紹介
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} i's Hair Salon. All rights reserved.</p>
+        <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
+          <p>© {new Date().getFullYear()} {SALON_NAME}. All rights reserved.</p>
         </div>
       </div>
     </footer>
