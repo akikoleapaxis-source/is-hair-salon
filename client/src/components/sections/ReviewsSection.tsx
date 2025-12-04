@@ -6,6 +6,7 @@ export default function ReviewsSection() {
 
   const reviews = [
     {
+      source: "google",
       name: "Jessica Y",
       rating: 5,
       text: "My hair was severely damaged from digital perm, but the 7-step treatment made it incredibly healthy and smooth. I'm truly impressed!",
@@ -13,6 +14,7 @@ export default function ReviewsSection() {
       date: "1 week ago",
     },
     {
+      source: "fresha",
       name: "Hiroka O",
       rating: 5,
       text: "Yuki is an amazing hair stylist! She took the time to listen carefully and truly understood the style I was looking for.",
@@ -21,6 +23,7 @@ export default function ReviewsSection() {
       date: "Nov 18, 2025",
     },
     {
+      source: "fresha",
       name: "Angelina H",
       rating: 5,
       text: "Mii, thank you for getting my color exactly how I wanted it! Very satisfied.",
@@ -29,6 +32,7 @@ export default function ReviewsSection() {
       date: "Nov 18, 2025",
     },
     {
+      source: "google",
       name: "Michelle S",
       rating: 5,
       text: "Chippy and Sayaka were very professional and friendly! Chippy's eyelash work was excellent.",
@@ -86,11 +90,20 @@ export default function ReviewsSection() {
                 key={index}
                 className="p-6 border border-border hover:border-primary/30 transition-colors"
               >
-                {/* Rating */}
-                <div className="flex gap-1 mb-3">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-primary text-primary" />
-                  ))}
+                {/* Source Badge */}
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex gap-1">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <span className={`text-xs px-2 py-0.5 rounded-full ${
+                    review.source === 'google' 
+                      ? 'bg-blue-100 text-blue-700' 
+                      : 'bg-purple-100 text-purple-700'
+                  }`}>
+                    {review.source === 'google' ? 'Google' : 'Fresha'}
+                  </span>
                 </div>
 
                 {/* Review Text */}
@@ -113,14 +126,23 @@ export default function ReviewsSection() {
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 flex items-center justify-center gap-6">
+            <a
+              href="https://www.google.com/maps/place/i's.+Japanese+Hair+%26+Eyelash+Salon/@49.1667,-123.1367,17z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-xs uppercase tracking-wider text-foreground hover:text-primary border-b border-transparent hover:border-primary transition-colors"
+            >
+              {language === 'ja' ? 'Google レビューを見る' : 'Read Google Reviews'}
+            </a>
+            <span className="text-foreground/30">|</span>
             <a
               href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-xs uppercase tracking-wider text-foreground hover:text-primary border-b border-transparent hover:border-primary transition-colors"
             >
-              Read more reviews
+              {language === 'ja' ? 'Fresha レビューを見る' : 'Read Fresha Reviews'}
             </a>
           </div>
         </div>
