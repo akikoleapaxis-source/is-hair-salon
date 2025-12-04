@@ -52,7 +52,7 @@ export default function Recruit() {
                 <h2 className="text-3xl font-bold mb-6">i's で働く魅力</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   i's は、バンクーバーで急成長中の日系美容室・アイラッシュサロンです。
-                  オープンして2年目ですでに2店舗展開しており、多くのお客様にご来店いただいています。
+                  カナダ(バンクーバー)と日本(札幌)の2店舗を展開しており、多くのお客様にご来店いただいています。
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   日本の最新技術を常に取り入れ、お客様に最高のサービスを提供することを目指しています。

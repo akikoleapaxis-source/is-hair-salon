@@ -39,7 +39,7 @@ const translations = {
     // About
     'about.label': 'Our Expertise',
     'about.title': "i's のこだわり",
-    'about.description': 'バンクーバーで日本人美容師が運営する、日本人美容師による日本人のための美容室です。\n日本の最新技術や技術を常に取り入れているサロンで、またオープンして2年目ですが、\nすでに2店舗展開しており、多くのお客様にご来店いただいている勢いのあるサロンです。',
+    'about.description': 'バンクーバーで日本人美容師が運営する、日本人美容師による日本人のための美容室です。\n日本の最新技術や技術を常に取り入れているサロンで、カナダ(バンクーバー)と日本(札幌)の2店舗を展開しており、\n多くのお客様にご来店いただいている勢いのあるサロンです。',
     'about.short.title': '女性ショートヘア専門',
     'about.short.desc': 'ショートヘアに特化した技術で、一人ひとりの骨格や髪質に合わせた理想のスタイルを実現します。',
     'about.straight.title': '髪質改善ストレート',
@@ -80,7 +80,7 @@ const translations = {
     // Recruit
     'recruit.label': 'Join Our Team',
     'recruit.title': '海外で挑戦したいあなたへ',
-    'recruit.desc1': 'バンクーバーの日系美容室で一番口コミが多く、唯一日本の最新機械や技術を常に取り入れているサロンで、またオープンして2年目ですが、すでに2店舗展開しており、多くのお客様にご来店いただいている勢いのあるサロンです。',
+    'recruit.desc1': 'バンクーバーの日系美容室で一番口コミが多く、唯一日本の最新機械や技術を常に取り入れているサロンです。カナダ(バンクーバー)と日本(札幌)の2店舗を展開しており、多くのお客様にご来店いただいている勢いのあるサロンです。',
     'recruit.desc2': 'お店としては海外に挑戦したいスタイリストを応援する仕組みにしているので、もし、学生さんの応援にも繋がるなら嬉しいなと思っております。実績を作る目的や学校の課題とかでも使えるのであれば、一緒に作れないかなと思っております。',
     'recruit.cta.info': '採用情報を見る',
     'recruit.cta.contact': 'お問い合わせ',
@@ -186,7 +186,7 @@ const translations = {
     // About
     'about.label': 'Our Expertise',
     'about.title': "What Makes i's Special",
-    'about.description': 'A Japanese hair salon in Vancouver, run by Japanese stylists for the Japanese community.\nWe constantly incorporate the latest techniques and technology from Japan. Despite being only in our second year,\nwe have already expanded to 2 locations with a 3rd planned for next year.',
+    'about.description': 'A Japanese hair salon in Vancouver, run by Japanese stylists for the Japanese community.\nWe constantly incorporate the latest techniques and technology from Japan. We have 2 locations in Canada (Vancouver) and Japan (Sapporo),\nserving many satisfied customers with our growing reputation.',
     'about.short.title': 'Short Hair Specialists',
     'about.short.desc': 'Expert techniques specialized in short hair, creating the ideal style tailored to each individual\'s bone structure and hair texture.',
     'about.straight.title': 'Hair Quality Improvement',
@@ -227,7 +227,7 @@ const translations = {
     // Recruit
     'recruit.label': 'Join Our Team',
     'recruit.title': 'For Those Who Want to Challenge Themselves Abroad',
-    'recruit.desc1': 'We are the most reviewed Japanese salon in Vancouver and the only one constantly incorporating the latest Japanese equipment and techniques. Despite being only in our second year, we have already expanded to 2 locations and serve many satisfied customers.',
+    'recruit.desc1': 'We are the most reviewed Japanese salon in Vancouver and the only one constantly incorporating the latest Japanese equipment and techniques. We have 2 locations in Canada (Vancouver) and Japan (Sapporo), serving many satisfied customers with our growing reputation.',
     'recruit.desc2': 'We have a system to support stylists who want to challenge themselves abroad. If we can also support students, we would be delighted. If it can be used for building achievements or school projects, we would love to work together.',
     'recruit.cta.info': 'View Career Info',
     'recruit.cta.contact': 'Contact Us',
