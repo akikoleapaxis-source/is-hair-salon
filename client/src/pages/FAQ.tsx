@@ -85,28 +85,14 @@ export default function FAQ() {
                 ))}
               </Accordion>
 
-              {/* Contact CTA */}
+              {/* Contact Message */}
               <div className="mt-12 p-8 bg-secondary rounded-lg text-center">
                 <h3 className="text-xl md:text-2xl font-light mb-3 tracking-wide">
                   Still have questions?
                 </h3>
-                <p className="text-sm md:text-base text-foreground/70 mb-6">
-                  Feel free to contact us directly. We're here to help!
+                <p className="text-sm md:text-base text-foreground/70">
+                  Please feel free to ask our staff for more details.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="tel:+16045551234" 
-                    className="px-6 py-3 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-colors"
-                  >
-                    Call Us
-                  </a>
-                  <a 
-                    href="mailto:info@is-salon.com" 
-                    className="px-6 py-3 border border-border rounded hover:bg-secondary/50 transition-colors"
-                  >
-                    Email Us
-                  </a>
-                </div>
               </div>
             </div>
           </div>
