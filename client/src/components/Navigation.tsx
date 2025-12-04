@@ -25,11 +25,16 @@ export default function Navigation() {
     if (isAnchor && href.startsWith('#')) {
       const id = href.substring(1);
       const element = document.getElementById(id);
+      
       if (element) {
+        // If element exists on current page, scroll to it
         const offset = 80;
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - offset;
         window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      } else {
+        // If element doesn't exist (we're on a different page), navigate to home with hash
+        window.location.href = '/' + href;
       }
     }
   };
