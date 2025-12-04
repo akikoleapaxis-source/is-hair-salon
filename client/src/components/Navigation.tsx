@@ -40,7 +40,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center cursor-pointer group">
-            <span className="text-2xl font-light tracking-[0.2em] uppercase">i's.</span>
+            <img src="/logo.png" alt="i's Hair Salon" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -4,7 +4,7 @@ export default function AboutSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="section-spacing bg-secondary">
+    <section id="about" className="section-spacing bg-white">
       <div className="container">
         {/* Split layout: Image left, Text right */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-7xl mx-auto">

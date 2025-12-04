@@ -1,20 +1,40 @@
 import { Button } from "@/components/ui/button";
 import { FRESHA_BOOKING_URL } from "@/lib/constants";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useEffect, useState } from "react";
+
+const heroImages = [
+  '/hero-2.jpg',
+  '/hero-1.jpg',
+  '/hero-3-transparent.png',
+];
 
 export default function HeroSection() {
   const { t } = useLanguage();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 6000); // Change image every 6 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
   
   return (
     <section className="relative h-[70vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
-      {/* Full-width background image */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/hero-salon-real.jpg')`,
-          backgroundPosition: 'center 40%'
-        }}
-      />
+      {/* Slideshow background images with smooth fade transition */}
+      {heroImages.map((image, index) => (
+        <div
+          key={image}
+          className="absolute inset-0 z-0 bg-cover bg-center transition-opacity duration-[2000ms] ease-in-out"
+          style={{
+            backgroundImage: `url('${image}')`,
+            backgroundPosition: 'center 40%',
+            opacity: currentImageIndex === index ? (index === 2 ? 0.5 : 1) : 0,
+          }}
+        />
+      ))}
       
       {/* Subtle dark overlay for text readability */}
       <div className="absolute inset-0 z-0 bg-black/25" />
