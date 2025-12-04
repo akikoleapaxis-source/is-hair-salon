@@ -41,10 +41,8 @@ export default function Navigation() {
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/">
-            <a className="flex items-center cursor-pointer group">
-              <span className="text-2xl font-light tracking-[0.2em] uppercase">i's.</span>
-            </a>
+          <Link href="/" className="flex items-center cursor-pointer group">
+            <span className="text-2xl font-light tracking-[0.2em] uppercase">i's.</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -59,10 +57,8 @@ export default function Navigation() {
                   {item.label}
                 </button>
               ) : (
-                <Link key={item.href} href={item.href}>
-                  <a className="px-4 py-2 text-sm uppercase tracking-wider hover:text-primary transition-colors">
-                    {item.label}
-                  </a>
+                <Link key={item.href} href={item.href} className="px-4 py-2 text-sm uppercase tracking-wider hover:text-primary transition-colors">
+                  {item.label}
                 </Link>
               )
             ))}
@@ -125,13 +121,13 @@ export default function Navigation() {
                   {item.label}
                 </button>
               ) : (
-                <Link key={item.href} href={item.href}>
-                  <a 
-                    className="block px-4 py-3 text-sm uppercase tracking-wider hover:bg-secondary transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
+                <Link 
+                  key={item.href} 
+                  href={item.href}
+                  className="block px-4 py-3 text-sm uppercase tracking-wider hover:bg-secondary transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
                 </Link>
               )
             ))}
