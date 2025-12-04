@@ -16,6 +16,8 @@ export default function Navigation() {
     { href: "#gallery", label: "Gallery", isAnchor: true },
     { href: "/menu", label: "Menu", isAnchor: false },
     { href: "/news", label: "News", isAnchor: false },
+    { href: "/faq", label: "FAQ", isAnchor: false },
+    { href: "/store", label: "Store", isAnchor: false },
     { href: "#access", label: "Access", isAnchor: true },
   ];
 

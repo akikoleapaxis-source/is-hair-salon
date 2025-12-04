@@ -23,7 +23,7 @@ export interface Staff {
 }
 
 export const staffMembers: Staff[] = [
-  // Hair Stylists / Colorists (in order: Harry, Sho, Sayaka, Mii, Kana)
+  // Hair Stylists (in order: Harry, Sho, Sayaka, Mii, Kana)
   {
     id: "harry",
     name: "Harry",
@@ -101,8 +101,8 @@ export const staffMembers: Staff[] = [
     id: "mii",
     name: "Mii",
     nameJa: "ミイ",
-    role: "Colorist",
-    roleJa: "カラーリスト",
+    role: "Hair Stylist",
+    roleJa: "ヘアスタイリスト",
     category: 'hair',
     specialty: ["Color", "Bleach", "Balayage"],
     specialtyJa: ["カラー", "ブリーチ", "バレイヤージュ"],

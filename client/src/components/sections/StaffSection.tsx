@@ -74,10 +74,10 @@ export default function StaffSection() {
             </p>
           </div>
 
-          {/* Hair Stylists / Colorists */}
+          {/* Hair Stylists */}
           <div className="mb-12 md:mb-16">
             <h3 className="text-xl md:text-2xl font-light mb-6 md:mb-8 tracking-wide text-center uppercase">
-              {language === 'ja' ? 'ヘアスタイリスト / カラーリスト' : 'Hair Stylists / Colorists'}
+              {language === 'ja' ? 'ヘアスタイリスト' : 'Hair Stylists'}
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
               {hairStaff.map((member) => (

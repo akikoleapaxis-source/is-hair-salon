@@ -40,7 +40,7 @@ export default function Stylists() {
           <div className="container">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-light mb-8 text-center tracking-wide uppercase">
-                {language === 'ja' ? 'ヘアスタイリスト / カラーリスト' : 'Hair Stylists / Colorists'}
+                {language === 'ja' ? 'ヘアスタイリスト' : 'Hair Stylists'}
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {hairStylists.map((staff) => (
