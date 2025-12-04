@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { FRESHA_BOOKING_URL } from "@/lib/constants";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function HeroSection() {
+  const { t } = useLanguage();
+  
   return (
     <section className="relative h-[70vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
       {/* Full-width background image */}
@@ -25,10 +28,10 @@ export default function HeroSection() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base md:text-lg mb-8 leading-relaxed font-light tracking-wide opacity-95">
-            Vancouver Japanese Hair Salon
+          <p className="text-base md:text-lg mb-8 leading-relaxed font-light tracking-wide opacity-95 whitespace-pre-line">
+            {t('hero.badge')}
             <br />
-            Short Hair & Straight Perm Specialist
+            {t('hero.subtitle')}
           </p>
 
           {/* CTA Button */}

@@ -9,8 +9,8 @@ export default function GallerySection() {
     "/service-treatment.jpg",
     "/concept-styling-detail.jpg",
     "/ambiance-calm.jpg",
-    "/hero-salon-interior.jpg",
-    "/hero-salon-real.jpg",
+    "/salon-interior.png",
+    "/salon-waiting-area.jpg",
   ];
 
   return (

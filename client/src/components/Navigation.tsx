@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -32,9 +32,7 @@ export default function Navigation() {
     }
   };
 
-  const toggleLanguage = () => {
-    setLanguage(language === 'ja' ? 'en' : 'ja');
-  };
+
 
   return (
     <nav className="bg-white/98 backdrop-blur-sm sticky top-0 z-50 border-b border-border">
@@ -63,17 +61,6 @@ export default function Navigation() {
               )
             ))}
             
-            {/* Language Toggle */}
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={toggleLanguage}
-              className="ml-2 text-sm uppercase tracking-wider"
-            >
-              <Globe className="h-4 w-4 mr-2" />
-              {language === 'ja' ? 'EN' : 'JA'}
-            </Button>
-            
             <Button 
               asChild 
               className="ml-4 bg-black text-white hover:bg-black/80 uppercase tracking-wider text-sm"
@@ -86,15 +73,6 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={toggleLanguage}
-              className="text-sm uppercase"
-            >
-              <Globe className="h-4 w-4 mr-1" />
-              {language === 'ja' ? 'EN' : 'JA'}
-            </Button>
             <button
               className="p-2 text-foreground"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
