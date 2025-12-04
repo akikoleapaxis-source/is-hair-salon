@@ -38,31 +38,31 @@ export default function ServicesSection() {
       <div className="container">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-[0.1em] uppercase">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-5 tracking-[0.1em] uppercase">
               Services
             </h2>
-            <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
               {t('services.subtitle')}
             </p>
           </div>
 
           {/* Services List */}
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-4xl mx-auto space-y-6">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-6 border-b border-border last:border-b-0 hover:bg-secondary/30 transition-colors px-4 sm:px-6"
+                className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-5 border-b border-border last:border-b-0 hover:bg-secondary/30 transition-colors px-4 sm:px-6"
               >
-                <div className="flex-1 mb-3 sm:mb-0">
-                  <h3 className="text-xl md:text-2xl font-normal mb-2 tracking-wide">
+                <div className="flex-1 mb-2 sm:mb-0">
+                  <h3 className="text-lg md:text-xl font-normal mb-1 tracking-wide">
                     {service.title}
                   </h3>
-                  <p className="text-sm md:text-base text-foreground/60">
+                  <p className="text-xs md:text-sm text-foreground/60">
                     {service.description}
                   </p>
                 </div>
-                <div className="text-xl md:text-2xl font-light text-primary">
+                <div className="text-lg md:text-xl font-light text-primary">
                   {service.price}
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function ServicesSection() {
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-16">
+          <div className="text-center mt-12">
             <Button 
               asChild 
               variant="outline" 

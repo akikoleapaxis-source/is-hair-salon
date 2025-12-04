@@ -12,7 +12,7 @@ export default function Navigation() {
     { href: "/", label: "Home", isAnchor: false },
     { href: "#about", label: "Concept", isAnchor: true },
     { href: "#services", label: "Services", isAnchor: true },
-    { href: "#staff", label: "Stylists", isAnchor: true },
+    { href: "/stylists", label: "Stylists", isAnchor: false },
     { href: "#gallery", label: "Gallery", isAnchor: true },
     { href: "/menu", label: "Menu", isAnchor: false },
     { href: "/news", label: "News", isAnchor: false },

@@ -13,36 +13,36 @@ export default function AboutSection() {
             <img
               src="/concept-styling-detail.jpg"
               alt="Professional Hair Styling"
-              className="w-full h-[500px] lg:h-[600px] object-cover"
+              className="w-full h-[400px] lg:h-[480px] object-cover"
             />
           </div>
 
           {/* Text */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 tracking-[0.1em] uppercase">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6 tracking-[0.1em] uppercase">
               Concept
             </h2>
             
-            <div className="space-y-6 text-base md:text-lg leading-relaxed text-foreground/80">
+            <div className="space-y-5 text-sm md:text-base leading-relaxed text-foreground/80">
               <p>{t('about.description')}</p>
             </div>
 
             {/* Features */}
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
-                <h3 className="text-sm uppercase tracking-wider mb-2 font-medium">
+                <h3 className="text-xs uppercase tracking-wider mb-2 font-medium">
                   {t('about.short.title')}
                 </h3>
-                <p className="text-foreground/70">
+                <p className="text-sm text-foreground/70">
                   {t('about.short.desc')}
                 </p>
               </div>
               
               <div>
-                <h3 className="text-sm uppercase tracking-wider mb-2 font-medium">
+                <h3 className="text-xs uppercase tracking-wider mb-2 font-medium">
                   {t('about.straight.title')}
                 </h3>
-                <p className="text-foreground/70">
+                <p className="text-sm text-foreground/70">
                   {t('about.straight.desc')}
                 </p>
               </div>

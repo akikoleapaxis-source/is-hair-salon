@@ -18,11 +18,11 @@ export default function GallerySection() {
       <div className="container">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-[0.1em] uppercase">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-5 tracking-[0.1em] uppercase">
               Gallery
             </h2>
-            <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
               {t('gallery.subtitle')}
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function GallerySection() {
           </div>
 
           {/* Instagram Link */}
-          <div className="mt-16 text-center">
+          <div className="mt-12 text-center">
             <a
               href="https://www.instagram.com/is.japanese_hair.eyelash_salon/"
               target="_blank"

@@ -52,11 +52,11 @@ export default function Menu() {
       <Navigation />
       <main className="flex-1">
         {/* Hero */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-16 bg-muted/30">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-6">メニュー・料金</h1>
-              <p className="text-lg text-muted-foreground">
+              <h1 className="text-3xl md:text-4xl font-bold mb-5">メニュー・料金</h1>
+              <p className="text-sm md:text-base text-muted-foreground">
                 すべてのメニューは、経験豊富なスタイリストによる丁寧なカウンセリング付きです
               </p>
             </div>
@@ -64,25 +64,25 @@ export default function Menu() {
         </section>
 
         {/* Menu */}
-        <section className="py-20">
+        <section className="py-16">
           <div className="container">
-            <div className="max-w-4xl mx-auto space-y-12">
+            <div className="max-w-4xl mx-auto space-y-8">
               {menuCategories.map((category, index) => (
-                <div key={index} className="bg-background rounded-2xl p-8 shadow-sm">
-                  <h2 className="text-3xl font-bold mb-6 pb-4 border-b border-border">
+                <div key={index} className="bg-background rounded-2xl p-6 shadow-sm">
+                  <h2 className="text-xl md:text-2xl font-bold mb-5 pb-3 border-b border-border">
                     {category.category}
                   </h2>
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {category.items.map((item, itemIndex) => (
                       <div
                         key={itemIndex}
-                        className="flex items-center justify-between py-3 border-b border-border last:border-0"
+                        className="flex items-center justify-between py-2 border-b border-border last:border-0"
                       >
                         <div>
-                          <h3 className="font-semibold text-lg">{item.name}</h3>
-                          <p className="text-sm text-muted-foreground">{item.duration}</p>
+                          <h3 className="font-semibold text-base">{item.name}</h3>
+                          <p className="text-xs text-muted-foreground">{item.duration}</p>
                         </div>
-                        <div className="text-xl font-bold text-primary">{item.price}</div>
+                        <div className="text-lg font-bold text-primary">{item.price}</div>
                       </div>
                     ))}
                   </div>
@@ -91,13 +91,13 @@ export default function Menu() {
             </div>
 
             {/* CTA */}
-            <div className="mt-16 text-center">
-              <div className="max-w-2xl mx-auto bg-primary/5 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-4">ご予約はこちら</h3>
-                <p className="text-muted-foreground mb-6">
+            <div className="mt-12 text-center">
+              <div className="max-w-2xl mx-auto bg-primary/5 rounded-2xl p-6">
+                <h3 className="text-xl font-bold mb-3">ご予約はこちら</h3>
+                <p className="text-sm text-muted-foreground mb-5">
                   オンライン予約なら24時間いつでもご予約いただけます
                 </p>
-                <Button asChild size="lg" className="text-lg px-8 py-6">
+                <Button asChild size="lg" className="text-base px-6 py-5">
                   <a href={FRESHA_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                     オンライン予約
                   </a>

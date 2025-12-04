@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
 import StaffDetail from "./pages/StaffDetail";
+import Stylists from "./pages/Stylists";
 import Menu from "./pages/Menu";
 import News from "./pages/News";
 import Recruit from "./pages/Recruit";
@@ -17,6 +18,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/staff/:id"} component={StaffDetail} />
+      <Route path={"/stylists"} component={Stylists} />
       <Route path={"/menu"} component={Menu} />
       <Route path={"/news"} component={News} />
       <Route path={"/recruit"} component={Recruit} />

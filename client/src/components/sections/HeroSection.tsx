@@ -3,7 +3,7 @@ import { FRESHA_BOOKING_URL } from "@/lib/constants";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[85vh] md:h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[70vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
       {/* Full-width background image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center"
@@ -20,12 +20,12 @@ export default function HeroSection() {
       <div className="container relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Main heading - uppercase, thin, letter-spaced */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light mb-6 leading-tight tracking-[0.15em] uppercase">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-5 leading-tight tracking-[0.15em] uppercase">
             i's Hair Salon
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl mb-10 leading-relaxed font-light tracking-wide opacity-95">
+          <p className="text-base md:text-lg mb-8 leading-relaxed font-light tracking-wide opacity-95">
             Vancouver Japanese Hair Salon
             <br />
             Short Hair & Straight Perm Specialist
@@ -36,7 +36,7 @@ export default function HeroSection() {
             <Button 
               asChild 
               size="lg" 
-              className="bg-black text-white hover:bg-black/80 px-12 py-6 text-base tracking-wide uppercase font-normal"
+              className="bg-black text-white hover:bg-black/80 px-10 py-5 text-sm tracking-wide uppercase font-normal"
             >
               <a href={FRESHA_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book Appointment
