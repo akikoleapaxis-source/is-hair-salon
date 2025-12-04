@@ -1,99 +1,111 @@
-import { Instagram, Facebook } from "lucide-react";
-import { APP_LOGO, SALON_NAME } from "@/lib/constants";
+import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
-    <footer className="bg-muted/50 border-t border-border">
-      <div className="container py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+    <footer className="bg-secondary border-t border-border">
+      <div className="container py-16 md:py-20">
+        <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {/* Logo & Description */}
-          <div className="md:col-span-2">
-            <img src={APP_LOGO} alt={SALON_NAME} className="h-16 w-auto mb-4" />
-            <p className="text-muted-foreground leading-relaxed max-w-md">
-              バンクーバーで日本の最新技術を提供する、プレミアムな日系美容室・アイラッシュサロンです。
+          <div>
+            <h3 className="text-2xl font-light tracking-[0.2em] uppercase mb-6">i's.</h3>
+            <p className="text-sm text-foreground/70 leading-relaxed mb-6">
+              {t('footer.description')}
             </p>
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4">
               <a
                 href="https://www.instagram.com/is.japanese_hair.eyelash_salon/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                className="text-foreground/60 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
-                <Instagram className="w-5 h-5 text-primary" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                className="text-foreground/60 hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
-                <Facebook className="w-5 h-5 text-primary" />
+                <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold mb-4">クイックリンク</h3>
-            <ul className="space-y-2 text-muted-foreground">
+            <h4 className="text-sm uppercase tracking-wider mb-6 font-medium">Quick Links</h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <a href="/#about" className="hover:text-primary transition-colors">
-                  About Us
+                <a href="/#about" className="text-foreground/70 hover:text-primary transition-colors">
+                  Concept
                 </a>
               </li>
               <li>
-                <a href="/#services" className="hover:text-primary transition-colors">
-                  サービス
+                <a href="/#services" className="text-foreground/70 hover:text-primary transition-colors">
+                  Services
                 </a>
               </li>
               <li>
-                <a href="/#staff" className="hover:text-primary transition-colors">
-                  スタッフ
+                <a href="/#staff" className="text-foreground/70 hover:text-primary transition-colors">
+                  Stylists
                 </a>
               </li>
               <li>
-                <a href="/#gallery" className="hover:text-primary transition-colors">
-                  ギャラリー
+                <a href="/#gallery" className="text-foreground/70 hover:text-primary transition-colors">
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="/menu" className="text-foreground/70 hover:text-primary transition-colors">
+                  Menu
+                </a>
+              </li>
+              <li>
+                <a href="/news" className="text-foreground/70 hover:text-primary transition-colors">
+                  News
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* More Links */}
+          {/* Contact Info */}
           <div>
-            <h3 className="font-bold mb-4">その他</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>
-                <a href="/menu" className="hover:text-primary transition-colors">
-                  メニュー・料金
+            <h4 className="text-sm uppercase tracking-wider mb-6 font-medium">Contact</h4>
+            <ul className="space-y-4 text-sm">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 mt-1 text-foreground/60 flex-shrink-0" />
+                <span className="text-foreground/70 leading-relaxed">
+                  4000 No 3 Rd Unit 2060<br />
+                  Richmond, BC V6X 0J8
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-foreground/60 flex-shrink-0" />
+                <a href="tel:+16045551234" className="text-foreground/70 hover:text-primary transition-colors">
+                  (604) 555-1234
                 </a>
               </li>
-              <li>
-                <a href="/news" className="hover:text-primary transition-colors">
-                  News
-                </a>
-              </li>
-              <li>
-                <a href="/recruit" className="hover:text-primary transition-colors">
-                  リクルート
-                </a>
-              </li>
-              <li>
-                <a href="/products" className="hover:text-primary transition-colors">
-                  商品紹介
+              <li className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-foreground/60 flex-shrink-0" />
+                <a href="mailto:info@is-salon.com" className="text-foreground/70 hover:text-primary transition-colors">
+                  info@is-salon.com
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} {SALON_NAME}. All rights reserved.</p>
+        <div className="border-t border-border mt-12 pt-8 text-center">
+          <p className="text-xs text-foreground/50 uppercase tracking-wider">
+            © {new Date().getFullYear()} i's Hair Salon. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
   );
 }
-

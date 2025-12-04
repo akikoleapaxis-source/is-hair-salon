@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -44,40 +45,40 @@
 }
 
 :root {
-  /* i's. Theme - Warm Orange × Natural Beige */
-  --primary: oklch(0.65 0.15 45); /* Warm Terracotta Orange */
-  --primary-foreground: oklch(0.99 0.01 75); /* Soft Cream White */
-  --sidebar-primary: oklch(0.65 0.15 45);
+  /* i's. Theme - Minimalist White × Beige × Deep Green */
+  --primary: oklch(0.35 0.08 160); /* Deep Green - Professional & Calm */
+  --primary-foreground: oklch(0.99 0.01 75); /* Pure White */
+  --sidebar-primary: oklch(0.35 0.08 160);
   --sidebar-primary-foreground: oklch(0.99 0.01 75);
-  --chart-1: oklch(0.75 0.12 50); /* Light Peach */
-  --chart-2: oklch(0.68 0.14 48); /* Medium Coral */
-  --chart-3: oklch(0.60 0.16 45); /* Deep Terracotta */
-  --chart-4: oklch(0.55 0.14 42); /* Burnt Orange */
-  --chart-5: oklch(0.48 0.12 40); /* Deep Rust */
-  --radius: 1rem;
-  --background: oklch(0.97 0.015 75); /* Warm Beige Background */
-  --foreground: oklch(0.30 0.03 40); /* Warm Dark Brown */
-  --card: oklch(0.99 0.005 80); /* Soft Cream Card */
-  --card-foreground: oklch(0.30 0.03 135);
-  --popover: oklch(0.99 0.005 80);
-  --popover-foreground: oklch(0.30 0.03 135);
-  --secondary: oklch(0.90 0.02 80); /* Warm Beige */
-  --secondary-foreground: oklch(0.30 0.03 135);
-  --muted: oklch(0.93 0.015 60); /* Light Warm Beige */
-  --muted-foreground: oklch(0.48 0.04 40);
-  --accent: oklch(0.75 0.10 45); /* Warm Terracotta */
-  --accent-foreground: oklch(0.30 0.03 40);
+  --chart-1: oklch(0.75 0.06 150); /* Light Sage */
+  --chart-2: oklch(0.65 0.07 155); /* Medium Sage */
+  --chart-3: oklch(0.55 0.08 160); /* Deep Sage */
+  --chart-4: oklch(0.45 0.08 165); /* Forest Green */
+  --chart-5: oklch(0.35 0.08 170); /* Dark Forest */
+  --radius: 0.25rem; /* Minimal border radius */
+  --background: oklch(0.99 0.005 75); /* Pure White */
+  --foreground: oklch(0.20 0.01 0); /* Deep Black */
+  --card: oklch(0.98 0.01 80); /* Off-white Card */
+  --card-foreground: oklch(0.20 0.01 0);
+  --popover: oklch(0.99 0.005 75);
+  --popover-foreground: oklch(0.20 0.01 0);
+  --secondary: oklch(0.95 0.01 75); /* Light Beige Background */
+  --secondary-foreground: oklch(0.20 0.01 0);
+  --muted: oklch(0.93 0.015 70); /* Warm Beige */
+  --muted-foreground: oklch(0.45 0.02 0);
+  --accent: oklch(0.35 0.08 160); /* Deep Green Accent */
+  --accent-foreground: oklch(0.99 0.01 75);
   --destructive: oklch(0.58 0.20 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.85 0.02 60); /* Soft Warm Border */
-  --input: oklch(0.85 0.02 60);
-  --ring: oklch(0.55 0.12 45);
-  --sidebar: oklch(0.97 0.01 85);
-  --sidebar-foreground: oklch(0.30 0.03 135);
-  --sidebar-accent: oklch(0.90 0.02 80);
-  --sidebar-accent-foreground: oklch(0.30 0.03 135);
-  --sidebar-border: oklch(0.85 0.02 60);
-  --sidebar-ring: oklch(0.55 0.12 45);
+  --border: oklch(0.88 0.01 70); /* Subtle Beige Border */
+  --input: oklch(0.88 0.01 70);
+  --ring: oklch(0.35 0.08 160);
+  --sidebar: oklch(0.99 0.005 75);
+  --sidebar-foreground: oklch(0.20 0.01 0);
+  --sidebar-accent: oklch(0.95 0.01 75);
+  --sidebar-accent-foreground: oklch(0.20 0.01 0);
+  --sidebar-border: oklch(0.88 0.01 70);
+  --sidebar-ring: oklch(0.35 0.08 160);
 }
 
 .dark {
@@ -121,12 +122,29 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+    font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 400;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -142,39 +160,44 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      padding-left: 3rem;
+      padding-right: 3rem;
+      max-width: 1400px;
     }
+  }
+
+  /* Minimalist section spacing */
+  .section-spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .section-spacing {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
   }
 }

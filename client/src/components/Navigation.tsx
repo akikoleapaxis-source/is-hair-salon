@@ -10,12 +10,13 @@ export default function Navigation() {
 
   const navItems = [
     { href: "/", label: "Home", isAnchor: false },
-    { href: "#about", label: "About", isAnchor: true },
+    { href: "#about", label: "Concept", isAnchor: true },
     { href: "#services", label: "Services", isAnchor: true },
-    { href: "#staff", label: "Staff", isAnchor: true },
+    { href: "#staff", label: "Stylists", isAnchor: true },
     { href: "#gallery", label: "Gallery", isAnchor: true },
     { href: "/menu", label: "Menu", isAnchor: false },
     { href: "/news", label: "News", isAnchor: false },
+    { href: "#access", label: "Access", isAnchor: true },
   ];
 
   const handleNavClick = (href: string, isAnchor: boolean) => {
@@ -36,13 +37,13 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-primary/10">
+    <nav className="bg-white/98 backdrop-blur-sm sticky top-0 z-50 border-b border-border">
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center cursor-pointer group">
-              <img src="/logo.png" alt="i's." className="h-12 w-auto" />
+              <span className="text-2xl font-light tracking-[0.2em] uppercase">i's.</span>
             </a>
           </Link>
 
@@ -50,20 +51,17 @@ export default function Navigation() {
           <div className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
               item.isAnchor ? (
-                <Button
+                <button
                   key={item.href}
-                  variant="ghost"
-                  className="hover:text-primary hover:bg-primary/5"
+                  className="px-4 py-2 text-sm uppercase tracking-wider hover:text-primary transition-colors"
                   onClick={() => handleNavClick(item.href, true)}
                 >
                   {item.label}
-                </Button>
+                </button>
               ) : (
                 <Link key={item.href} href={item.href}>
-                  <a>
-                    <Button variant="ghost" className="hover:text-primary hover:bg-primary/5">
-                      {item.label}
-                    </Button>
+                  <a className="px-4 py-2 text-sm uppercase tracking-wider hover:text-primary transition-colors">
+                    {item.label}
                   </a>
                 </Link>
               )
@@ -74,15 +72,18 @@ export default function Navigation() {
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
-              className="ml-2 text-gray-600 hover:text-primary hover:bg-primary/5"
+              className="ml-2 text-sm uppercase tracking-wider"
             >
               <Globe className="h-4 w-4 mr-2" />
-              {language === 'ja' ? 'EN' : '日本語'}
+              {language === 'ja' ? 'EN' : 'JA'}
             </Button>
             
-            <Button asChild className="ml-4 bg-primary hover:bg-primary/90 text-white shadow-md">
+            <Button 
+              asChild 
+              className="ml-4 bg-black text-white hover:bg-black/80 uppercase tracking-wider text-sm"
+            >
               <a href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx" target="_blank" rel="noopener noreferrer">
-                予約
+                Book
               </a>
             </Button>
           </div>
@@ -93,13 +94,13 @@ export default function Navigation() {
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
-              className="text-gray-600 hover:text-primary"
+              className="text-sm uppercase"
             >
               <Globe className="h-4 w-4 mr-1" />
               {language === 'ja' ? 'EN' : 'JA'}
             </Button>
             <button
-              className="p-2 text-gray-700"
+              className="p-2 text-foreground"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -110,39 +111,43 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 space-y-2 border-t border-primary/10">
+          <div className="lg:hidden py-4 space-y-2 border-t border-border">
             {navItems.map((item) => (
               item.isAnchor ? (
-                <Button
+                <button
                   key={item.href}
-                  variant="ghost"
-                  className="w-full justify-start hover:text-primary hover:bg-primary/5"
+                  className="w-full text-left px-4 py-3 text-sm uppercase tracking-wider hover:bg-secondary transition-colors"
                   onClick={() => {
                     handleNavClick(item.href, true);
                     setIsMenuOpen(false);
                   }}
                 >
                   {item.label}
-                </Button>
+                </button>
               ) : (
                 <Link key={item.href} href={item.href}>
-                  <a className="w-full">
-                    <Button variant="ghost" className="w-full justify-start hover:text-primary hover:bg-primary/5" onClick={() => setIsMenuOpen(false)}>
-                      {item.label}
-                    </Button>
+                  <a 
+                    className="block px-4 py-3 text-sm uppercase tracking-wider hover:bg-secondary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
                   </a>
                 </Link>
               )
             ))}
-            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
-              <a href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx" target="_blank" rel="noopener noreferrer">
-                予約
-              </a>
-            </Button>
+            <div className="px-4 pt-4">
+              <Button 
+                asChild 
+                className="w-full bg-black text-white hover:bg-black/80 uppercase tracking-wider"
+              >
+                <a href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx" target="_blank" rel="noopener noreferrer">
+                  Book
+                </a>
+              </Button>
+            </div>
           </div>
         )}
       </div>
     </nav>
   );
 }
-

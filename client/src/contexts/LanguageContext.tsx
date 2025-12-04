@@ -50,17 +50,26 @@ const translations = {
     // Services
     'services.label': 'Our Services',
     'services.title': '主なサービス',
+    'services.subtitle': '日本の最新技術を取り入れた、プロフェッショナルなサービスをご提供します',
     'services.cut': 'カット',
+    'services.cut.title': 'ヘアカット',
     'services.cut.desc': '骨格に合わせた理想のカット',
     'services.color': 'カラー',
+    'services.color.title': 'カラーリング',
     'services.color.desc': '髪に優しいカラーリング',
     'services.straight': 'ストレート',
+    'services.straight.title': '髪質改善ストレート',
     'services.straight.desc': '髪質改善ストレートパーマ',
+    'services.treatment.title': 'トリートメント',
+    'services.treatment.desc': '髪に栄養を与えるトリートメント',
+    'services.eyelash.title': 'アイラッシュ',
+    'services.eyelash.desc': 'プロフェッショナルな施術',
     'services.perm': 'パーマ',
     'services.perm.desc': 'ナチュラルなパーマスタイル',
     'services.cta': '全メニューを見る',
     
     // Stylist
+    'staff.subtitle': '経験豊富なプロフェッショナルが、あなたの理想のスタイルを実現します',
     'stylist.label': 'Meet Our Team',
     'stylist.title': 'スタイリスト紹介',
     'stylist.badge': 'Owner & Top Stylist',
@@ -79,6 +88,7 @@ const translations = {
     // Access
     'access.label': 'Visit Us',
     'access.title': 'アクセス',
+    'access.subtitle': 'Richmond, BC の Aberdeen Square 内にございます',
     'access.location': 'Location',
     'access.location.text': 'Vancouver, BC\nCanada',
     'access.location.note': '※詳細な住所はご予約時にお知らせします',
@@ -93,11 +103,13 @@ const translations = {
     // Gallery
     'gallery.label': 'Style Gallery',
     'gallery.title': 'スタイルギャラリー',
+    'gallery.subtitle': '実際の施術例をご覧ください。あなたにぴったりのスタイルが見つかります',
     'gallery.desc': '実際の施術例をご覧ください。あなたにぴったりのスタイルが見つかります。',
     'gallery.style': 'スタイル',
     'gallery.cta': 'もっと見る',
     
     // Testimonials
+    'reviews.subtitle': 'お客様からいただいた声をご紹介します',
     'testimonials.label': 'Customer Reviews',
     'testimonials.title': 'お客様の声',
     'testimonials.review1': 'ショートヘアのカットをお願いしました。骨格に合わせた提案で、想像以上の仕上がりに大満足です！日本語で細かく相談できるのも安心でした。',
@@ -140,6 +152,7 @@ const translations = {
     'contact.form.submit': '送信する',
     
     // Footer
+    'footer.description': 'バンクーバーで日本の最新技術を提供する、プレミアムな日系美容室・アイラッシュサロンです。',
     'footer.about': 'サロンについて',
     'footer.menu': 'メニュー',
     'footer.follow': 'フォローする',
@@ -184,17 +197,26 @@ const translations = {
     // Services
     'services.label': 'Our Services',
     'services.title': 'Main Services',
+    'services.subtitle': 'Professional services incorporating the latest Japanese techniques',
     'services.cut': 'カット',
+    'services.cut.title': 'Haircut',
     'services.cut.desc': 'Ideal cut tailored to your bone structure',
     'services.color': 'カラー',
+    'services.color.title': 'Hair Color',
     'services.color.desc': 'Gentle hair coloring',
     'services.straight': 'ストレート',
+    'services.straight.title': 'Hair Quality Improvement Straightening',
     'services.straight.desc': 'Hair quality improvement straightening',
+    'services.treatment.title': 'Treatment',
+    'services.treatment.desc': 'Nourishing hair treatment',
+    'services.eyelash.title': 'Eyelash',
+    'services.eyelash.desc': 'Professional eyelash services',
     'services.perm': 'パーマ',
     'services.perm.desc': 'Natural perm styling',
     'services.cta': 'View All Services',
     
     // Stylist
+    'staff.subtitle': 'Experienced professionals who will realize your ideal style',
     'stylist.label': 'Meet Our Team',
     'stylist.title': 'Our Stylists',
     'stylist.badge': 'Owner & Top Stylist',
@@ -213,6 +235,7 @@ const translations = {
     // Access
     'access.label': 'Visit Us',
     'access.title': 'Access',
+    'access.subtitle': 'Located in Aberdeen Square, Richmond, BC',
     'access.location': 'Location',
     'access.location.text': 'Vancouver, BC\nCanada',
     'access.location.note': '*Detailed address will be provided upon booking',
@@ -227,11 +250,13 @@ const translations = {
     // Gallery
     'gallery.label': 'Style Gallery',
     'gallery.title': 'Style Gallery',
+    'gallery.subtitle': 'Browse our actual styling examples. Find the perfect style for you',
     'gallery.desc': 'Browse our actual styling examples. Find the perfect style for you.',
     'gallery.style': 'Style',
     'gallery.cta': 'View More',
     
     // Testimonials
+    'reviews.subtitle': 'Hear what our customers have to say',
     'testimonials.label': 'Customer Reviews',
     'testimonials.title': 'What Our Customers Say',
     'testimonials.review1': 'I had my short hair cut here. The stylist\'s suggestions based on my bone structure exceeded my expectations! Being able to discuss details in Japanese was very reassuring.',
@@ -274,6 +299,7 @@ const translations = {
     'contact.form.submit': 'Send Message',
     
     // Footer
+    'footer.description': 'A premium Japanese hair salon and eyelash salon in Vancouver, providing the latest Japanese techniques.',
     'footer.about': 'About',
     'footer.menu': 'Menu',
     'footer.follow': 'Follow Us',

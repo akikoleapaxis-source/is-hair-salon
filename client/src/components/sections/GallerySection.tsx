@@ -1,68 +1,65 @@
+import { Instagram } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function GallerySection() {
+  const { t } = useLanguage();
+
   const galleryImages = [
-    "/images/gallery/eyelash-1.avif",
-    "/images/gallery/hair-color-1.avif",
-    "/images/gallery/hair-treatment-1.avif",
-    "/images/gallery/hair-balayage-1.avif",
-    "/images/gallery/salon-interior-1.avif",
-    "/images/gallery/hair-cut-1.avif",
+    "/gallery-hair-result.jpg",
+    "/service-treatment.jpg",
+    "/concept-styling-detail.jpg",
+    "/ambiance-calm.jpg",
+    "/hero-salon-interior.jpg",
+    "/hero-salon-real.jpg",
   ];
 
   return (
-    <section id="gallery" className="py-20 md:py-32">
+    <section id="gallery" className="section-spacing bg-white">
       <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 rounded-full">
-            <p className="text-sm font-medium text-primary">Style Gallery</p>
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16 md:mb-20">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-[0.1em] uppercase">
+              Gallery
+            </h2>
+            <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto">
+              {t('gallery.subtitle')}
+            </p>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            スタイルギャラリー
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            実際の施術例をご覧ください。あなたにぴったりのスタイルが見つかります
-          </p>
-        </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-          {galleryImages.map((image, index) => (
-            <div
-              key={index}
-              className="group aspect-[3/4] overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300"
-            >
-              <img
-                src={image}
-                alt={`Style ${index + 1}`}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
-        </div>
+          {/* Gallery Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            {galleryImages.map((image, index) => (
+              <div
+                key={index}
+                className="group aspect-[3/4] overflow-hidden relative"
+              >
+                <img
+                  src={image}
+                  alt={`Style ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+              </div>
+            ))}
+          </div>
 
-        <div className="mt-12 text-center">
-          <a
-            href="https://www.instagram.com/is.japanese_hair.eyelash_salon/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
-          >
-            Instagramでもっと見る
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Instagram Link */}
+          <div className="mt-16 text-center">
+            <a
+              href="https://www.instagram.com/is.japanese_hair.eyelash_salon/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </a>
+              <Instagram className="w-5 h-5" />
+              <span className="text-sm uppercase tracking-wider border-b border-transparent group-hover:border-primary transition-colors">
+                Follow us on Instagram
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   );
 }
-
