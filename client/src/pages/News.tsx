@@ -3,58 +3,81 @@ import Footer from "@/components/Footer";
 
 export default function News() {
   const newsItems = [
-
     {
       date: "2025-01-10",
-      title: "冬のヘアケア特集",
-      excerpt: "乾燥する冬の季節、髪のダメージが気になる方へ。プロが教える冬のヘアケア方法をご紹介します。",
-      category: "ヘアケア知識",
+      title: "Winter Hair Care Guide",
+      excerpt: "Protect your hair from winter dryness with our professional tips and recommended treatments for the cold season.",
+      category: "Hair Care Tips",
     },
     {
       date: "2025-01-05",
-      title: "新スタッフ Wakana 加入",
-      excerpt: "経験豊富なスタイリスト Wakana が新しくチームに加わりました。ぜひご指名ください。",
-      category: "お知らせ",
+      title: "New Stylist Wakana Joins Our Team",
+      excerpt: "We're excited to welcome experienced stylist Wakana to our team. Book your appointment with her today!",
+      category: "Announcement",
+    },
+    {
+      date: "2024-12-20",
+      title: "Holiday Hours & Year-End Schedule",
+      excerpt: "Check our special holiday hours for the festive season. We'll be open throughout the holidays to serve you.",
+      category: "Announcement",
+    },
+    {
+      date: "2024-12-15",
+      title: "New Japanese Hair Quality Treatment",
+      excerpt: "Introducing our latest hair quality improvement treatment from Japan. Experience salon-quality results that last.",
+      category: "Services",
     },
   ];
 
   const faqCategories = [
     {
-      category: "ヘアケア基礎知識",
+      category: "Hair Care Basics",
       items: [
         {
-          q: "シャンプーの正しい方法は？",
-          a: "シャンプーは頭皮を洗うことが目的です。指の腹を使って優しくマッサージするように洗いましょう。髪の毛自体は泡で軽く洗う程度で十分です。",
+          q: "What's the proper way to shampoo?",
+          a: "Shampooing is primarily for cleansing the scalp. Use your fingertips to gently massage in circular motions. For the hair itself, simply running the lather through is sufficient.",
         },
         {
-          q: "トリートメントとコンディショナーの違いは？",
-          a: "コンディショナーは髪の表面を整えるもの、トリートメントは髪の内部に栄養を届けるものです。両方使う場合は、トリートメント→コンディショナーの順番で使用します。",
+          q: "What's the difference between treatment and conditioner?",
+          a: "Conditioner smooths the hair's outer surface, while treatment penetrates deep into the hair shaft to deliver nutrients. When using both, apply treatment first, then conditioner.",
+        },
+        {
+          q: "How often should I get a haircut?",
+          a: "For maintaining healthy hair, we recommend a trim every 6-8 weeks. This helps prevent split ends and keeps your style looking fresh.",
         },
       ],
     },
     {
-      category: "カラーリング",
+      category: "Hair Coloring",
       items: [
         {
-          q: "カラーを長持ちさせる方法は？",
-          a: "カラー専用シャンプーの使用、熱いお湯を避ける、紫外線対策、定期的なトリートメントが効果的です。",
+          q: "How can I make my hair color last longer?",
+          a: "Use color-safe shampoo, avoid hot water, protect from UV rays, and get regular treatments. These steps will help maintain vibrant color for weeks.",
         },
         {
-          q: "ブリーチとヘアカラーの違いは？",
-          a: "ブリーチは髪の色素を抜くもの、ヘアカラーは色を入れるものです。明るい色にしたい場合はブリーチが必要になることがあります。",
+          q: "What's the difference between bleach and hair color?",
+          a: "Bleach removes natural pigment from hair, while hair color adds pigment. For lighter shades, bleaching may be necessary before coloring.",
+        },
+        {
+          q: "Is it safe to color hair frequently?",
+          a: "With proper care and quality products, regular coloring can be safe. We recommend spacing color treatments 4-6 weeks apart and using deep conditioning treatments.",
         },
       ],
     },
     {
-      category: "パーマ・縮毛矯正",
+      category: "Perms & Straightening",
       items: [
         {
-          q: "縮毛矯正とストレートパーマの違いは？",
-          a: "縮毛矯正は熱を使ってクセを伸ばし、半永久的に効果が持続します。ストレートパーマは薬剤のみでクセを伸ばし、効果は2〜3ヶ月程度です。",
+          q: "What's the difference between straightening and thermal reconditioning?",
+          a: "Thermal reconditioning (Japanese straightening) uses heat to permanently straighten hair. Regular straightening uses chemicals only and lasts 2-3 months.",
         },
         {
-          q: "パーマ後のケア方法は？",
-          a: "パーマ当日はシャンプーを避け、その後も優しく扱うことが大切です。パーマ用のスタイリング剤を使用し、ドライヤーは弱風で乾かしましょう。",
+          q: "How do I care for my perm?",
+          a: "Avoid shampooing on the day of your perm. Afterward, handle hair gently, use perm-specific styling products, and dry with low heat to maintain curls.",
+        },
+        {
+          q: "Can I color and perm my hair at the same time?",
+          a: "We recommend spacing these treatments at least 2 weeks apart to minimize damage. Consult with your stylist for the best timing based on your hair condition.",
         },
       ],
     },
@@ -70,7 +93,7 @@ export default function News() {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-5xl font-bold mb-6">News & Knowledge</h1>
               <p className="text-lg text-muted-foreground">
-                サロンからのお知らせと、ヘアケアに役立つ知識をお届けします
+                Stay updated with salon news and professional hair care tips
               </p>
             </div>
           </div>
@@ -80,7 +103,7 @@ export default function News() {
         <section className="py-20">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8">最新のお知らせ</h2>
+              <h2 className="text-3xl font-bold mb-8">Latest News</h2>
               <div className="space-y-6">
                 {newsItems.map((item, index) => (
                   <div
@@ -106,9 +129,9 @@ export default function News() {
         <section className="py-20 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-4 text-center">ヘアケア知識</h2>
+              <h2 className="text-3xl font-bold mb-4 text-center">Hair Care Knowledge</h2>
               <p className="text-center text-muted-foreground mb-12">
-                プロが教える、髪と頭皮のケア方法
+                Professional tips for healthy hair and scalp care
               </p>
 
               <div className="space-y-12">
@@ -141,4 +164,3 @@ export default function News() {
     </div>
   );
 }
-
