@@ -6,43 +6,43 @@ import { FRESHA_BOOKING_URL } from "@/lib/constants";
 export default function Menu() {
   const menuCategories = [
     {
-      category: "ヘアカット",
+      category: "Haircut",
       items: [
-        { name: "カット", price: "$60", duration: "60分" },
-        { name: "カット + ブロー", price: "$70", duration: "75分" },
-        { name: "前髪カット", price: "$20", duration: "15分" },
+        { name: "Cut", price: "$60", duration: "60 min" },
+        { name: "Cut + Blow Dry", price: "$70", duration: "75 min" },
+        { name: "Bangs Trim", price: "$20", duration: "15 min" },
       ],
     },
     {
-      category: "カラー",
+      category: "Color",
       items: [
-        { name: "フルカラー", price: "$80〜", duration: "90分" },
-        { name: "リタッチカラー", price: "$60〜", duration: "60分" },
-        { name: "ハイライト", price: "$100〜", duration: "120分" },
-        { name: "バレイヤージュ", price: "$120〜", duration: "150分" },
+        { name: "Full Color", price: "$80~", duration: "90 min" },
+        { name: "Root Touch-up", price: "$60~", duration: "60 min" },
+        { name: "Highlights", price: "$100~", duration: "120 min" },
+        { name: "Balayage", price: "$120~", duration: "150 min" },
       ],
     },
     {
-      category: "パーマ・縮毛矯正",
+      category: "Perm & Straightening",
       items: [
-        { name: "デジタルパーマ", price: "$120〜", duration: "150分" },
-        { name: "縮毛矯正", price: "$150〜", duration: "180分" },
-        { name: "髪質改善ストレート", price: "$180〜", duration: "180分" },
+        { name: "Digital Perm", price: "$120~", duration: "150 min" },
+        { name: "Straightening", price: "$150~", duration: "180 min" },
+        { name: "Hair Quality Improvement Straightening", price: "$180~", duration: "180 min" },
       ],
     },
     {
-      category: "トリートメント",
+      category: "Treatment",
       items: [
-        { name: "トリートメント", price: "$30〜", duration: "30分" },
-        { name: "ヘッドスパ", price: "$40〜", duration: "40分" },
+        { name: "Treatment", price: "$30~", duration: "30 min" },
+        { name: "Head Spa", price: "$40~", duration: "40 min" },
       ],
     },
     {
-      category: "アイラッシュ",
+      category: "Eyelash",
       items: [
-        { name: "シングルラッシュ", price: "$70〜", duration: "90分" },
-        { name: "ボリュームラッシュ", price: "$90〜", duration: "120分" },
-        { name: "リフィル", price: "$50〜", duration: "60分" },
+        { name: "Classic Lash", price: "$70~", duration: "90 min" },
+        { name: "Volume Lash", price: "$90~", duration: "120 min" },
+        { name: "Refill", price: "$50~", duration: "60 min" },
       ],
     },
   ];
@@ -55,9 +55,9 @@ export default function Menu() {
         <section className="py-16 bg-muted/30">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-3xl md:text-4xl font-bold mb-5">メニュー・料金</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-5">Menu & Pricing</h1>
               <p className="text-sm md:text-base text-muted-foreground">
-                すべてのメニューは、経験豊富なスタイリストによる丁寧なカウンセリング付きです
+                All services include professional consultation with experienced stylists
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function Menu() {
             <div className="max-w-4xl mx-auto space-y-8">
               {menuCategories.map((category, index) => (
                 <div key={index} className="bg-background rounded-2xl p-6 shadow-sm">
-                  <h2 className="text-xl md:text-2xl font-bold mb-5 pb-3 border-b border-border">
+                  <h2 className="text-base md:text-lg font-bold mb-5 pb-3 border-b border-border">
                     {category.category}
                   </h2>
                   <div className="space-y-3">
@@ -79,10 +79,10 @@ export default function Menu() {
                         className="flex items-center justify-between py-2 border-b border-border last:border-0"
                       >
                         <div>
-                          <h3 className="font-semibold text-base">{item.name}</h3>
+                          <h3 className="font-medium text-xs md:text-sm">{item.name}</h3>
                           <p className="text-xs text-muted-foreground">{item.duration}</p>
                         </div>
-                        <div className="text-lg font-bold text-primary">{item.price}</div>
+                        <div className="text-sm md:text-base font-semibold text-primary">{item.price}</div>
                       </div>
                     ))}
                   </div>
@@ -93,13 +93,13 @@ export default function Menu() {
             {/* CTA */}
             <div className="mt-12 text-center">
               <div className="max-w-2xl mx-auto bg-primary/5 rounded-2xl p-6">
-                <h3 className="text-xl font-bold mb-3">ご予約はこちら</h3>
+                <h3 className="text-lg font-bold mb-3">Book Your Appointment</h3>
                 <p className="text-sm text-muted-foreground mb-5">
-                  オンライン予約なら24時間いつでもご予約いただけます
+                  Online booking available 24/7 for your convenience
                 </p>
-                <Button asChild size="lg" className="text-base px-6 py-5">
+                <Button asChild size="lg" className="text-sm px-6 py-4">
                   <a href={FRESHA_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                    オンライン予約
+                    Book Online
                   </a>
                 </Button>
               </div>
@@ -111,4 +111,3 @@ export default function Menu() {
     </div>
   );
 }
-
