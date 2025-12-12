@@ -46,7 +46,7 @@ export default function HeroSection() {
           <div className="mb-5" style={{ lineHeight: '1' }}>
             <div className="flex justify-center -mb-16 md:-mb-20 lg:-mb-24">
               <img 
-                src="/images/is-logo-text.png" 
+                src="/images/is-logo-new.png" 
                 alt="i's." 
                 className="h-40 md:h-52 lg:h-64 w-auto"
               />
