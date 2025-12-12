@@ -46,7 +46,7 @@ export default function Navigation() {
       <div className="container">
         <div className="flex items-center justify-between h-36">
           {/* Logo */}
-          <Link href="/" className="flex items-center cursor-pointer group">
+          <Link href="/" className="flex items-center cursor-pointer group -ml-16 mt-2">
             <img src="/images/is-logo-new.png" alt="i's Hair Salon" className="h-30 w-auto" />
           </Link>
 
