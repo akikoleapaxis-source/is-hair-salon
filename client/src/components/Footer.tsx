@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {/* Logo & Description */}
           <div>
-            <h3 className="text-2xl font-light tracking-[0.2em] uppercase mb-6">i's.</h3>
+            <h3 className="text-2xl font-light tracking-[0.2em] mb-6" style={{ fontFamily: 'Cormorant, serif' }}>i's.</h3>
             <p className="text-sm text-foreground/70 leading-relaxed mb-6">
               {t('footer.description')}
             </p>
