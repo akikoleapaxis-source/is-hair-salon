@@ -44,10 +44,10 @@ export default function Navigation() {
   return (
     <nav className="bg-white/98 backdrop-blur-sm sticky top-0 z-50 border-b border-border">
       <div className="container">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-36">
           {/* Logo */}
           <Link href="/" className="flex items-center cursor-pointer group">
-            <img src="/images/is-logo-new.png" alt="i's Hair Salon" className="h-12 w-auto" />
+            <img src="/images/is-logo-new.png" alt="i's Hair Salon" className="h-30 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
