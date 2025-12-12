@@ -31,7 +31,7 @@ export default function FAQ() {
     },
     {
       question: "Do you offer hair quality improvement treatments?",
-      answer: "Yes! We specialize in Japanese hair quality improvement treatments, including our signature 7-step treatment and hair quality improvement straightening. These treatments help restore damaged hair and improve overall hair health."
+      answer: "Yes! We specialize in Japanese hair quality improvement treatments. We offer two premium treatments: Japanese TOKIO premium treatment (CA$150~) which includes free home care, and Millbon Japanese Premium Aujua 7 Step Treatment (CA$90~). These treatments help restore damaged hair and improve overall hair health."
     },
     {
       question: "Is parking available?",
