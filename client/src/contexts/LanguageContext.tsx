@@ -65,6 +65,7 @@ const translations = {
     'services.eyelash.title': 'アイラッシュ',
     'services.eyelash.desc': 'プロフェッショナルな施術',
     'services.perm': 'パーマ',
+    'services.perm.title': 'パーマ',
     'services.perm.desc': 'ナチュラルなパーマスタイル',
     'services.cta': '全メニューを見る',
     
@@ -212,6 +213,7 @@ const translations = {
     'services.eyelash.title': 'Eyelash',
     'services.eyelash.desc': 'Professional eyelash services',
     'services.perm': 'パーマ',
+    'services.perm.title': 'Perm',
     'services.perm.desc': 'Natural perm styling',
     'services.cta': 'View All Services',
     

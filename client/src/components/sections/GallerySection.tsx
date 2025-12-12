@@ -5,12 +5,14 @@ export default function GallerySection() {
   const { t } = useLanguage();
 
   const galleryImages = [
-    "/gallery-hair-result.jpg",
-    "/service-treatment.jpg",
-    "/concept-styling-detail.jpg",
-    "/ambiance-calm.jpg",
-    "/salon-interior.png",
-    "/salon-waiting-area.jpg",
+    "/images/gallery/カラー.png",
+    "/images/gallery/model-hairstyle.png",
+    "/images/gallery/straight_hair_closeup_professional.png",
+    "/images/gallery/１.png",
+    "/images/gallery/salon_interior_detail_professional.png",
+    "/images/gallery/salon_waiting_area_professional.png",
+    "/images/gallery/hair-balayage-1.avif",
+    "/images/gallery/hair-color-1.avif",
   ];
 
   return (
@@ -28,7 +30,7 @@ export default function GallerySection() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {galleryImages.map((image, index) => (
               <div
                 key={index}

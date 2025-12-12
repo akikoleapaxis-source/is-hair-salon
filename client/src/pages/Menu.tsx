@@ -8,41 +8,48 @@ export default function Menu() {
     {
       category: "Haircut",
       items: [
-        { name: "Cut", price: "$60", duration: "60 min" },
-        { name: "Cut + Blow Dry", price: "$70", duration: "75 min" },
-        { name: "Bangs Trim", price: "$20", duration: "15 min" },
+        { name: "★Haircut", price: "CA$68~", duration: "1h 15min - 1h 45min" },
+        { name: "★Very Short Haircut (Shaved style, super short style)", price: "CA$63~", duration: "1h - 1h 20min" },
+        { name: "★Cut + Japanese TOKIO premium treatment (+free home care)", price: "CA$215~", duration: "2h - 2h 15min" },
+        { name: "★Bangs cut", price: "CA$21~", duration: "30min" },
+        { name: "★Up-do", price: "CA$86~", duration: "1h - 1h 30min" },
+      ],
+    },
+    {
+      category: "Eye lash",
+      items: [
+        { name: "★Flat Lash Extensions", price: "CA$78~", duration: "1h - 2h" },
+        { name: "★Keratain Lash Lift", price: "CA$46~", duration: "30min - 2h" },
+        { name: "★Shimmer Lash (EyeLash Extention + Lash Lift)", price: "CA$148~", duration: "1h 30min - 2h 15min" },
+        { name: "★Keratin Lash Lift + Black Tint + Shampoo", price: "CA$93~", duration: "1h 30min - 1h 45min" },
       ],
     },
     {
       category: "Color",
       items: [
-        { name: "Full Color", price: "$80~", duration: "90 min" },
-        { name: "Root Touch-up", price: "$60~", duration: "60 min" },
-        { name: "Highlights", price: "$100~", duration: "120 min" },
-        { name: "Balayage", price: "$120~", duration: "150 min" },
+        { name: "★Premium care Color (Regular color = Non Bleaching process)", price: "CA$278~", duration: "2h 45min - 4h" },
+        { name: "★Color (Regular color = Non Bleaching process)", price: "CA$164~", duration: "2h 15min - 3h" },
       ],
     },
     {
-      category: "Perm & Straightening",
+      category: "Perm",
       items: [
-        { name: "Digital Perm", price: "$120~", duration: "150 min" },
-        { name: "Straightening", price: "$150~", duration: "180 min" },
-        { name: "Hair Quality Improvement Straightening", price: "$180~", duration: "180 min" },
+        { name: "★Japanese Digital perm", price: "CA$281~", duration: "3h - 3h 30min" },
+        { name: "★Japanese Cold Perm for women", price: "CA$181~", duration: "2h - 2h 30min" },
+        { name: "★Partial Perm for Men's hairstyles", price: "CA$158~", duration: "2h - 2h 30min" },
+      ],
+    },
+    {
+      category: "Japanese Straightening",
+      items: [
+        { name: "★Premium Treatment Japanese Straightening (with system treatment)", price: "CA$398~", duration: "3h 30min - 4h 30min" },
       ],
     },
     {
       category: "Treatment",
       items: [
-        { name: "Treatment", price: "$30~", duration: "30 min" },
-        { name: "Head Spa", price: "$40~", duration: "40 min" },
-      ],
-    },
-    {
-      category: "Eyelash",
-      items: [
-        { name: "Classic Lash", price: "$70~", duration: "90 min" },
-        { name: "Volume Lash", price: "$90~", duration: "120 min" },
-        { name: "Refill", price: "$50~", duration: "60 min" },
+        { name: "★Japanese TOKIO premium treatment (+free home care)", price: "CA$150~", duration: "45min - 1h 15min" },
+        { name: "★Millbon Japanese Premium Aujua 7 Step Treatment", price: "CA$90~", duration: "1h - 1h 15min" },
       ],
     },
   ];

@@ -9,27 +9,32 @@ export default function ServicesSection() {
     {
       title: t('services.cut.title'),
       description: t('services.cut.desc'),
-      price: "$60~",
+      price: "CA$68~",
     },
     {
       title: t('services.color.title'),
       description: t('services.color.desc'),
-      price: "$80~",
+      price: "CA$164~",
+    },
+    {
+      title: t('services.perm.title'),
+      description: t('services.perm.desc'),
+      price: "CA$181~",
     },
     {
       title: t('services.straight.title'),
       description: t('services.straight.desc'),
-      price: "$150~",
+      price: "CA$398~",
     },
     {
       title: t('services.treatment.title'),
       description: t('services.treatment.desc'),
-      price: "$50~",
+      price: "CA$90~",
     },
     {
       title: t('services.eyelash.title'),
       description: t('services.eyelash.desc'),
-      price: "$70~",
+      price: "CA$78~",
     },
   ];
 
@@ -78,7 +83,7 @@ export default function ServicesSection() {
               className="uppercase tracking-wider border-2 hover:bg-black hover:text-white transition-colors"
             >
               <Link href="/menu">
-                <a>View Full Menu</a>
+                View Full Menu
               </Link>
             </Button>
           </div>

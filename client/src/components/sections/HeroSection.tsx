@@ -4,9 +4,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { useEffect, useState } from "react";
 
 const heroImages = [
-  '/hero-2.jpg',
   '/hero-1.jpg',
-  '/hero-3-transparent.png',
+  '/hero-2-interior.png',
+  '/hero-3-gold.png',
 ];
 
 export default function HeroSection() {
@@ -43,9 +43,18 @@ export default function HeroSection() {
       <div className="container relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Main heading - uppercase, thin, letter-spaced */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-5 leading-tight tracking-[0.15em] uppercase">
-            i's Hair Salon
-          </h1>
+          <div className="mb-5" style={{ lineHeight: '1' }}>
+            <div className="flex justify-center -mb-16 md:-mb-20 lg:-mb-24">
+              <img 
+                src="/images/is-logo-text.png" 
+                alt="i's." 
+                className="h-40 md:h-52 lg:h-64 w-auto"
+              />
+            </div>
+            <div className="text-xl md:text-2xl lg:text-3xl font-light tracking-[0.05em]" style={{ fontFamily: 'Cormorant, serif' }}>
+              Japanese Hair & Eyelash salon
+            </div>
+          </div>
 
           {/* Subtitle */}
           <p className="text-base md:text-lg mb-8 leading-relaxed font-light tracking-wide opacity-95 whitespace-pre-line">
