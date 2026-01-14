@@ -79,3 +79,9 @@
     color: transparent;
   }
 }
+
+@layer utilities {
+  .section-spacing {
+    @apply py-24 md:py-32;
+  }
+}
