@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import StaffSection from "@/components/sections/StaffSection";
+import Staff from "@/components/Staff";
 import GallerySection from "@/components/sections/GallerySection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import AccessSection from "@/components/sections/AccessSection";
@@ -16,7 +16,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <StaffSection />
+        <Staff />
         <GallerySection />
         <ReviewsSection />
         <AccessSection />
@@ -25,4 +25,3 @@ export default function Home() {
     </div>
   );
 }
-
