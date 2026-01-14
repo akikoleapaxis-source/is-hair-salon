@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface StaffMember {
   id: number;
@@ -63,59 +64,64 @@ const staffMembers: StaffMember[] = [
 
 export default function Staff() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
+  const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-background border-t border-border">
-      <div className="container mx-auto px-4">
-        <div className="mb-16">
-          <h2 className="text-6xl md:text-8xl font-display font-bold uppercase leading-none mb-4">
-            The <span className="text-stroke text-transparent">Artisans</span>
-          </h2>
-          <p className="text-xl md:text-2xl font-sans max-w-2xl ml-auto border-l-2 border-primary pl-6">
-            Precision meets creativity. Our team of specialists is dedicated to crafting your perfect look with authentic Japanese techniques.
-          </p>
-        </div>
+    <section className="section-spacing bg-white">
+      <div className="container">
+        <div className="max-w-7xl mx-auto">
+          {/* Header - Matching Gallery Style */}
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-5 tracking-[0.1em] uppercase">
+              Stylists
+            </h2>
+            <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
+              Precision meets creativity. Our team of specialists is dedicated to crafting your perfect look with authentic Japanese techniques.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 border-l border-t border-border">
-          {staffMembers.map((staff) => (
-            <motion.div
-              key={staff.id}
-              className="group relative border-r border-b border-border aspect-[3/4] overflow-hidden cursor-pointer"
-              onMouseEnter={() => setHoveredId(staff.id)}
-              onMouseLeave={() => setHoveredId(null)}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: staff.id * 0.1 }}
-            >
-              {/* Image Layer */}
-              <div className="absolute inset-0 bg-gray-200">
+          {/* Staff Grid - Matching Gallery Layout (2 cols mobile, 4 cols desktop) */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {staffMembers.map((staff) => (
+              <motion.div
+                key={staff.id}
+                className="group aspect-[3/4] overflow-hidden relative cursor-pointer"
+                onMouseEnter={() => setHoveredId(staff.id)}
+                onMouseLeave={() => setHoveredId(null)}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: staff.id * 0.1 }}
+              >
+                {/* Image Layer */}
                 <img
                   src={staff.image}
                   alt={staff.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 grayscale group-hover:grayscale-0"
                 />
-              </div>
+                
+                {/* Overlay Info - Matching Gallery Hover Effect */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
 
-              {/* Overlay Info */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex flex-col justify-end p-6">
-                <div className="bg-background/90 backdrop-blur-sm p-4 border border-border transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                  <h3 className="text-2xl font-display font-bold uppercase mb-1">
+                {/* Staff Info Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-white text-lg font-medium tracking-wide uppercase">
                     {staff.name}
                   </h3>
-                  <div className="flex justify-between items-center font-sans text-sm">
-                    <span className="uppercase tracking-wider">{staff.role}</span>
-                    <span className="text-accent font-bold">{staff.specialty}</span>
-                  </div>
+                  <p className="text-white/80 text-xs uppercase tracking-wider">
+                    {staff.role}
+                  </p>
                 </div>
-              </div>
 
-              {/* Static Label (Always visible until hover) */}
-              <div className={`absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 text-sm font-bold uppercase tracking-widest transition-opacity duration-300 ${hoveredId === staff.id ? 'opacity-0' : 'opacity-100'}`}>
-                {staff.name}
-              </div>
-            </motion.div>
-          ))}
+                {/* Static Label (Always visible until hover) - Optional, can remove if cleaner look desired */}
+                <div className={`absolute bottom-4 left-4 text-white drop-shadow-md transition-opacity duration-300 ${hoveredId === staff.id ? 'opacity-0' : 'opacity-100'}`}>
+                  <h3 className="text-lg font-medium tracking-wide uppercase">
+                    {staff.name}
+                  </h3>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
