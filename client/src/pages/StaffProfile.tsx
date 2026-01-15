@@ -4,8 +4,19 @@ import { Instagram, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FRESHA_BOOKING_URL } from "@/lib/constants";
 
+interface StaffMember {
+  name: string;
+  role: string;
+  image?: string;
+  initial?: string;
+  specialty: string;
+  description: string;
+  instagram?: string;
+  instagramId?: string;
+}
+
 // Staff data
-const staffData = {
+const staffData: Record<string, StaffMember> = {
   "harry": {
     name: "Harry",
     role: "Owner / Top Stylist",
@@ -51,6 +62,16 @@ const staffData = {
     instagram: "https://instagram.com/mii_ishair",
     instagramId: "mii_ishair"
   },
+  "kana": {
+    name: "Kana",
+    role: "Stylist",
+    initial: "K",
+    specialty: "Natural Style & Head Spa",
+    description: "Kana specializes in natural, effortless styles that enhance your inherent beauty. She is also an expert in relaxing head spa treatments.",
+    // Placeholder Instagram until provided
+    instagram: "https://instagram.com/is_hair_salon",
+    instagramId: "is_hair_salon"
+  },
   "saeko": {
     name: "Saeko",
     role: "Eyelist",
@@ -68,6 +89,16 @@ const staffData = {
     description: "Sari is an expert in eyelash extensions, from natural to volume styles. She customizes the design to perfectly match your eye shape.",
     instagram: "https://instagram.com/sari_ishair",
     instagramId: "sari_ishair"
+  },
+  "chippy": {
+    name: "Chippy",
+    role: "Eyelist",
+    initial: "C",
+    specialty: "Volume Lash & Design",
+    description: "Chippy brings artistic flair to eyelash design, specializing in volume lashes that create a stunning, dramatic look while maintaining lash health.",
+    // Placeholder Instagram until provided
+    instagram: "https://instagram.com/is_hair_salon",
+    instagramId: "is_hair_salon"
   }
 };
 
@@ -89,13 +120,19 @@ export default function StaffProfile() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="aspect-[3/4] overflow-hidden"
+            className="aspect-[3/4] overflow-hidden bg-[#F5F2EB] flex items-center justify-center"
           >
-            <img
-              src={staff.image}
-              alt={staff.name}
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-            />
+            {staff.image ? (
+              <img
+                src={staff.image}
+                alt={staff.name}
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              />
+            ) : (
+              <span className="text-9xl font-display font-light text-foreground/20">
+                {staff.initial}
+              </span>
+            )}
           </motion.div>
 
           {/* Right: Info */}
