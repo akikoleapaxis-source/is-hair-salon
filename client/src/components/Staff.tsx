@@ -17,7 +17,7 @@ const hairStylists: StaffMember[] = [
     id: "harry",
     name: "Harry",
     role: "Owner / Top Stylist",
-    image: "/images/staff_02.jpg",
+    image: "/images/staff_harry.jpg",
     specialty: "Texture Control",
   },
   {
@@ -179,27 +179,6 @@ export default function Staff() {
             <h3 className="text-xl md:text-2xl font-display font-light text-center mb-10 tracking-widest uppercase">
               Eyelash Specialists
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 justify-center">
-              {/* Centering logic for 3 items: empty div if needed, or just grid */}
-              {/* Since we have 3 items and 4 columns, we can just center the grid content or use empty divs */}
-              {/* Let's use flex for centering row if items < 4, but grid is robust. */}
-              {/* For 3 items in 4 cols, we can add an empty div at start if we want true center, or just let them align left. */}
-              {/* Let's try to center them nicely. */}
-              <div className="hidden md:block md:col-span-4 lg:col-span-4 xl:col-span-4 flex justify-center gap-6">
-                 {/* Actually, switching to flex for the container might be easier for centering odd numbers */}
-              </div>
-              
-              {/* Reverting to grid with centering hack for 3 items */}
-               {/* 
-                  Grid with 4 columns. 
-                  Item 1: col-start-1 (or offset)
-                  To center 3 items in 4 columns:
-                  Space | Item | Item | Item | Space -> Not possible in 4 cols
-                  Maybe just center the grid itself?
-               */}
-            </div>
-            
-            {/* Alternative: Use Flexbox for centering regardless of count */}
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                {eyelashSpecialists.map((staff, index) => (
                 <div key={staff.id} className="w-[calc(50%-0.5rem)] md:w-[calc(25%-1.125rem)]">

@@ -20,7 +20,7 @@ const staffData: Record<string, StaffMember> = {
   "harry": {
     name: "Harry",
     role: "Owner / Top Stylist",
-    image: "/images/staff_02.jpg",
+    image: "/images/staff_harry.jpg",
     specialty: "Texture Control & Precision Cut",
     description: "With over 15 years of experience in Japan and Canada, Harry specializes in creating styles that are easy to maintain and perfectly suited to your hair texture and lifestyle.",
     instagram: "https://instagram.com/harry_ishair",
