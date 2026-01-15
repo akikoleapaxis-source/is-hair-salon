@@ -70,7 +70,17 @@ export default function Staff() {
               href={staff.freshaBookingUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e) => {
+                e.stopPropagation();
+                // Google Analytics Event Tracking
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'click_book_now', {
+                    'event_category': 'engagement',
+                    'event_label': staff.name,
+                    'staff_id': staff.id
+                  });
+                }
+              }}
             >
               Book Now
             </a>
