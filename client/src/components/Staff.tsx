@@ -1,96 +1,30 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useLocation } from "wouter";
-
-interface StaffMember {
-  id: string;
-  name: string;
-  role: string;
-  image?: string;
-  initial?: string;
-  specialty: string;
-}
-
-// Hair Stylists
-const hairStylists: StaffMember[] = [
-  {
-    id: "harry",
-    name: "Harry",
-    role: "Owner / Top Stylist",
-    image: "/images/staff_harry.jpg",
-    specialty: "Texture Control",
-  },
-  {
-    id: "sho",
-    name: "Sho",
-    role: "Stylist",
-    image: "/images/staff_sho.jpg",
-    specialty: "Men's Cut",
-  },
-  {
-    id: "sayaka",
-    name: "Sayaka",
-    role: "Stylist",
-    image: "/images/staff_sayaka.jpg",
-    specialty: "Color Design",
-  },
-  {
-    id: "yuki",
-    name: "Yuki",
-    role: "Stylist",
-    image: "/images/staff_07.jpg",
-    specialty: "Bob Style",
-  },
-  {
-    id: "mii",
-    name: "Mii",
-    role: "Stylist",
-    image: "/images/staff_04.jpg",
-    specialty: "Short Hair",
-  },
-  {
-    id: "kana",
-    name: "Kana",
-    role: "Stylist",
-    image: "/images/staff_kana.png",
-    specialty: "Natural Style",
-  },
-];
-
-// Eyelash Specialists
-const eyelashSpecialists: StaffMember[] = [
-  {
-    id: "saeko",
-    name: "Saeko",
-    role: "Eyelist",
-    image: "/images/staff_03.jpg",
-    specialty: "Eyelash Perm",
-  },
-  {
-    id: "sari",
-    name: "Sari",
-    role: "Eyelist",
-    image: "/images/staff_01.jpg",
-    specialty: "Eyelash Extensions",
-  },
-];
+import { Button } from "@/components/ui/button";
+import { staffMembers } from "@/lib/staffData";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Staff() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [, setLocation] = useLocation();
+  const { language } = useLanguage();
+
+  // Filter staff by category from the centralized staffData
+  const hairStylists = staffMembers.filter(member => member.category === 'hair');
+  const eyelashSpecialists = staffMembers.filter(member => member.category === 'eyelash');
 
   const handleStaffClick = (id: string) => {
     setLocation(`/staff/${id}`);
     window.scrollTo(0, 0);
   };
 
-  const StaffCard = ({ staff, index }: { staff: StaffMember; index: number }) => (
+  const StaffCard = ({ staff, index }: { staff: typeof staffMembers[0]; index: number }) => (
     <motion.div
       key={staff.id}
       className="group aspect-[3/4] overflow-hidden relative cursor-pointer bg-[#F5F2EB]"
       onMouseEnter={() => setHoveredId(staff.id)}
       onMouseLeave={() => setHoveredId(null)}
-      onClick={() => handleStaffClick(staff.id)}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -100,42 +34,58 @@ export default function Staff() {
         // Image Layer
         <img
           src={staff.image}
-          alt={staff.name}
+          alt={language === 'ja' ? staff.nameJa : staff.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 grayscale group-hover:grayscale-0"
         />
       ) : (
         // Placeholder Layer
         <div className="w-full h-full flex items-center justify-center">
           <span className="text-6xl font-display font-light text-foreground/20">
-            {staff.initial}
+            {staff.name.charAt(0)}
           </span>
         </div>
       )}
 
       {/* Overlay Info - Matching Gallery Hover Effect */}
-      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
 
-      {/* Staff Info Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <h3 className="text-white text-lg font-medium tracking-wide uppercase">
-          {staff.name}
-        </h3>
-        <p className="text-white/80 text-xs uppercase tracking-wider">
-          {staff.role}
-        </p>
-        <p className="text-white/60 text-[10px] uppercase tracking-widest mt-1">
-          View Profile →
-        </p>
+      {/* Hover overlay with buttons */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-3 p-4 z-10">
+        <Button 
+          variant="outline" 
+          className="w-full max-w-[140px] bg-transparent text-white border-white hover:bg-white hover:text-black uppercase tracking-wider text-xs h-9"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleStaffClick(staff.id);
+          }}
+        >
+          View Profile
+        </Button>
+        {staff.freshaBookingUrl && (
+          <Button 
+            className="w-full max-w-[140px] bg-white text-black hover:bg-white/90 uppercase tracking-wider text-xs h-9"
+            asChild
+          >
+            <a 
+              href={staff.freshaBookingUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              Book Now
+            </a>
+          </Button>
+        )}
       </div>
 
       {/* Static Label (Always visible until hover) */}
       <div
         className={`absolute bottom-4 left-4 drop-shadow-md transition-opacity duration-300 ${
           hoveredId === staff.id ? "opacity-0" : "opacity-100"
-        } ${staff.image ? "text-white" : "text-foreground"}`}
+        } text-white`}
       >
         <h3 className="text-lg font-medium tracking-wide uppercase">
-          {staff.name}
+          {language === 'ja' ? staff.nameJa : staff.name}
         </h3>
       </div>
     </motion.div>
