@@ -46,7 +46,7 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/C5Sk9eRLjEw/" },
       { id: "5", postUrl: "https://www.instagram.com/p/C0Qj9gxOca1/" },
     ],
-    image: "/images/staff/placeholder-harry.jpg",
+    image: "/images/staff_harry.jpg",
   },
   {
     id: "sho",
@@ -71,7 +71,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DPsee1tjrrk/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DPX0Sm9kTSR/" },
     ],
-    image: "/images/staff/placeholder-sho.jpg",
+    image: "/images/staff_sho.jpg",
   },
   {
     id: "sayaka",
@@ -95,7 +95,7 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/DRIBISojy-A/" },
       { id: "5", postUrl: "https://www.instagram.com/p/DRFnfCCEkie/" },
     ],
-    image: "/images/staff/placeholder-sayaka.jpg",
+    image: "/images/staff_sayaka.jpg",
   },
   {
     id: "yuki",
@@ -120,7 +120,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DSEn7tjkSSk/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DSBn-UMERPy/" },
     ],
-    image: "/images/staff/placeholder-yuki.jpg",
+    image: "/images/staff_04.jpg",
   },
   {
     id: "mii",
@@ -145,7 +145,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DGW-xfgx-25/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DFujO_cx2Yt/" },
     ],
-    image: "/images/staff/placeholder-mii.jpg",
+    image: "/images/staff_05.jpg",
   },
   {
     id: "kana",
@@ -166,7 +166,7 @@ export const staffMembers: Staff[] = [
       { id: "1", postUrl: "https://www.instagram.com/p/DRgamUZkaTQ/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DRtZM4REe8k/" },
     ],
-    image: "/images/staff/placeholder-kana.jpg",
+    image: "/images/staff_kana.png",
   },
   
   // Eyelash Specialists (in order: Saeko, Sally, Chippy)
@@ -189,7 +189,7 @@ export const staffMembers: Staff[] = [
       { id: "1", postUrl: "https://www.instagram.com/p/DRBgVuLkYB8/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DCMx181yuO1/" },
     ],
-    image: "/images/staff/placeholder-saeko.jpg",
+    image: "/images/staff_07.jpg",
   },
   {
     id: "sally",
@@ -214,7 +214,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DPVfE4vgPAy/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DPVetkVgH58/" },
     ],
-    image: "/images/staff/placeholder-sally.jpg",
+    image: "/images/staff_06.jpg",
   },
 
 ];
