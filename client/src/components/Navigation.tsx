@@ -76,6 +76,15 @@ export default function Navigation() {
                 Book
               </a>
             </Button>
+            
+            <Button
+              variant="ghost"
+              size="sm"
+              className="ml-2 px-2 text-xs font-medium"
+              onClick={() => setLanguage(language === 'en' ? 'ja' : 'en')}
+            >
+              {language === 'en' ? 'JP' : 'EN'}
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -116,14 +125,21 @@ export default function Navigation() {
                 </Link>
               )
             ))}
-            <div className="px-4 pt-4">
+            <div className="px-4 pt-4 flex gap-2">
               <Button 
                 asChild 
-                className="w-full bg-black text-white hover:bg-black/80 uppercase tracking-wider"
+                className="flex-1 bg-black text-white hover:bg-black/80 uppercase tracking-wider"
               >
                 <a href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx" target="_blank" rel="noopener noreferrer">
                   Book
                 </a>
+              </Button>
+              <Button
+                variant="outline"
+                className="w-12"
+                onClick={() => setLanguage(language === 'en' ? 'ja' : 'en')}
+              >
+                {language === 'en' ? 'JP' : 'EN'}
               </Button>
             </div>
           </div>
