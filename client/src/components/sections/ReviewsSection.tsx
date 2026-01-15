@@ -7,49 +7,50 @@ export default function ReviewsSection() {
   const reviews = [
     {
       source: "google",
+      name: "Janet Wong",
+      rating: 5,
+      text: "I recently got a haircut with Yuki and had such a great experience! She's incredibly nice and very professional. Before the appointment, she took the time to ask about my ideas and what I wanted. During the cut, she also gave me really good suggestions that suited my face shape and style. I'm very happy with the result.",
+      staff: "Yuki",
+      date: "a month ago",
+    },
+    {
+      source: "fresha",
+      name: "Catherine L",
+      rating: 5,
+      text: "Highly recommend Yuki!",
+      staff: "Yuki",
+      date: "Jan 14, 2026",
+    },
+    {
+      source: "google",
       name: "Jessica Y",
       rating: 5,
       text: "I had super damaged, frizzy hair from a digital perm, and after getting their 7-step treatment, the difference is unbelievable! My hair is now healthy, smooth, and so much more manageable. I'm genuinely impressed.",
-      date: "2 weeks ago",
+      date: "a month ago",
     },
     {
       source: "fresha",
-      name: "KiKi T",
+      name: "Nikki",
       rating: 5,
-      text: "Mii is just awesome! She's always so attentive and patient. She is willing to provide advices and suggestions. She was my cheerleader when I wanted to go for a different hairstyle. I have nothing but good things to say about her. She is my go-to hairstylist ❤️",
+      text: "Amazing service, beautiful haircut done by Kana and Mii :)",
+      staff: "Kana & Mii",
+      date: "Jan 13, 2026",
+    },
+    {
+      source: "google",
+      name: "Michele Chen",
+      rating: 5,
+      text: "I got a hair cut with Mii today. She is very professional and asked me what style do I want a day before my appointment. She is meticulous in cutting my hair. I appreciate her time and help. I would definitely recommend Mii to anyone looking to have a nice looking hair cut.",
       staff: "Mii",
-      date: "Nov 30, 2025",
-    },
-    {
-      source: "google",
-      name: "Customer Review",
-      rating: 5,
-      text: "It's my second time going to Harry for a haircut as there's no one else I would trust with my hair after getting it done here. Never got as much compliment on my hair and Harry was able to style it to show my natural curls, which no one has...",
-      staff: "Harry",
-      date: "2 weeks ago",
+      date: "a month ago",
     },
     {
       source: "fresha",
-      name: "Carmela S",
+      name: "Andrea L",
       rating: 5,
-      text: "As always, Saeko makes my lashes so beautiful. She really listens to what I want and creates natural looking lashes that last!",
-      staff: "Saeko",
-      date: "Nov 29, 2025",
-    },
-    {
-      source: "google",
-      name: "Customer Review",
-      rating: 5,
-      text: "Yuki was an amazing hairstylist! She took the time to carefully listen and truly understand what kind of hairstyle I wanted. The scalp massage during the treatment was also incredible. When adjusting my haircut, she worked step by step...",
-      staff: "Yuki",
-      date: "2 weeks ago",
-    },
-    {
-      source: "fresha",
-      name: "Chiharu S",
-      rating: 5,
-      text: "頭のマッサージとても気持ち良かったです。すごい丁寧で、髪の長さも相談しながら切ってくれました。新しいヘアスタイルとても気に入ってます。ありがとうございました。Head massage was awesome!! I really like new hair style. Thank you so much.",
-      date: "Dec 1, 2025",
+      text: "Sayaka is friendly and treats us like old friends. She remembers things we are doing in our lives and asks about them. She is also very skilled and efficient.",
+      staff: "Sayaka",
+      date: "Jan 14, 2026",
     },
   ];
 
@@ -73,7 +74,7 @@ export default function ReviewsSection() {
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
                 <div className="text-left">
-                  <div className="text-lg font-medium text-primary">826</div>
+                  <div className="text-lg font-medium text-primary">855</div>
                   <div className="text-xs text-foreground/60">
                     {language === 'ja' ? 'Google レビュー' : 'Google Reviews'}
                   </div>
@@ -85,7 +86,7 @@ export default function ReviewsSection() {
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
                 <div className="text-left">
-                  <div className="text-lg font-medium text-primary">1,802</div>
+                  <div className="text-lg font-medium text-primary">1,955</div>
                   <div className="text-xs text-foreground/60">
                     {language === 'ja' ? 'Fresha レビュー' : 'Fresha Reviews'}
                   </div>
