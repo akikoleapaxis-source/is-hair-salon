@@ -187,7 +187,7 @@ const translations = {
     // About
     'about.label': 'Our Expertise',
     'about.title': "What Makes i's Special",
-    'about.description': 'A Japanese hair salon in Vancouver, run by Japanese stylists for the Japanese community.\nWe constantly incorporate the latest techniques and technology from Japan. We have 2 locations in Canada (Vancouver) and Japan (Sapporo),\nserving many satisfied customers with our growing reputation.',
+    'about.description': 'Hair and beauty is our "oshigoto" — work with heart and purpose. Your happiness is our mission, and we achieve it not by imposing styles, but by creating together. Through careful consultation and genuine dialogue, we listen to your vision and bring it to life with authentic Japanese techniques. This is more than a job to us — it\'s about transforming lives, one smile at a time.',
     'about.short.title': 'All Styles Welcome',
     'about.short.desc': 'From short to medium to long, we create the ideal style tailored to each individual\'s bone structure and hair texture.',
     'about.straight.title': 'Hair Quality Improvement',
@@ -330,7 +330,7 @@ const translations = {
     'stats.ranking': 'Vancouver Japanese Salon',
     'about.label': 'Our Expertise',
     'about.title': "What Makes i's Special",
-    'about.description': 'A Japanese hair salon in Vancouver, run by Japanese stylists for the Japanese community.\nWe constantly incorporate the latest techniques and technology from Japan. We have 2 locations in Canada (Vancouver) and Japan (Sapporo),\nserving many satisfied customers with our growing reputation.',
+    'about.description': 'Hair and beauty is our "oshigoto" — work with heart and purpose. Your happiness is our mission, and we achieve it not by imposing styles, but by creating together. Through careful consultation and genuine dialogue, we listen to your vision and bring it to life with authentic Japanese techniques. This is more than a job to us — it\'s about transforming lives, one smile at a time.',
     'about.short.title': 'All Styles Welcome',
     'about.short.desc': 'From short to medium to long, we create the ideal style tailored to each individual\'s bone structure and hair texture.',
     'about.straight.title': 'Hair Quality Improvement',
