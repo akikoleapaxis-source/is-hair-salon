@@ -4,52 +4,70 @@ import { Instagram, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FRESHA_BOOKING_URL } from "@/lib/constants";
 
-// Staff data (should be moved to a shared constant file in a real app)
+// Staff data
 const staffData = {
   "harry": {
     name: "Harry",
     role: "Owner / Top Stylist",
-    image: "/images/staff_02.jpg", // Assuming this is Harry based on "Director" role in previous data
+    image: "/images/staff_02.jpg",
     specialty: "Texture Control & Precision Cut",
     description: "With over 15 years of experience in Japan and Canada, Harry specializes in creating styles that are easy to maintain and perfectly suited to your hair texture and lifestyle.",
-    instagram: "https://instagram.com/harry_ishair", // Placeholder
+    instagram: "https://instagram.com/harry_ishair",
     instagramId: "harry_ishair"
+  },
+  "sho": {
+    name: "Sho",
+    role: "Stylist",
+    image: "/images/staff_sho.jpg",
+    specialty: "Men's Cut & Perm",
+    description: "Sho excels in men's grooming and perm styles, creating sharp, modern looks that enhance your personality.",
+    instagram: "https://instagram.com/sho_ishair",
+    instagramId: "sho_ishair"
+  },
+  "sayaka": {
+    name: "Sayaka",
+    role: "Stylist",
+    image: "/images/staff_sayaka.jpg",
+    specialty: "Color Design & Layered Cut",
+    description: "Sayaka is a color specialist who loves creating dimensional colors and layered cuts that bring movement and lightness to your hair.",
+    instagram: "https://instagram.com/sayaka_ishair",
+    instagramId: "sayaka_ishair"
+  },
+  "yuki": {
+    name: "Yuki",
+    role: "Stylist",
+    image: "/images/staff_07.jpg",
+    specialty: "Bob Style & Soft Texture",
+    description: "Yuki creates soft, feminine bob styles that frame the face beautifully. Her attention to detail ensures a perfect finish every time.",
+    instagram: "https://instagram.com/yuki_ishair",
+    instagramId: "yuki_ishair"
   },
   "mii": {
     name: "Mii",
     role: "Stylist",
     image: "/images/staff_04.jpg",
-    specialty: "Short Hair & Bob Style",
-    description: "Mii is an expert in short hair and bob styles. She creates feminine and soft silhouettes that enhance your natural beauty.",
-    instagram: "https://instagram.com/mii_ishair", // Placeholder
+    specialty: "Short Hair & Creative Color",
+    description: "Mii is passionate about short hair transformations and creative color work. She helps you discover a new version of yourself.",
+    instagram: "https://instagram.com/mii_ishair",
     instagramId: "mii_ishair"
-  },
-  "sari": {
-    name: "Sari",
-    role: "Eyelist / Assistant",
-    image: "/images/staff_01.jpg",
-    specialty: "Eyelash Extensions & Head Spa",
-    description: "Sari provides relaxing head spa treatments and precise eyelash extensions to brighten your eyes.",
-    instagram: "https://instagram.com/sari_ishair", // Placeholder
-    instagramId: "sari_ishair"
   },
   "saeko": {
     name: "Saeko",
-    role: "Eyelist / Assistant",
+    role: "Eyelist",
     image: "/images/staff_03.jpg",
-    specialty: "Eyelash Perm & Color",
-    description: "Saeko specializes in eyelash perms and color services, helping you achieve a natural yet impactful look.",
-    instagram: "https://instagram.com/saeko_ishair", // Placeholder
+    specialty: "Eyelash Perm & Natural Design",
+    description: "Saeko specializes in eyelash perms that lift your lashes from the root, giving you a natural yet wide-eyed look that lasts.",
+    instagram: "https://instagram.com/saeko_ishair",
     instagramId: "saeko_ishair"
   },
-  "yuki": {
-    name: "Yuki",
-    role: "Receptionist",
-    image: "/images/staff_07.jpg",
-    specialty: "Hospitality",
-    description: "Yuki ensures every guest feels welcomed and comfortable during their visit to i's.",
-    instagram: "",
-    instagramId: ""
+  "sari": {
+    name: "Sari",
+    role: "Eyelist",
+    image: "/images/staff_01.jpg",
+    specialty: "Eyelash Extensions & Volume Lash",
+    description: "Sari is an expert in eyelash extensions, from natural to volume styles. She customizes the design to perfectly match your eye shape.",
+    instagram: "https://instagram.com/sari_ishair",
+    instagramId: "sari_ishair"
   }
 };
 
