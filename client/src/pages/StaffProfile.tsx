@@ -71,7 +71,7 @@ const staffData: Record<string, StaffMember> = {
   "kana": {
     name: "Kana",
     role: "Stylist",
-    initial: "K",
+    image: "/images/staff_kana.png",
     specialty: "Natural Style & Head Spa",
     description: "Kana specializes in natural, effortless styles that enhance your inherent beauty. She is also an expert in relaxing head spa treatments.",
     instagram: "https://instagram.com/kanapi_hair",

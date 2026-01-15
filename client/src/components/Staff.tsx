@@ -52,7 +52,7 @@ const hairStylists: StaffMember[] = [
     id: "kana",
     name: "Kana",
     role: "Stylist",
-    initial: "K",
+    image: "/images/staff_kana.png",
     specialty: "Natural Style",
   },
 ];
