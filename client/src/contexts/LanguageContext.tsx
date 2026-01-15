@@ -25,8 +25,8 @@ const translations = {
     
     // Hero
     'hero.badge': "Vancouver's Premier Japanese Hair Salon",
-    'hero.title': '自分らしい\nスタイルを\n見つける',
-    'hero.subtitle': '日本の最新技術で、あなたの理想のスタイルを実現\nカット、カラー、パーマ、ストレート、トリートメント',
+    'hero.title': 'Discover\nYour\nTrue Style',
+    'hero.subtitle': 'Achieve your ideal look with the latest Japanese techniques\nCut, Color, Perm, Straightening, Treatment',
     'hero.cta.book': 'オンライン予約',
     'hero.cta.gallery': 'スタイルギャラリー',
     
@@ -39,11 +39,11 @@ const translations = {
     // About
     'about.label': 'Our Expertise',
     'about.title': "i's のこだわり",
-    'about.description': 'バンクーバーで日本人美容師が運営する、日本人美容師による日本人のための美容室です。\n日本の最新技術や技術を常に取り入れているサロンで、カナダ(バンクーバー)と日本(札幌)の2店舗を展開しており、\n多くのお客様にご来店いただいている勢いのあるサロンです。',
+    'about.description': '美容は私たちの「お仕事」であり、心と目的を持って取り組むものです。お客様の幸せが私たちの使命であり、スタイルを押し付けるのではなく、共に創り上げることでそれを実現します。丁寧なカウンセリングと真摯な対話を通じて、お客様のビジョンに耳を傾け、確かな日本の技術で形にします。これは単なる仕事ではなく、一人ひとりの笑顔を通じて人生を豊かにすることだと考えています。',
     'about.short.title': 'あらゆるスタイルに対応',
-    'about.short.desc': 'ショート、ミディアム、ロングまで、一人ひとりの骨格や髪質に合わせた理想のスタイルを実現します。',
+    'about.short.desc': '私たちは一方的に提案するのではなく、問いかけ、耳を傾け、共に創り上げます。ショート、ミディアム、ロングを問わず、対話を通じてあなたの骨格、髪質、そしてライフスタイルに完璧にフィットするスタイルを形にします。',
     'about.straight.title': '髪質改善ストレート',
-    'about.straight.desc': '最新の髪質改善技術で、ダメージを最小限に抑えながら美しいストレートヘアを実現します。',
+    'about.straight.desc': '日本の縮毛矯正技術に特化し、ダメージを最小限に抑えながら、美しく健康的なストレートヘアを実現します。日本製の高品質な薬剤と独自の技術により、扱いやすく輝きのある髪が数ヶ月間続きます。',
     'about.tech.title': '最新技術',
     'about.tech.desc': '日本の最新機械や技術を常に取り入れ、トレンドを押さえたスタイルをご提供します。',
     
