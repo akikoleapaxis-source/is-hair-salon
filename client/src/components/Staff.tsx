@@ -1,60 +1,47 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLocation } from "wouter";
 
 interface StaffMember {
-  id: number;
+  id: string; // Changed to string for URL routing
   name: string;
   role: string;
   image: string;
   specialty: string;
 }
 
+// Reordered staff list: Harry (Owner) -> Stylists -> Eyelists -> Others
 const staffMembers: StaffMember[] = [
   {
-    id: 1,
-    name: "Sari",
-    role: "Top Stylist",
-    image: "/images/staff_01.jpg",
-    specialty: "Precision Cut",
-  },
-  {
-    id: 2,
-    name: "Sho",
-    role: "Director",
-    image: "/images/staff_02.jpg",
+    id: "harry",
+    name: "Harry",
+    role: "Owner / Top Stylist",
+    image: "/images/staff_02.jpg", // Assuming this is Harry (Director)
     specialty: "Texture Control",
   },
   {
-    id: 3,
-    name: "Saeko",
-    role: "Stylist",
-    image: "/images/staff_03.jpg",
-    specialty: "Color Design",
-  },
-  {
-    id: 4,
+    id: "mii",
     name: "Mii",
     role: "Stylist",
     image: "/images/staff_04.jpg",
     specialty: "Short Hair",
   },
   {
-    id: 5,
-    name: "Saeko",
-    role: "Assistant",
-    image: "/images/staff_05.jpg",
-    specialty: "Head Spa",
-  },
-  {
-    id: 6,
+    id: "sari",
     name: "Sari",
-    role: "Assistant",
-    image: "/images/staff_06.jpg",
-    specialty: "Treatment",
+    role: "Eyelist / Assistant",
+    image: "/images/staff_01.jpg",
+    specialty: "Eyelash Extensions",
   },
   {
-    id: 7,
+    id: "saeko",
+    name: "Saeko",
+    role: "Eyelist / Assistant",
+    image: "/images/staff_03.jpg",
+    specialty: "Eyelash Perm",
+  },
+  {
+    id: "yuki",
     name: "Yuki",
     role: "Receptionist",
     image: "/images/staff_07.jpg",
@@ -63,8 +50,13 @@ const staffMembers: StaffMember[] = [
 ];
 
 export default function Staff() {
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
-  const { t } = useLanguage();
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const [, setLocation] = useLocation();
+
+  const handleStaffClick = (id: string) => {
+    setLocation(`/staff/${id}`);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <section className="section-spacing bg-white">
@@ -82,16 +74,17 @@ export default function Staff() {
 
           {/* Staff Grid - Matching Gallery Layout (2 cols mobile, 4 cols desktop) */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {staffMembers.map((staff) => (
+            {staffMembers.map((staff, index) => (
               <motion.div
                 key={staff.id}
                 className="group aspect-[3/4] overflow-hidden relative cursor-pointer"
                 onMouseEnter={() => setHoveredId(staff.id)}
                 onMouseLeave={() => setHoveredId(null)}
+                onClick={() => handleStaffClick(staff.id)}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: staff.id * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 {/* Image Layer */}
                 <img
@@ -111,9 +104,12 @@ export default function Staff() {
                   <p className="text-white/80 text-xs uppercase tracking-wider">
                     {staff.role}
                   </p>
+                  <p className="text-white/60 text-[10px] uppercase tracking-widest mt-1">
+                    View Profile →
+                  </p>
                 </div>
 
-                {/* Static Label (Always visible until hover) - Optional, can remove if cleaner look desired */}
+                {/* Static Label (Always visible until hover) */}
                 <div className={`absolute bottom-4 left-4 text-white drop-shadow-md transition-opacity duration-300 ${hoveredId === staff.id ? 'opacity-0' : 'opacity-100'}`}>
                   <h3 className="text-lg font-medium tracking-wide uppercase">
                     {staff.name}

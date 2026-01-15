@@ -6,7 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
-import StaffDetail from "./pages/StaffDetail";
+import StaffProfile from "./pages/StaffProfile"; // Updated import
 import Stylists from "./pages/Stylists";
 import Menu from "./pages/Menu";
 import News from "./pages/News";
@@ -19,11 +19,11 @@ function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
-      <Route path={"/staff/:id"} component={StaffDetail} />
+      <Route path={"/staff/:id"} component={StaffProfile} /> {/* Updated component */}
       <Route path={"/stylists"} component={Stylists} />
       <Route path={"/menu"} component={Menu} />
       <Route path={"/news"} component={News} />
-      <Route path={"/ recruit"} component={Recruit} />
+      <Route path={"/recruit"} component={Recruit} />
       <Route path={"/products"} component={Products} />
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/store"} component={Store} />
@@ -50,4 +50,3 @@ function App() {
 }
 
 export default App;
-
