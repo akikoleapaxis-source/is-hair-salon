@@ -29,7 +29,25 @@ export default function StaffSection() {
             </div>
             
             {/* Hover overlay */}
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 gap-3 p-4">
+              <Button 
+                variant="outline" 
+                className="w-full bg-transparent text-white border-white hover:bg-white hover:text-black uppercase tracking-wider text-xs h-9"
+              >
+                View Profile
+              </Button>
+              {member.freshaBookingUrl && (
+                <Button 
+                  className="w-full bg-white text-black hover:bg-white/90 uppercase tracking-wider text-xs h-9"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(member.freshaBookingUrl, '_blank');
+                  }}
+                >
+                  Book Now
+                </Button>
+              )}
+            </div>
           </div>
 
           {/* Info */}
