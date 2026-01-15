@@ -97,16 +97,6 @@ const staffData: Record<string, StaffMember> = {
     instagram: "https://instagram.com/eyelashbysally",
     instagramId: "eyelashbysally",
     freshaId: "3322990"
-  },
-  "chippy": {
-    name: "Chippy",
-    role: "Eyelist",
-    initial: "C",
-    specialty: "Volume Lash & Design",
-    description: "Chippy brings artistic flair to eyelash design, specializing in volume lashes that create a stunning, dramatic look while maintaining lash health.",
-    instagram: "https://instagram.com/chippy_l_van",
-    instagramId: "chippy_l_van",
-    freshaId: undefined // Use generic link
   }
 };
 

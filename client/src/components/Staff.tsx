@@ -73,13 +73,6 @@ const eyelashSpecialists: StaffMember[] = [
     image: "/images/staff_01.jpg",
     specialty: "Eyelash Extensions",
   },
-  {
-    id: "chippy",
-    name: "Chippy",
-    role: "Eyelist",
-    initial: "C",
-    specialty: "Volume Lash",
-  },
 ];
 
 export default function Staff() {
