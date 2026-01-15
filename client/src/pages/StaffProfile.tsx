@@ -23,8 +23,8 @@ const staffData: Record<string, StaffMember> = {
     image: "/images/staff_harry.jpg",
     specialty: "Texture Control & Precision Cut",
     description: "With over 15 years of experience in Japan and Canada, Harry specializes in creating styles that are easy to maintain and perfectly suited to your hair texture and lifestyle.",
-    instagram: "https://instagram.com/harry_ishair",
-    instagramId: "harry_ishair"
+    instagram: "https://instagram.com/harry_hairstylist",
+    instagramId: "harry_hairstylist"
   },
   "sho": {
     name: "Sho",
@@ -32,8 +32,8 @@ const staffData: Record<string, StaffMember> = {
     image: "/images/staff_sho.jpg",
     specialty: "Men's Cut & Perm",
     description: "Sho excels in men's grooming and perm styles, creating sharp, modern looks that enhance your personality.",
-    instagram: "https://instagram.com/sho_ishair",
-    instagramId: "sho_ishair"
+    instagram: "https://instagram.com/sho.nu",
+    instagramId: "sho.nu"
   },
   "sayaka": {
     name: "Sayaka",
@@ -41,8 +41,8 @@ const staffData: Record<string, StaffMember> = {
     image: "/images/staff_sayaka.jpg",
     specialty: "Color Design & Layered Cut",
     description: "Sayaka is a color specialist who loves creating dimensional colors and layered cuts that bring movement and lightness to your hair.",
-    instagram: "https://instagram.com/sayaka_ishair",
-    instagramId: "sayaka_ishair"
+    instagram: "https://instagram.com/sayaka_vancouverhair",
+    instagramId: "sayaka_vancouverhair"
   },
   "yuki": {
     name: "Yuki",
@@ -50,8 +50,8 @@ const staffData: Record<string, StaffMember> = {
     image: "/images/staff_07.jpg",
     specialty: "Bob Style & Soft Texture",
     description: "Yuki creates soft, feminine bob styles that frame the face beautifully. Her attention to detail ensures a perfect finish every time.",
-    instagram: "https://instagram.com/yuki_ishair",
-    instagramId: "yuki_ishair"
+    instagram: "https://instagram.com/yuki._hair",
+    instagramId: "yuki._hair"
   },
   "mii": {
     name: "Mii",
@@ -59,8 +59,8 @@ const staffData: Record<string, StaffMember> = {
     image: "/images/staff_04.jpg",
     specialty: "Short Hair & Creative Color",
     description: "Mii is passionate about short hair transformations and creative color work. She helps you discover a new version of yourself.",
-    instagram: "https://instagram.com/mii_ishair",
-    instagramId: "mii_ishair"
+    instagram: "https://instagram.com/mii_hairstylist",
+    instagramId: "mii_hairstylist"
   },
   "kana": {
     name: "Kana",
@@ -68,9 +68,8 @@ const staffData: Record<string, StaffMember> = {
     initial: "K",
     specialty: "Natural Style & Head Spa",
     description: "Kana specializes in natural, effortless styles that enhance your inherent beauty. She is also an expert in relaxing head spa treatments.",
-    // Placeholder Instagram until provided
-    instagram: "https://instagram.com/is_hair_salon",
-    instagramId: "is_hair_salon"
+    instagram: "https://instagram.com/kanapi_hair",
+    instagramId: "kanapi_hair"
   },
   "saeko": {
     name: "Saeko",
@@ -78,8 +77,8 @@ const staffData: Record<string, StaffMember> = {
     image: "/images/staff_03.jpg",
     specialty: "Eyelash Perm & Natural Design",
     description: "Saeko specializes in eyelash perms that lift your lashes from the root, giving you a natural yet wide-eyed look that lasts.",
-    instagram: "https://instagram.com/saeko_ishair",
-    instagramId: "saeko_ishair"
+    instagram: "https://instagram.com/saeko_eyelash",
+    instagramId: "saeko_eyelash"
   },
   "sari": {
     name: "Sari",
@@ -87,8 +86,8 @@ const staffData: Record<string, StaffMember> = {
     image: "/images/staff_01.jpg",
     specialty: "Eyelash Extensions & Volume Lash",
     description: "Sari is an expert in eyelash extensions, from natural to volume styles. She customizes the design to perfectly match your eye shape.",
-    instagram: "https://instagram.com/sari_ishair",
-    instagramId: "sari_ishair"
+    instagram: "https://instagram.com/eyelashbysally",
+    instagramId: "eyelashbysally"
   },
   "chippy": {
     name: "Chippy",
@@ -96,9 +95,8 @@ const staffData: Record<string, StaffMember> = {
     initial: "C",
     specialty: "Volume Lash & Design",
     description: "Chippy brings artistic flair to eyelash design, specializing in volume lashes that create a stunning, dramatic look while maintaining lash health.",
-    // Placeholder Instagram until provided
-    instagram: "https://instagram.com/is_hair_salon",
-    instagramId: "is_hair_salon"
+    instagram: "https://instagram.com/chippy_eyelash_pro",
+    instagramId: "chippy_eyelash_pro"
   }
 };
 
