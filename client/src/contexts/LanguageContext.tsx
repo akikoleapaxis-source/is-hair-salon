@@ -70,7 +70,7 @@ const translations = {
     'services.cta': '全メニューを見る',
     
     // Stylist
-    'staff.subtitle': '経験豊富なスタイリストが、あなたの「なりたい」を叶えます。',
+    'staff.subtitle': '日本で培った確かな技術とホスピタリティを、バンクーバーから世界へ。',
     'stylist.label': 'Meet Our Team',
     'stylist.title': 'スタイリスト紹介',
     'stylist.badge': 'Owner & Top Stylist',
@@ -218,7 +218,7 @@ const translations = {
     'services.cta': 'View All Services',
     
     // Stylist
-    'staff.subtitle': 'Experienced professionals who will realize your ideal style',
+    'staff.subtitle': 'Bringing authentic Japanese technique and hospitality from Vancouver to the world.',
     'stylist.label': 'Meet Our Team',
     'stylist.title': 'Our Stylists',
     'stylist.badge': 'Owner & Top Stylist',
@@ -356,7 +356,7 @@ const translations = {
     'services.perm': 'Perm',
     'services.perm.desc': 'Natural perm styling',
     'services.cta': 'View All Services',
-    'staff.subtitle': 'Experienced professionals who will realize your ideal style',
+    'staff.subtitle': 'Bringing authentic Japanese technique and hospitality from Vancouver to the world.',
     'stylist.label': 'Meet Our Team',
     'stylist.title': 'Our Stylists',
     'stylist.badge': 'Owner & Top Stylist',
