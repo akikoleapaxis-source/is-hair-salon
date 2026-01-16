@@ -189,7 +189,7 @@ export const staffMembers: Staff[] = [
       { id: "1", postUrl: "https://www.instagram.com/p/DRBgVuLkYB8/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DCMx181yuO1/" },
     ],
-    image: "/images/staff_07.jpg",
+    image: "/images/staff_saeko_new.jpg",
   },
   {
     id: "sally",
@@ -214,7 +214,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DPVfE4vgPAy/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DPVetkVgH58/" },
     ],
-    image: "/images/staff_06.jpg",
+    image: "/images/staff_sari.jpg",
   },
 
 ];
