@@ -39,7 +39,7 @@ const translations = {
     // About
     'about.label': 'Our Expertise',
     'about.title': "i's のこだわり",
-    'about.description': '確かな技術と創造性の融合。私たちのチームは、日本の繊細な技術と美意識をもって、あなただけの理想のスタイルを創り上げます。',
+    'about.description': '確かな技術と創造性の融合。私たちのチームは、日本の繊細な技術と美意識を\nもって、あなただけの理想のスタイルを創り上げます。',
     'about.short.title': 'あらゆるスタイルに対応',
     'about.short.desc': 'スタイルを押し付けるのではなく、対話を通じて「あなたらしさ」を引き出します。ショートからロングまで、骨格や髪質、ライフスタイルに寄り添い、毎日がもっと輝くスタイルをご提案します。',
     'about.straight.title': '髪質改善ストレート',
