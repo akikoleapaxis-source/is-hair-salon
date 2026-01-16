@@ -187,7 +187,7 @@ const translations = {
     // About
     'about.label': 'Our Expertise',
     'about.title': "What Makes i's Special",
-    'about.description': 'Hair and beauty is our "oshigoto" — work with heart and purpose. Your happiness is our mission, and we achieve it not by imposing styles, but by creating together. Through careful consultation and genuine dialogue, we listen to your vision and bring it to life with authentic Japanese techniques. This is more than a job to us — it\'s about transforming lives, one smile at a time.',
+    'about.description': 'A fusion of precision and creativity. Our team brings authentic Japanese technique and aesthetic sensibility to craft the perfect style just for you.',
     'about.short.title': 'All Styles Welcome',
     'about.short.desc': 'We don\'t tell you what to do — we ask, we listen, we create together. Short, medium, or long, your style is crafted through conversation, tailored perfectly to your bone structure, hair texture, and daily life.',
     'about.straight.title': 'Hair Quality Improvement',
@@ -330,7 +330,7 @@ const translations = {
     'stats.ranking': 'Vancouver Japanese Salon',
     'about.label': 'Our Expertise',
     'about.title': "What Makes i's Special",
-    'about.description': 'Hair and beauty is our "oshigoto" — work with heart and purpose. Your happiness is our mission, and we achieve it not by imposing styles, but by creating together. Through careful consultation and genuine dialogue, we listen to your vision and bring it to life with authentic Japanese techniques. This is more than a job to us — it\'s about transforming lives, one smile at a time.',
+    'about.description': 'A fusion of precision and creativity. Our team brings authentic Japanese technique and aesthetic sensibility to craft the perfect style just for you.',
     'about.short.title': 'All Styles Welcome',
     'about.short.desc': 'We don\'t tell you what to do — we ask, we listen, we create together. Short, medium, or long, your style is crafted through conversation, tailored perfectly to your bone structure, hair texture, and daily life.',
     'about.straight.title': 'Hair Quality Improvement',
