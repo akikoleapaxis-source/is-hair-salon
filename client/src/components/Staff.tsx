@@ -34,7 +34,7 @@ export default function Staff() {
         // Image Layer
         <img
           src={staff.image}
-          alt={language === 'ja' ? staff.nameJa : staff.name}
+          alt={staff.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 grayscale group-hover:grayscale-0"
         />
       ) : (
@@ -95,7 +95,7 @@ export default function Staff() {
         } text-white`}
       >
         <h3 className="text-lg font-medium tracking-wide uppercase">
-          {language === 'ja' ? staff.nameJa : staff.name}
+          {staff.name}
         </h3>
       </div>
     </motion.div>
@@ -111,7 +111,9 @@ export default function Staff() {
               Stylists
             </h2>
             <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
-              Precision meets creativity. Our team of specialists is dedicated to crafting your perfect look with authentic Japanese techniques.
+              {language === 'ja' 
+                ? "確かな技術と創造性の融合。私たちのチームは、日本の繊細な技術と美意識をもって、あなただけの理想のスタイルを創り上げます。"
+                : "Precision meets creativity. Our team of specialists is dedicated to crafting your perfect look with authentic Japanese techniques."}
             </p>
           </div>
 
