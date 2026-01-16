@@ -141,3 +141,8 @@
 - [ ] コンセプトの英語テキストを日本語訳に合わせて修正する
   - [ ] 現在の日本語: 「確かな技術と創造性の融合。私たちのチームは、日本の繊細な技術と美意識をもって、あなただけの理想のスタイルを創り上げます。」
   - [ ] 新しい英語: "A fusion of precision and creativity. Our team brings authentic Japanese technique and aesthetic sensibility to craft the perfect style just for you."
+
+### バグ修正 (2026-01-16)
+- [ ] スタイリストセクションの英語テキスト "Precision meets creativity..." が残っている問題を修正する
+  - [ ] LanguageContext.tsx以外の場所（コンポーネント内のハードコードなど）をgrepで探す
+  - [ ] 正しいテキスト "Bringing authentic Japanese technique and hospitality from Vancouver to the world." に置き換える

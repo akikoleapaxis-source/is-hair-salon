@@ -112,8 +112,8 @@ export default function Staff() {
             </h2>
             <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
               {language === 'ja' 
-                ? "確かな技術と創造性の融合。私たちのチームは、日本の繊細な技術と美意識をもって、あなただけの理想のスタイルを創り上げます。"
-                : "Precision meets creativity. Our team of specialists is dedicated to crafting your perfect look with authentic Japanese techniques."}
+                ? "日本で培った確かな技術とホスピタリティを、バンクーバーから世界へ。"
+                : "Bringing authentic Japanese technique and hospitality from Vancouver to the world."}
             </p>
           </div>
 
