@@ -39,7 +39,7 @@ const translations = {
     // About
     'about.label': 'Our Expertise',
     'about.title': "i's のこだわり",
-    'about.description': '確かな技術と創造性の融合。私たちのチームは、日本の繊細な技術と美意識を\nもって、あなただけの理想のスタイルを創り上げます。',
+    'about.description': '確かな技術と創造性の融合。\n私たちのチームは、日本の繊細な技術と美意識をもって、\nあなただけの理想のスタイルを創り上げます。',
     'about.short.title': 'あらゆるスタイルに対応',
     'about.short.desc': 'スタイルを押し付けるのではなく、対話を通じて「あなたらしさ」を引き出します。ショートからロングまで、骨格や髪質、ライフスタイルに寄り添い、毎日がもっと輝くスタイルをご提案します。',
     'about.straight.title': '髪質改善ストレート',
@@ -187,7 +187,7 @@ const translations = {
     // About
     'about.label': 'Our Expertise',
     'about.title': "What Makes i's Special",
-    'about.description': 'A fusion of precision and creativity. Our team brings authentic Japanese technique and aesthetic sensibility to craft the perfect style just for you.',
+    'about.description': 'A fusion of precision and creativity.\nOur team brings authentic Japanese technique and aesthetic sensibility\nto craft the perfect style just for you.',
     'about.short.title': 'All Styles Welcome',
     'about.short.desc': 'We don\'t tell you what to do — we ask, we listen, we create together. Short, medium, or long, your style is crafted through conversation, tailored perfectly to your bone structure, hair texture, and daily life.',
     'about.straight.title': 'Hair Quality Improvement',
@@ -330,7 +330,7 @@ const translations = {
     'stats.ranking': 'Vancouver Japanese Salon',
     'about.label': 'Our Expertise',
     'about.title': "What Makes i's Special",
-    'about.description': 'A fusion of precision and creativity. Our team brings authentic Japanese technique and aesthetic sensibility to craft the perfect style just for you.',
+    'about.description': 'A fusion of precision and creativity.\nOur team brings authentic Japanese technique and aesthetic sensibility\nto craft the perfect style just for you.',
     'about.short.title': 'All Styles Welcome',
     'about.short.desc': 'We don\'t tell you what to do — we ask, we listen, we create together. Short, medium, or long, your style is crafted through conversation, tailored perfectly to your bone structure, hair texture, and daily life.',
     'about.straight.title': 'Hair Quality Improvement',
