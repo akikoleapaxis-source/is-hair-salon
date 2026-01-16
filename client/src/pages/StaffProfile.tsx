@@ -124,12 +124,19 @@ export default function StaffProfile() {
                     rel="noopener noreferrer"
                     className="aspect-square bg-secondary relative group overflow-hidden block"
                   >
-                    <div className="absolute inset-0 flex items-center justify-center text-foreground/20 group-hover:text-foreground/40 transition-colors">
-                      <Instagram className="w-8 h-8" />
+                    <div className="absolute inset-0 flex items-center justify-center text-foreground/20 group-hover:text-foreground/40 transition-colors z-10">
+                      <Instagram className="w-8 h-8 text-white drop-shadow-md" />
                     </div>
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors" />
-                    {/* If we had actual images for posts, we would render them here */}
-                    {/* <img src={post.imageUrl} alt="Instagram post" className="w-full h-full object-cover" /> */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-20" />
+                    <img 
+                      src={`/images/gallery/gallery-${(parseInt(post.id) % 6) + 1}.jpg`} 
+                      alt="Instagram post" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      onError={(e) => {
+                        // Fallback if specific gallery image doesn't exist
+                        e.currentTarget.src = "/images/gallery/gallery-1.jpg";
+                      }}
+                    />
                   </a>
                 ))
               ) : (
