@@ -88,12 +88,12 @@ const staffData: Record<string, StaffMember> = {
     instagramId: "saeko_eyelash",
     freshaId: "3097930"
   },
-  "sari": {
-    name: "Sari",
+  "sally": {
+    name: "Sally",
     role: "Eyelist",
-    image: "/images/staff_01.jpg",
+    image: "/images/staff_sari.jpg",
     specialty: "Eyelash Extensions & Volume Lash",
-    description: "Sari is an expert in eyelash extensions, from natural to volume styles. She customizes the design to perfectly match your eye shape.",
+    description: "Sally is an expert in eyelash extensions, from natural to volume styles. She customizes the design to perfectly match your eye shape.",
     instagram: "https://instagram.com/eyelashbysally",
     instagramId: "eyelashbysally",
     freshaId: "3322990"
