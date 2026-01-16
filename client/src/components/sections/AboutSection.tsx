@@ -24,7 +24,16 @@ export default function AboutSection() {
             </h2>
             
             <div className="space-y-5 text-sm md:text-base leading-relaxed text-foreground/80">
-              <p>{t('about.description')}</p>
+              <p>
+                {t('about.description').split('\n').map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    {i < t('about.description').split('\n').length - 1 && (
+                      <br className="hidden lg:block" />
+                    )}
+                  </span>
+                ))}
+              </p>
             </div>
 
             {/* Features */}
