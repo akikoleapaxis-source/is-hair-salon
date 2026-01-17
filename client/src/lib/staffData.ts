@@ -169,6 +169,14 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DGW-xfgx-25/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DFujO_cx2Yt/" },
     ],
+    galleryImages: [
+      "/images/gallery_mii_1.webp",
+      "/images/gallery_mii_2.webp",
+      "/images/gallery_mii_3.webp",
+      "/images/gallery_mii_4.webp",
+      "/images/gallery_mii_5.webp",
+      "/images/gallery_mii_6.webp",
+    ],
     image: "/images/staff_mii_v2.jpg",
   },
   {
@@ -189,6 +197,10 @@ export const staffMembers: Staff[] = [
     instagramPosts: [
       { id: "1", postUrl: "https://www.instagram.com/p/DRgamUZkaTQ/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DRtZM4REe8k/" },
+    ],
+    galleryImages: [
+      "/images/gallery_kana_1.webp",
+      "/images/gallery_kana_2.webp",
     ],
     image: "/images/staff_kana.png",
   },
@@ -212,6 +224,10 @@ export const staffMembers: Staff[] = [
     instagramPosts: [
       { id: "1", postUrl: "https://www.instagram.com/p/DRBgVuLkYB8/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DCMx181yuO1/" },
+    ],
+    galleryImages: [
+      "/images/gallery_saeko_1.webp",
+      "/images/gallery_saeko_2.webp",
     ],
     image: "/images/staff_saeko_new.jpg",
   },
@@ -237,6 +253,14 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/DQSzkknDzNO/" },
       { id: "5", postUrl: "https://www.instagram.com/p/DPVfE4vgPAy/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DPVetkVgH58/" },
+    ],
+    galleryImages: [
+      "/images/gallery_sally_1.webp",
+      "/images/gallery_sally_2.webp",
+      "/images/gallery_sally_3.webp",
+      "/images/gallery_sally_4.webp",
+      "/images/gallery_sally_5.webp",
+      "/images/gallery_sally_6.webp",
     ],
     image: "/images/staff_sari.jpg",
   },

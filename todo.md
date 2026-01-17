@@ -230,3 +230,11 @@
 - [x] 取得した画像を `client/public/images/` に保存する (例: `gallery_yuki_1.jpg` 等)
 - [x] `staffData.ts` を更新して、Yukiさんのギャラリー画像を新しいファイルに差し替える
 - [x] プレビューで表示を確認する
+
+### 残りのスタッフのギャラリー画像追加 (2026-01-16)
+- [x] MiiさんのInstagram投稿から画像を取得・保存する (6件)
+- [x] KanaさんのInstagram投稿から画像を取得・保存する (2件)
+- [x] SaekoさんのInstagram投稿から画像を取得・保存する (2件)
+- [x] SallyさんのInstagram投稿から画像を取得・保存する (6件)
+- [x] `staffData.ts` を更新して、各スタッフの `galleryImages` に新しい画像パスを設定する
+- [x] プレビューで全スタッフのギャラリーが表示されることを確認する
