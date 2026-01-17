@@ -224,3 +224,9 @@
 
 ### プレビュー更新のためのサーバー再起動 (2026-01-16)
 - [x] 開発サーバーを再起動して、最新の画像とコード変更を反映させる
+
+### YukiさんのInstagramギャラリー画像追加 (2026-01-16)
+- [x] YukiさんのInstagram投稿 (DEo7t1wRDgf, DDTqqSPx4XN, DTmOuRzkWnO) から画像を取得する
+- [x] 取得した画像を `client/public/images/` に保存する (例: `gallery_yuki_1.jpg` 等)
+- [x] `staffData.ts` を更新して、Yukiさんのギャラリー画像を新しいファイルに差し替える
+- [x] プレビューで表示を確認する
