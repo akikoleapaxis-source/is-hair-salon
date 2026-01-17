@@ -164,3 +164,63 @@
 ### コンテンツ修正 (2026-01-16)
 - [x] スタッフプロフィールの日本語訳を自然な表現（意訳）にリライトする
   - [x] staffData.ts の bioJa, specialtyJa を修正
+
+### Instagram画像修正 (2026-01-16)
+- [ ] 各スタッフのInstagram投稿URLから画像を取得し、プロジェクトに保存する
+  - [ ] Harry: 5 posts
+  - [ ] Sho: 6 posts
+  - [ ] Sayaka: 5 posts
+  - [ ] Yuki: 6 posts
+  - [ ] Mii: 6 posts
+  - [ ] Kana: 2 posts
+  - [ ] Saeko: 2 posts
+  - [ ] Sally: 6 posts
+- [ ] staffData.tsを更新し、各投稿に固有の画像パス（imageUrl）を追加する
+- [ ] StaffProfile.tsxを更新し、genericな画像ではなく、post.imageUrlを使用するように変更する
+
+### バグ修正 (2026-01-16) - 再修正
+- [x] StaffProfile.tsxが共通のギャラリー画像を使用している問題を修正
+  - [x] `staff.galleryImages` が存在する場合はそれを優先して表示するようにロジックを変更
+  - [x] 共通の `GALLERY_IMAGES` 定数への依存を削除またはフォールバックとしてのみ使用する
+
+### Instagram画像追加 (2026-01-16) - 重複解消
+- [ ] 各スタッフにつき追加で2枚ずつ画像を取得し、計4枚のユニークな画像にする
+  - [ ] Harry: 追加2枚
+  - [ ] Sho: 追加2枚
+  - [ ] Sayaka: 追加2枚
+  - [ ] Yuki: 追加3枚（現在1枚のみ有効）
+- [ ] 取得した画像を保存し、staffData.tsを更新する
+
+### スタッフ写真修正 (2026-01-16) - 緊急
+- [x] スタッフ写真の割り当てミスを修正する
+  - [x] Yukiの枠にMiiの写真が表示されている問題を修正
+  - [x] Miiの枠にSayakaの写真が表示されている問題を修正
+  - [x] Yukiの正しい写真を見つけて割り当てる
+- [x] ファイル名の確認: `client/public/images/` 内のファイルを確認し、正しい人物とファイル名を紐付ける
+
+### ユーザー提供画像対応 & プロフィール写真修正 (2026-01-16)
+- [x] Yukiさんのギャラリー画像をユーザー提供リンクから取得・更新
+  - [x] https://www.instagram.com/p/DEo7t1wRDgf/
+  - [x] https://www.instagram.com/p/DDTqqSPx4XN/
+  - [x] https://www.instagram.com/p/DTmOuRzkWnO/
+- [x] スタッフプロフィール写真の修正（再確認）
+  - [x] Yukiさんの正しい顔写真を取得・設定
+  - [x] Miiさんの正しい顔写真を取得・設定
+
+### ユーザー提供プロフィール写真対応 (2026-01-16)
+- [x] ユーザーから提供された画像をプロジェクトに配置する
+  - [x] Mii: `LINE_ALBUM_スタッフ写真_260114_2.jpg` -> `staff_mii.jpg`
+  - [x] Yuki: `LINE_ALBUM_スタッフ写真_260114_6.jpg` -> `staff_yuki.jpg`
+  - [x] Sayaka: `LINE_ALBUM_スタッフ写真_260114_7.jpg` -> `staff_sayaka.jpg`
+- [x] `staffData.ts` を更新して、新しい画像ファイルを参照するようにする
+- [x] 既存の誤った画像割り当てを修正する
+
+### キャッシュ回避のための画像ファイル名変更 (2026-01-16)
+- [x] プロフィール画像のファイル名を変更してキャッシュを無効化する
+  - [x] `staff_mii.jpg` -> `staff_mii_v2.jpg`
+  - [x] `staff_yuki.jpg` -> `staff_yuki_v2.jpg`
+  - [x] `staff_sayaka.jpg` -> `staff_sayaka_v2.jpg`
+- [x] `staffData.ts` の参照パスを新しいファイル名に更新する
+
+### プレビュー更新のためのサーバー再起動 (2026-01-16)
+- [x] 開発サーバーを再起動して、最新の画像とコード変更を反映させる

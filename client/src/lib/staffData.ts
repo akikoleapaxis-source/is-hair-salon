@@ -19,6 +19,7 @@ export interface Staff {
   instagram?: string;
   freshaBookingUrl?: string;
   instagramPosts?: InstagramPost[];
+  galleryImages?: string[]; // ローカル保存されたギャラリー画像パス
   image: string; // 仮の画像パス
 }
 
@@ -39,6 +40,12 @@ export const staffMembers: Staff[] = [
     experienceJa: "20年以上",
     instagram: "https://www.instagram.com/harry_hairstylist/",
     freshaBookingUrl: "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx/booking?employeeId=2302500",
+    galleryImages: [
+      "/images/gallery/harry_1.webp",
+      "/images/gallery/harry_2.webp",
+      "/images/gallery/harry_3.webp",
+      "/images/gallery/harry_4.webp",
+    ],
     instagramPosts: [
       { id: "1", postUrl: "https://www.instagram.com/p/DQMmVGPkaUb/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DQtmvKYkf17/" },
@@ -63,6 +70,12 @@ export const staffMembers: Staff[] = [
     experienceJa: "",
     instagram: "https://www.instagram.com/sho.nu/",
     freshaBookingUrl: "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx/booking?employeeId=2456678",
+    galleryImages: [
+      "/images/gallery/sho_1.webp",
+      "/images/gallery/sho_2.webp",
+      "/images/gallery/sho_3.webp",
+      "/images/gallery/sho_4.webp",
+    ],
     instagramPosts: [
       { id: "1", postUrl: "https://www.instagram.com/p/DRTcM96kQRj/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DRQz4Rtkcft/" },
@@ -88,6 +101,12 @@ export const staffMembers: Staff[] = [
     experienceJa: "",
     instagram: "https://www.instagram.com/sayaka_vancouverhair/",
     freshaBookingUrl: "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx/booking?employeeId=2812936",
+    galleryImages: [
+      "/images/gallery/sayaka_1.webp",
+      "/images/gallery/sayaka_2.webp",
+      "/images/gallery/sayaka_3.webp",
+      "/images/gallery/sayaka_4.webp",
+    ],
     instagramPosts: [
       { id: "1", postUrl: "https://www.instagram.com/p/DRh1FXCEk5h/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DRWA7lekTWL/" },
@@ -95,7 +114,7 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/DRIBISojy-A/" },
       { id: "5", postUrl: "https://www.instagram.com/p/DRFnfCCEkie/" },
     ],
-    image: "/images/staff_sayaka.jpg",
+    image: "/images/staff_sayaka_v2.jpg",
   },
   {
     id: "yuki",
@@ -112,6 +131,12 @@ export const staffMembers: Staff[] = [
     experienceJa: "",
     instagram: "https://www.instagram.com/yuki._hair/",
     freshaBookingUrl: "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx/booking?employeeId=2952908",
+    galleryImages: [
+      "/images/gallery/yuki_1.webp",
+      "/images/gallery/yuki_2_new.webp",
+      "/images/gallery/yuki_3_new.webp",
+      "/images/gallery/yuki_4_new.webp",
+    ],
     instagramPosts: [
       { id: "1", postUrl: "https://www.instagram.com/p/C62i_cNvAoN/" },
       { id: "2", postUrl: "https://www.instagram.com/p/DEo7t1wRDgf/" },
@@ -120,7 +145,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DSEn7tjkSSk/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DSBn-UMERPy/" },
     ],
-    image: "/images/staff_04.jpg",
+    image: "/images/staff_yuki_v2.jpg",
   },
   {
     id: "mii",
@@ -145,7 +170,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DGW-xfgx-25/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DFujO_cx2Yt/" },
     ],
-    image: "/images/staff_05.jpg",
+    image: "/images/staff_mii_v2.jpg",
   },
   {
     id: "kana",

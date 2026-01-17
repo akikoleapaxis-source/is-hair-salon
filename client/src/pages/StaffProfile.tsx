@@ -116,7 +116,7 @@ export default function StaffProfile() {
             {/* Instagram Posts Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {staff.instagramPosts ? (
-                staff.instagramPosts.slice(0, 4).map((post) => (
+                staff.instagramPosts.slice(0, 4).map((post, index) => (
                   <a 
                     key={post.id}
                     href={post.postUrl}
@@ -129,7 +129,7 @@ export default function StaffProfile() {
                     </div>
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-20" />
                     <img 
-                      src={`/images/gallery/gallery-${(parseInt(post.id) % 6) + 1}.jpg`} 
+                      src={staff.galleryImages && staff.galleryImages[index] ? staff.galleryImages[index] : `/images/gallery/gallery-${(parseInt(post.id) % 6) + 1}.jpg`} 
                       alt="Instagram post" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       onError={(e) => {
