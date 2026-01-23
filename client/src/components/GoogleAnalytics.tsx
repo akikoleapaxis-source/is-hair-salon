@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import { useLocation } from "wouter";
 
-// TODO: Replace with your actual Google Analytics Measurement ID (starts with G-)
-// Example: "G-XXXXXXXXXX"
-const GA_MEASUREMENT_ID = ""; 
+// Google Analytics Measurement ID for i's Hair Salon
+const GA_MEASUREMENT_ID = "G-RP5WXHV181"; 
 
 declare global {
   interface Window {
