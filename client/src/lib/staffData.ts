@@ -114,7 +114,7 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/DRIBISojy-A/" },
       { id: "5", postUrl: "https://www.instagram.com/p/DRFnfCCEkie/" },
     ],
-    image: "/images/staff_sayaka_v2.jpg",
+    image: "/images/staff_sayaka_final_v3.jpg",
   },
   {
     id: "yuki",
@@ -177,7 +177,7 @@ export const staffMembers: Staff[] = [
       "/images/gallery_mii_5.webp",
       "/images/gallery_mii_6.webp",
     ],
-    image: "/images/staff_mii_v2.jpg",
+    image: "/images/staff_mii_final_v3.jpg",
   },
   {
     id: "kana",
