@@ -29,6 +29,21 @@ export default function StaffDetail() {
     }
   }, [staff?.instagramPosts]);
 
+  // Generate Person Schema
+  const personSchema = staff ? {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": staff.name,
+    "jobTitle": staff.role,
+    "worksFor": {
+      "@type": "BeautySalon",
+      "name": "i's. Hair Salon"
+    },
+    "image": staff.image,
+    "description": `Book an appointment with ${staff.name}, ${staff.role} at i's. Hair Salon. Specializing in ${staff.specialty.join(", ")}.`,
+    "url": `https://is-hair-salon.manus.space/staff/${staff.id}`
+  } : null;
+
   if (!staff) {
     return (
       <div className="min-h-screen flex flex-col">
@@ -55,6 +70,10 @@ export default function StaffDetail() {
         title={`${staff.name} - ${staff.role}`}
         description={`Book an appointment with ${staff.name}, ${staff.role} at i's. Hair Salon. Specializing in ${staff.specialty.join(", ")}.`}
         image={staff.image}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
       <Navigation />
       

@@ -5,30 +5,50 @@ import SEO from "@/components/SEO";
 export default function News() {
   const newsItems = [
     {
-      date: "2025-01-10",
-      title: "Winter Hair Care Guide",
-      excerpt: "Protect your hair from winter dryness with our professional tips and recommended treatments for the cold season.",
+      date: "2025-01-23",
+      title: "Why Japanese Straightening is Perfect for Vancouver Weather",
+      excerpt: "Vancouver's rainy season can cause frizz and unmanageable hair. Discover how our authentic Japanese Straightening (Thermal Reconditioning) can give you sleek, shiny, and manageable hair that withstands the humidity. Our specialists use premium Japanese products to ensure minimal damage and maximum shine.",
       category: "Hair Care Tips",
     },
     {
-      date: "2025-01-05",
-      title: "New Stylist Wakana Joins Our Team",
-      excerpt: "We're excited to welcome experienced stylist Wakana to our team. Book your appointment with her today!",
-      category: "Announcement",
-    },
-    {
-      date: "2024-12-20",
-      title: "Holiday Hours & Year-End Schedule",
-      excerpt: "Check our special holiday hours for the festive season. We'll be open throughout the holidays to serve you.",
-      category: "Announcement",
-    },
-    {
-      date: "2024-12-15",
-      title: "New Japanese Hair Quality Treatment",
-      excerpt: "Introducing our latest hair quality improvement treatment from Japan. Experience salon-quality results that last.",
+      date: "2025-01-15",
+      title: "Digital Perm vs. Cold Perm: Which is Right for You?",
+      excerpt: "Looking for those effortless, bouncy curls? We explain the difference between Digital Perm (Hot Perm) and traditional Cold Perm. Digital Perms are ideal for thick, coarse Asian hair and create long-lasting, low-maintenance waves that look great even when air-dried.",
       category: "Services",
     },
+    {
+      date: "2025-01-08",
+      title: "The Benefits of Japanese Head Spa Treatment",
+      excerpt: "Experience the ultimate relaxation and scalp health with our Japanese Head Spa. This treatment not only relieves stress but also promotes healthy hair growth by deep cleansing the scalp and improving blood circulation. Perfect for revitalizing your hair after winter dryness.",
+      category: "Services",
+    },
+    {
+      date: "2025-01-01",
+      title: "New Year, New Look: 2025 Hair Trends in Vancouver",
+      excerpt: "Start the year fresh with a new style! We're seeing a rise in layered cuts, face-framing highlights, and ash-toned colors this season. Our stylists are trained in the latest Japanese and North American trends to help you find the perfect look that suits your face shape and lifestyle.",
+      category: "Trends",
+    },
   ];
+
+  // Generate Article Schema for News Items
+  const newsSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": newsItems.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Article",
+        "headline": item.title,
+        "datePublished": item.date,
+        "author": {
+          "@type": "Organization",
+          "name": "i's. Hair Salon"
+        },
+        "description": item.excerpt
+      }
+    }))
+  };
 
   const faqCategories = [
     {
@@ -89,6 +109,10 @@ export default function News() {
       <SEO 
         title="News & Knowledge" 
         description="Latest news from i's. Hair Salon and professional hair care tips. Learn about our new services, stylists, and how to maintain your hair at home."
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(newsSchema) }}
       />
       <Navigation />
       <main className="flex-1">

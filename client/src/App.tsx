@@ -3,6 +3,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
 import ScrollToTop from "./components/ScrollToTop";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
@@ -19,6 +20,7 @@ import Store from "./pages/Store";
 function Router() {
   return (
     <>
+      <GoogleAnalytics />
       <ScrollToTop />
       <Switch>
       <Route path={"/"} component={Home} />
