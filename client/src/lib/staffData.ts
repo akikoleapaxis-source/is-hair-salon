@@ -193,8 +193,10 @@ export const staffMembers: Staff[] = [
     instagram: "https://www.instagram.com/kanapi_hair/",
     freshaBookingUrl: "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx/booking?employeeId=4942473",
     instagramPosts: [
-      { id: "1", postUrl: "https://www.instagram.com/p/DRgamUZkaTQ/" },
-      { id: "2", postUrl: "https://www.instagram.com/p/DRtZM4REe8k/" },
+      { id: "1", postUrl: "https://www.instagram.com/p/DS32CcbkqSb/" },
+      { id: "2", postUrl: "https://www.instagram.com/p/DSGwni3EieO/" },
+      { id: "3", postUrl: "https://www.instagram.com/p/DT1zf63j-PS/" },
+      { id: "4", postUrl: "https://www.instagram.com/p/DTvPbMplTEc/" },
     ],
     galleryImages: [
       "/images/gallery_kana_1.webp",
