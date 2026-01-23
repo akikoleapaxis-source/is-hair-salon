@@ -1,9 +1,14 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Contact Us" 
+        description="Contact i's. Hair Salon in Richmond, Vancouver. Book your appointment online or visit us at Aberdeen Square."
+      />
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16">

@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SEO from "@/components/SEO";
 
 export default function FAQ() {
   const faqs = [
@@ -59,6 +60,10 @@ export default function FAQ() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="FAQ" 
+        description="Frequently asked questions about i's. Hair Salon. Find answers about appointments, payments, services, and parking."
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

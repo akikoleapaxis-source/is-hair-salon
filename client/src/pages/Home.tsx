@@ -7,10 +7,12 @@ import Staff from "@/components/Staff";
 import GallerySection from "@/components/sections/GallerySection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import AccessSection from "@/components/sections/AccessSection";
+import SEO from "@/components/SEO";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO />
       <Navigation />
       <main>
         <HeroSection />

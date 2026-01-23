@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function Products() {
   const products = [
@@ -31,6 +32,10 @@ export default function Products() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Products" 
+        description="Explore our selection of professional hair care products available at i's. Hair Salon. Premium shampoos, treatments, and styling products."
+      />
       <Navigation />
       <main className="flex-1">
         {/* Hero */}

@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { FRESHA_BOOKING_URL } from "@/lib/constants";
+import SEO from "@/components/SEO";
 
 export default function Menu() {
   const menuCategories = [
@@ -56,6 +57,10 @@ export default function Menu() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Menu & Pricing" 
+        description="View our full menu of services including Japanese Straightening, Digital Perms, Haircuts, and Eyelash Extensions. Transparent pricing and professional consultation."
+      />
       <Navigation />
       <main className="flex-1">
         {/* Hero */}

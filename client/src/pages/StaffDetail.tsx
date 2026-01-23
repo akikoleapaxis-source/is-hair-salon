@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 
 export default function StaffDetail() {
   const params = useParams();
@@ -50,6 +51,11 @@ export default function StaffDetail() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEO 
+        title={`${staff.name} - ${staff.role}`}
+        description={`Book an appointment with ${staff.name}, ${staff.role} at i's. Hair Salon. Specializing in ${staff.specialty.join(", ")}.`}
+        image={staff.image}
+      />
       <Navigation />
       
       <main className="flex-1">

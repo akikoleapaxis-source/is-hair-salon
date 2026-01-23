@@ -1,9 +1,14 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function Services() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Services" 
+        description="Our premium hair services include Japanese Straightening, Digital Perms, Haircuts, Coloring, and Eyelash Extensions."
+      />
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16">

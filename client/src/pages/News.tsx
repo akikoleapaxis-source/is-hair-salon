@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function News() {
   const newsItems = [
@@ -85,6 +86,10 @@ export default function News() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="News & Knowledge" 
+        description="Latest news from i's. Hair Salon and professional hair care tips. Learn about our new services, stylists, and how to maintain your hair at home."
+      />
       <Navigation />
       <main className="flex-1">
         {/* Hero */}

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { SALON_EMAIL } from "@/lib/constants";
 import { Users, TrendingUp, Heart, Sparkles } from "lucide-react";
+import SEO from "@/components/SEO";
 
 export default function Recruit() {
   const benefits = [
@@ -30,6 +31,10 @@ export default function Recruit() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Recruit | Careers" 
+        description="Join our team at i's. Hair Salon in Vancouver. We are looking for passionate stylists who want to grow with us. Japanese speaking environment."
+      />
       <Navigation />
       <main className="flex-1">
         {/* Hero */}

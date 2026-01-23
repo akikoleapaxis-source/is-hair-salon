@@ -4,6 +4,7 @@ import { Instagram, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { staffMembers } from "@/lib/staffData";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 
 export default function StaffProfile() {
   const [match, params] = useRoute("/staff/:id");
@@ -18,8 +19,17 @@ export default function StaffProfile() {
 
   const bookingUrl = staff.freshaBookingUrl || "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx/booking";
 
+  const staffName = staff.name;
+  const staffRole = language === 'ja' ? staff.roleJa : staff.role;
+  const staffBio = language === 'ja' ? staff.bioJa : staff.bio;
+
   return (
     <div className="min-h-screen bg-background pt-32 pb-20">
+      <SEO 
+        title={`${staffName} - ${staffRole}`}
+        description={staffBio.substring(0, 150) + "..."}
+        image={staff.image}
+      />
       <div className="container max-w-5xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left: Image */}

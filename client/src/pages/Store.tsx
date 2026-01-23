@@ -1,10 +1,15 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ShoppingBag } from "lucide-react";
+import SEO from "@/components/SEO";
 
 export default function Store() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Online Store" 
+        description="i's. Hair Salon Online Store - Coming Soon. Professional Japanese hair care products and salon-exclusive items."
+      />
       <Navigation />
       
       <main className="flex-1">

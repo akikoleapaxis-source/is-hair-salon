@@ -1,9 +1,14 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function Styles() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Style Gallery" 
+        description="Browse our gallery of hairstyles created by our talented Japanese stylists. Find inspiration for your next haircut, color, or perm."
+      />
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16">
