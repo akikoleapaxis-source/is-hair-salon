@@ -46,6 +46,15 @@ export default function AboutSection() {
                   {t('about.short.desc')}
                 </p>
               </div>
+
+              <div className="sm:col-span-2">
+                <h3 className="text-xs uppercase tracking-wider mb-2 font-medium">
+                  {t('about.damage.title')}
+                </h3>
+                <p className="text-sm text-foreground/70">
+                  {t('about.damage.desc')}
+                </p>
+              </div>
               
               <div>
                 <h3 className="text-xs uppercase tracking-wider mb-2 font-medium">
