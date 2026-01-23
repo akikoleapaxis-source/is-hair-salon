@@ -222,8 +222,10 @@ export const staffMembers: Staff[] = [
     instagram: "https://www.instagram.com/saeko_eyelash/",
     freshaBookingUrl: "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx/booking?employeeId=3097930",
     instagramPosts: [
-      { id: "1", postUrl: "https://www.instagram.com/p/DRBgVuLkYB8/" },
-      { id: "2", postUrl: "https://www.instagram.com/p/DCMx181yuO1/" },
+      { id: "1", postUrl: "https://www.instagram.com/reel/DDDOx8_zFcR/" },
+      { id: "2", postUrl: "https://www.instagram.com/reel/DCMx181yuO1/" },
+      { id: "3", postUrl: "https://www.instagram.com/p/DTzJ0JbERGB/" },
+      { id: "4", postUrl: "https://www.instagram.com/p/DTt9GJ8kd-5/" },
     ],
     galleryImages: [
       "/images/gallery_saeko_1.webp",
