@@ -11,27 +11,133 @@ export const SALON_CITY = "Richmond";
 export const SALON_PROVINCE = "British Columbia";
 export const SALON_COUNTRY = "Canada";
 export const SALON_POSTAL_CODE = "V6X 0J8";
-export const SALON_PHONE = "+1 (604) 285-5585"; // Updated phone number from demo site/Google Maps
-export const SALON_EMAIL = "info@is-salon.com"; // Placeholder, update if known
+export const SALON_PHONE = "+1 (604) XXX-XXXX"; // To be updated
+export const SALON_EMAIL = "info@is-salon.com"; // To be updated
 
 // Business Hours
 export const BUSINESS_HOURS = {
-  monday: { open: "10:00", close: "19:00", dayJa: "月曜日" },
-  tuesday: { open: "10:00", close: "19:00", dayJa: "火曜日" },
-  wednesday: { open: "10:00", close: "19:00", dayJa: "水曜日" },
-  thursday: { open: "10:00", close: "19:00", dayJa: "木曜日" },
-  friday: { open: "10:00", close: "19:00", dayJa: "金曜日" },
-  saturday: { open: "10:00", close: "19:00", dayJa: "土曜日" },
-  sunday: { open: "10:00", close: "19:00", dayJa: "日曜日" },
+  monday: { open: "10:00", close: "20:00", dayJa: "月曜日" },
+  tuesday: { open: "10:00", close: "20:00", dayJa: "火曜日" },
+  wednesday: { open: "10:00", close: "20:00", dayJa: "水曜日" },
+  thursday: { open: "10:00", close: "20:00", dayJa: "木曜日" },
+  friday: { open: "10:00", close: "20:00", dayJa: "金曜日" },
+  saturday: { open: "10:00", close: "20:00", dayJa: "土曜日" },
+  sunday: { open: "10:00", close: "20:00", dayJa: "日曜日" },
 };
 
 // Social Media
-export const INSTAGRAM_URL = "https://www.instagram.com/harry_hairstylist/"; // Updated to Harry's
+export const INSTAGRAM_URL = "https://www.instagram.com/is.japanese_hair.eyelash_salon/";
 export const FRESHA_BOOKING_URL = "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx";
 
 // Google Maps
-export const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/AAJfuzdR5GijSrcu8"; // Updated from user input
-export const GOOGLE_MAPS_EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.5!2d-123.1364!3d49.1667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDA5JzU5LjkiTiAxMjPCsDA4JzExLjAiVw!5e0!3m2!1sen!2sca!4v1234567890"; // Keep placeholder or update if I can generate a real one
+export const GOOGLE_MAPS_URL = "https://maps.google.com/?q=4000+No.+3+Road+Richmond+BC";
+export const GOOGLE_MAPS_EMBED = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.5!2d-123.1364!3d49.1667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDA5JzU5LjkiTiAxMjPCsDA4JzExLjAiVw!5e0!3m2!1sen!2sca!4v1234567890";
+
+// Staff Members
+export interface StaffMember {
+  id: string;
+  name: string;
+  nameJa: string;
+  role: string;
+  roleJa: string;
+  specialty: string;
+  specialtyJa: string;
+  instagram: string;
+  image: string;
+  bio?: string;
+  bioJa?: string;
+}
+
+export const STAFF_MEMBERS: StaffMember[] = [
+  {
+    id: "harry",
+    name: "Harry",
+    nameJa: "ハリー",
+    role: "Owner & Hair Stylist",
+    roleJa: "オーナー・ヘアスタイリスト",
+    specialty: "Cut, Color, Japanese Straightening",
+    specialtyJa: "カット、カラー、縮毛矯正",
+    instagram: "",
+    image: "/images/staff/harry.jpg",
+  },
+  {
+    id: "wakana",
+    name: "Wakana",
+    nameJa: "ワカナ",
+    role: "Hair Stylist",
+    roleJa: "ヘアスタイリスト",
+    specialty: "Cut, Color, Treatment",
+    specialtyJa: "カット、カラー、トリートメント",
+    instagram: "",
+    image: "/images/staff/wakana.jpg",
+  },
+  {
+    id: "sally",
+    name: "Sally",
+    nameJa: "サリー",
+    role: "Eyelash Specialist",
+    roleJa: "アイラッシュスペシャリスト",
+    specialty: "Eyelash Extensions",
+    specialtyJa: "まつげエクステ",
+    instagram: "",
+    image: "/images/staff/sally.jpg",
+  },
+  {
+    id: "sho",
+    name: "Sho",
+    nameJa: "ショウ",
+    role: "Hair Stylist",
+    roleJa: "ヘアスタイリスト",
+    specialty: "Cut, Perm",
+    specialtyJa: "カット、パーマ",
+    instagram: "",
+    image: "/images/staff/sho.jpg",
+  },
+  {
+    id: "chippy",
+    name: "Chippy",
+    nameJa: "チッピー",
+    role: "Eyelash Specialist",
+    roleJa: "アイラッシュスペシャリスト",
+    specialty: "Eyelash Extensions",
+    specialtyJa: "まつげエクステ",
+    instagram: "",
+    image: "/images/staff/chippy.jpg",
+  },
+  {
+    id: "sayaka",
+    name: "Sayaka",
+    nameJa: "サヤカ",
+    role: "Staff",
+    roleJa: "スタッフ",
+    specialty: "Customer Service",
+    specialtyJa: "カスタマーサービス",
+    instagram: "",
+    image: "/images/staff/sayaka.jpg",
+  },
+  {
+    id: "mii",
+    name: "Mii",
+    nameJa: "ミイ",
+    role: "Color Specialist",
+    roleJa: "カラーリスト",
+    specialty: "Color, Treatment",
+    specialtyJa: "カラー、トリートメント",
+    instagram: "",
+    image: "/images/staff/mii.jpg",
+  },
+  {
+    id: "yuki",
+    name: "Yuki",
+    nameJa: "ユキ",
+    role: "Hair Stylist",
+    roleJa: "ヘアスタイリスト",
+    specialty: "Cut, Style",
+    specialtyJa: "カット、スタイリング",
+    instagram: "",
+    image: "/images/staff/yuki.jpg",
+  },
+];
 
 // Service Categories
 export interface ServiceCategory {
@@ -105,3 +211,4 @@ export const SAMPLE_REVIEWS: Review[] = [
     comment: "Yuki was an amazing hairstylist! She took the time to carefully listen and truly understand what kind of style I was looking for.",
   },
 ];
+

@@ -5,14 +5,14 @@ export default function GallerySection() {
   const { t } = useLanguage();
 
   const galleryImages = [
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/NZGjrjyAnryutBpg.png",
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/yHwSyeBIBzZjEpph.png",
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/IBLSRWHQpuYcCeXE.png",
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/NdsIGtygIGgVAECI.png",
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/FsgZwzJlaodiSscI.png",
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/SdckvdXbmVRCfqgz.png",
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/fESvHUCLOmtHSYVh.png",
-    "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/RFNEhzbZQfjVbLSe.png",
+    "/images/gallery/model-hairstyle.png",
+    "/images/gallery/straight_hair_closeup_professional.png",
+    "/images/gallery/salon_interior_detail_professional.png",
+    "/images/gallery/salon_waiting_area_professional.png",
+    "/images/gallery/hair-balayage-1.avif",
+    "/images/gallery/hair-color-1.avif",
+    "/images/gallery/hair-cut-1.avif",
+    "/images/gallery/eyelash-1.avif",
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function GallerySection() {
           {/* Instagram Link */}
           <div className="mt-12 text-center">
             <a
-              href="https://www.instagram.com/harry_hairstylist/"
+              href="https://www.instagram.com/is.japanese_hair.eyelash_salon/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 text-foreground hover:text-primary transition-colors group"

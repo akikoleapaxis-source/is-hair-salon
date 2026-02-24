@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function AccessSection() {
   const { t } = useLanguage();
-  const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/AAJfuzdR5GijSrcu8";
+  const GOOGLE_MAPS_URL = "https://www.google.com/maps/place/i's.+Japanese+Hair+%26+Eyelash+salon/@49.184366,-123.1360851,17z/data=!3m1!4b1!4m6!3m5!1s0x54867520185077d9:0x8802580765506018!8m2!3d49.184366!4d-123.1335102!16s%2Fg%2F11v0_0_0_0?entry=ttu";
 
   return (
     <section id="access" className="section-spacing bg-secondary">
@@ -93,7 +93,7 @@ export default function AccessSection() {
               title="Open in Google Maps"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.5!2d-123.1364!3d49.1667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867520185077d9%3A0x8802580765506018!2si's.+Japanese+Hair+%26+Eyelash+salon!5e0!3m2!1sen!2sca!4v1708730000000!5m2!1sen!2sca"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.8!2d-123.1367!3d49.1667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDEwJzAwLjEiTiAxMjPCsDA4JzEyLjEiVw!5e0!3m2!1sen!2sca!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
