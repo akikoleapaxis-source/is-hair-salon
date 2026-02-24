@@ -53,6 +53,13 @@ export default function Menu() {
         { name: "★Millbon Japanese Premium Aujua 7 Step Treatment", price: "CA$90~", duration: "1h - 1h 15min" },
       ],
     },
+    {
+      category: "Head Spa",
+      items: [
+        { name: "★Japanese Head Spa", price: "CA$85~", duration: "45min - 1h" },
+        { name: "★Premium Head Spa", price: "CA$120~", duration: "1h - 1h 30min" },
+      ],
+    },
   ];
 
   return (
