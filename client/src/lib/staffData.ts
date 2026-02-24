@@ -41,10 +41,10 @@ export const staffMembers: Staff[] = [
     instagram: "https://www.instagram.com/harry_hairstylist/",
     freshaBookingUrl: "https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx/booking?employeeId=2302500",
     galleryImages: [
-      "/images/gallery/harry_1.webp",
-      "/images/gallery/harry_2.webp",
-      "/images/gallery/harry_3.webp",
-      "/images/gallery/harry_4.webp",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/SdckvdXbmVRCfqgz.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/FsgZwzJlaodiSscI.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/RFNEhzbZQfjVbLSe.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/fESvHUCLOmtHSYVh.png",
     ],
     instagramPosts: [
       { id: "1", postUrl: "https://www.instagram.com/p/DQMmVGPkaUb/" },
@@ -53,7 +53,7 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/C5Sk9eRLjEw/" },
       { id: "5", postUrl: "https://www.instagram.com/p/C0Qj9gxOca1/" },
     ],
-    image: "/images/staff_harry.jpg",
+    image: "/images/staff/staff_01.jpg",
   },
   {
     id: "sho",
@@ -84,7 +84,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DPsee1tjrrk/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DPX0Sm9kTSR/" },
     ],
-    image: "/images/staff_sho.jpg",
+    image: "/images/staff/staff_02.jpg",
   },
   {
     id: "sayaka",
@@ -114,7 +114,7 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/DRIBISojy-A/" },
       { id: "5", postUrl: "https://www.instagram.com/p/DRFnfCCEkie/" },
     ],
-    image: "/images/staff_sayaka_final_v3.jpg",
+    image: "/images/staff/staff_03.jpg",
   },
   {
     id: "yuki",
@@ -144,7 +144,7 @@ export const staffMembers: Staff[] = [
       { id: "5", postUrl: "https://www.instagram.com/p/DSEn7tjkSSk/" },
       { id: "6", postUrl: "https://www.instagram.com/p/DSBn-UMERPy/" },
     ],
-    image: "/images/staff_yuki_v2.jpg",
+    image: "/images/staff/staff_04.jpg",
   },
   {
     id: "mii",
@@ -168,12 +168,12 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/reel/DTzIJHtEelG/" },
     ],
     galleryImages: [
-      "/images/mii/mii-gallery-1.png",
-      "/images/mii/mii-gallery-2.png",
-      "/images/mii/mii-gallery-3.png",
-      "/images/mii/mii-gallery-4.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/PTSmbhpWUawUEuHT.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/TyGITOPZdpxGBcrK.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/wHLlWbHjDxjDEIfL.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/eSOjvLgaYGWBKWzK.png",
     ],
-    image: "/images/staff_mii_final_v3.jpg",
+    image: "/images/staff/staff_05.jpg",
   },
   {
     id: "kana",
@@ -197,12 +197,12 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/DTvPbMplTEc/" },
     ],
     galleryImages: [
-      "/images/kana/kana-gallery-1.png",
-      "/images/kana/kana-gallery-2.png",
-      "/images/kana/kana-gallery-3.png",
-      "/images/kana/kana-gallery-4.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/hmYQnTpaDmyzPDNR.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/hlTQJdxOXNlBctkN.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/JYMoCSnEHBjCQrUi.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/xPBKIndpVqxdOlZC.png",
     ],
-    image: "/images/staff_kana.png",
+    image: "/images/staff/staff_06.jpg",
   },
   
   // Eyelash Specialists (in order: Saeko, Sally, Chippy)
@@ -228,12 +228,12 @@ export const staffMembers: Staff[] = [
       { id: "4", postUrl: "https://www.instagram.com/p/DTt9GJ8kd-5/" },
     ],
     galleryImages: [
-      "/images/saeko/saeko-gallery-1.png",
-      "/images/saeko/saeko-gallery-2.png",
-      "/images/saeko/saeko-gallery-3.png",
-      "/images/saeko/saeko-gallery-4.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/QqBjSyvQvkJKgikB.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/rzOKussSFwcCfDwo.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/SUQsWJuwHUTJVxiz.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/HOYXjyAQahGqjWGO.png",
     ],
-    image: "/images/staff_saeko_new.jpg",
+    image: "/images/staff/staff_07.jpg",
   },
   {
     id: "sally",
@@ -258,8 +258,8 @@ export const staffMembers: Staff[] = [
     galleryImages: [
       "/images/sally/sally-gallery-1.png",
       "/images/sally/sally-gallery-2.png",
-      "/images/sally/sally-gallery-3.png",
-      "/images/sally/sally-gallery-4.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/RzZrUyhSnlwOUnyS.png",
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663110495411/MZVkWeRtnIBMXWpr.png",
     ],
     image: "/images/staff_sari.jpg",
   },
