@@ -1,0 +1,8 @@
+{
+  "title": "Treatment",
+  "order": 5,
+  "items": [
+    { "name": "★Japanese TOKIO premium treatment (+free home care)", "price": "CA$150~", "duration": "45min - 1h 15min" },
+    { "name": "★Millbon Japanese Premium Aujua 7 Step Treatment", "price": "CA$90~", "duration": "1h - 1h 15min" }
+  ]
+}

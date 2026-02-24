@@ -1,0 +1,10 @@
+{
+  "title": "Eye lash",
+  "order": 7,
+  "items": [
+    { "name": "★Flat Lash Extensions", "price": "CA$78~", "duration": "1h - 2h" },
+    { "name": "★Keratain Lash Lift", "price": "CA$46~", "duration": "30min - 2h" },
+    { "name": "★Shimmer Lash (EyeLash Extention + Lash Lift)", "price": "CA$148~", "duration": "1h 30min - 2h 15min" },
+    { "name": "★Keratin Lash Lift + Black Tint + Shampoo", "price": "CA$93~", "duration": "1h 30min - 1h 45min" }
+  ]
+}
