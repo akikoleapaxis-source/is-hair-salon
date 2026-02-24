@@ -1,0 +1,12 @@
+{
+  "category": "Haircut",
+  "categoryJa": "ヘアカット",
+  "order": 1,
+  "items": [
+    { "name": "★Haircut", "price": "CA$68~", "description": "1h 15min - 1h 45min" },
+    { "name": "★Very Short Haircut (Shaved style, super short style)", "price": "CA$63~", "description": "1h - 1h 20min" },
+    { "name": "★Cut + Japanese TOKIO premium treatment (+free home care)", "price": "CA$215~", "description": "2h - 2h 15min" },
+    { "name": "★Bangs cut", "price": "CA$21~", "description": "30min" },
+    { "name": "★Up-do", "price": "CA$86~", "description": "1h - 1h 30min" }
+  ]
+}

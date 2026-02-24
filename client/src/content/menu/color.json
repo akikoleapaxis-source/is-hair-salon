@@ -1,0 +1,9 @@
+{
+  "category": "Color",
+  "categoryJa": "カラー",
+  "order": 3,
+  "items": [
+    { "name": "★Premium care Color (Regular color = Non Bleaching process)", "price": "CA$278~", "description": "2h 45min - 4h" },
+    { "name": "★Color (Regular color = Non Bleaching process)", "price": "CA$164~", "description": "2h 15min - 3h" }
+  ]
+}

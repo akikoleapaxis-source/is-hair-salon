@@ -1,0 +1,10 @@
+{
+  "category": "Perm",
+  "categoryJa": "パーマ",
+  "order": 4,
+  "items": [
+    { "name": "★Japanese Digital perm", "price": "CA$281~", "description": "3h - 3h 30min" },
+    { "name": "★Japanese Cold Perm for women", "price": "CA$181~", "description": "2h - 2h 30min" },
+    { "name": "★Partial Perm for Men's hairstyles", "price": "CA$158~", "description": "2h - 2h 30min" }
+  ]
+}
