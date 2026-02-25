@@ -8,6 +8,7 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
+// Trigger deployment: 2026-02-25 01:28
 export default defineConfig({
   plugins,
   resolve: {
