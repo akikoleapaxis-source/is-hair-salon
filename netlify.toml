@@ -2,13 +2,21 @@
   command = "npm run build"
   publish = "dist"
 
-# Admin redirect is handled by file existence, but fallback is good
+# Ensure admin panel is served correctly
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+# Ensure admin panel root is served correctly
 [[redirects]]
   from = "/admin"
   to = "/admin/index.html"
   status = 200
 
+# SPA fallback for all other routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  status = 200
   status = 200
