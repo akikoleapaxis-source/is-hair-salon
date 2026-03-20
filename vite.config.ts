@@ -4,9 +4,10 @@ import react from "@vitejs/plugin-react";
 import fs from "node:fs";
 import path from "path";
 import { defineConfig } from "vite";
+import { plugin as markdown } from "vite-plugin-markdown";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), markdown({ mode: ["html", "toc"] })];
 
 // Trigger deployment: 2026-02-25 01:28
 export default defineConfig({

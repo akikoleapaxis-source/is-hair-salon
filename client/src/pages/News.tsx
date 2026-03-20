@@ -2,33 +2,56 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 
+import { useEffect, useState } from "react";
+import { marked } from "marked";
+
+interface NewsItem {
+  title: string;
+  date: string;
+  body: string;
+  slug: string;
+}
+
 export default function News() {
-  const newsItems = [
-    {
-      date: "2025-01-23",
-      title: "Why Japanese Straightening is Perfect for Vancouver Weather",
-      excerpt: "Vancouver's rainy season can cause frizz and unmanageable hair. Discover how our authentic Japanese Straightening (Thermal Reconditioning) can give you sleek, shiny, and manageable hair that withstands the humidity. Our specialists use premium Japanese products to ensure minimal damage and maximum shine.",
-      category: "Hair Care Tips",
-    },
-    {
-      date: "2025-01-15",
-      title: "Digital Perm vs. Cold Perm: Which is Right for You?",
-      excerpt: "Looking for those effortless, bouncy curls? We explain the difference between Digital Perm (Hot Perm) and traditional Cold Perm. Digital Perms are ideal for thick, coarse Asian hair and create long-lasting, low-maintenance waves that look great even when air-dried.",
-      category: "Services",
-    },
-    {
-      date: "2025-01-08",
-      title: "The Benefits of Japanese Head Spa Treatment",
-      excerpt: "Experience the ultimate relaxation and scalp health with our Japanese Head Spa. This treatment not only relieves stress but also promotes healthy hair growth by deep cleansing the scalp and improving blood circulation. Perfect for revitalizing your hair after winter dryness.",
-      category: "Services",
-    },
-    {
-      date: "2025-01-01",
-      title: "New Year, New Look: 2025 Hair Trends in Vancouver",
-      excerpt: "Start the year fresh with a new style! We're seeing a rise in layered cuts, face-framing highlights, and ash-toned colors this season. Our stylists are trained in the latest Japanese and North American trends to help you find the perfect look that suits your face shape and lifestyle.",
-      category: "Trends",
-    },
-  ];
+  const [newsItems, setNewsItems] = useState<NewsItem[]>([]);
+
+  useEffect(() => {
+    // Fetch news items from the public directory
+    // In a real scenario with many files, we'd need an index or API
+    // For now, we'll just fetch the sample one we created
+    const fetchNews = async () => {
+      try {
+        // We'll use a hardcoded list for now, but in a real setup, 
+        // we'd fetch an index.json generated during build or use a serverless function
+        const response = await fetch('/content/news/2026-02-25-welcome.md');
+        if (response.ok) {
+          const text = await response.text();
+          // Simple frontmatter parser for the client side
+          const match = text.match(/---\n([\s\S]*?)\n---\n([\s\S]*)/);
+          if (match) {
+            const frontmatter = match[1];
+            const body = match[2];
+            
+            const titleMatch = frontmatter.match(/title:\s*"(.*?)"/);
+            const dateMatch = frontmatter.match(/date:\s*(.*?)$/m);
+            
+            if (titleMatch && dateMatch) {
+              setNewsItems([{
+                title: titleMatch[1],
+                date: new Date(dateMatch[1]).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+                body: marked.parse(body.trim()) as string,
+                slug: 'welcome'
+              }]);
+            }
+          }
+        }
+      } catch (error) {
+        console.error("Failed to fetch news:", error);
+      }
+    };
+
+    fetchNews();
+  }, []);
 
   // Generate Article Schema for News Items
   const newsSchema = {
@@ -45,7 +68,7 @@ export default function News() {
           "@type": "Organization",
           "name": "i's. Hair Salon"
         },
-        "description": item.excerpt
+        "description": item.body.substring(0, 150) + "..."
       }
     }))
   };
@@ -141,12 +164,9 @@ export default function News() {
                   >
                     <div className="flex items-center gap-3 mb-3">
                       <span className="text-sm text-muted-foreground">{item.date}</span>
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
-                        {item.category}
-                      </span>
                     </div>
                     <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.excerpt}</p>
+                    <div className="text-muted-foreground prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: item.body }} />
                   </div>
                 ))}
               </div>
