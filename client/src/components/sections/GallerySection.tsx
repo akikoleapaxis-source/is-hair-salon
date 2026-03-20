@@ -30,19 +30,8 @@ export default function GallerySection() {
           </div>
 
           {/* Instagram Feed Widget */}
-          <div className="w-full min-h-[400px] bg-gray-50 flex items-center justify-center rounded-lg border border-gray-100 p-8">
-            {/* Elfsight Widget Code will be placed here */}
-            <div className="text-center">
-              <Instagram className="w-8 h-8 mx-auto mb-4 text-gray-400" />
-              <p className="text-gray-500 mb-2">Instagram Feed Loading...</p>
-              <p className="text-xs text-gray-400">※ここにInstagramの自動更新ギャラリーが表示されます</p>
-              
-              {/* 
-                TODO: Replace this placeholder with actual Elfsight widget code
-                Example: <div className="elfsight-app-YOUR-WIDGET-ID" data-elfsight-app-lazy></div>
-              */}
-              <div className="elfsight-app-placeholder mt-6" data-elfsight-app-lazy></div>
-            </div>
+          <div className="w-full min-h-[400px] bg-white rounded-lg">
+            <div className="elfsight-app-d8b8bbcc-fc17-4f58-9307-13cb16f9a86a" data-elfsight-app-lazy></div>
           </div>
 
           {/* Instagram Link */}
