@@ -70,7 +70,7 @@ export default function ReviewsSection() {
             {/* Review Stats */}
             <div className="flex items-center justify-center gap-8 mt-6">
               <a 
-                href="https://www.google.com/maps/place/i's.+Japanese+Hair+%26+Eyelash+Salon/@49.1840882,-123.136208,17z/data=!4m8!3m7!1s0x5486752718131333:0x1234567890abcdef!8m2!3d49.1840882!4d-123.136208!9m1!1b1!16s%2Fg%2F11b7q3q_q" 
+                href="https://www.google.com/maps/place/i%E2%80%99s.+Japanese+Hair+%26+Eyelash+Salon/@49.1479709,-123.3148094,11z/data=!3m1!5s0x5486752f52a2af57:0x4c95e0bd40c091d4!4m8!3m7!1s0x548675287fe0c2a3:0x34629c05451be687!8m2!3d49.1837667!4d-123.1359964!9m1!1b1!16s%2Fg%2F11btwv20kg?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
@@ -110,23 +110,24 @@ export default function ReviewsSection() {
             <div className="elfsight-app-43424155-2ae2-48e3-8afb-257cc07afbc8" data-elfsight-app-lazy></div>
           </div>
 
-          {/* Fresha CTA */}
-          <div className="text-center mt-12 bg-gray-50 p-8 rounded-lg border border-gray-100">
-            <h3 className="text-xl font-medium mb-4">
-              {language === 'ja' ? 'Freshaでも2,600件以上の高評価をいただいています！' : 'Over 2,600 Highly Rated Reviews on Fresha!'}
-            </h3>
-            <p className="text-sm text-foreground/70 mb-6">
-              {language === 'ja' 
-                ? 'たくさんのお客様から嬉しいお言葉をいただいております。ぜひFreshaのページでも口コミをご覧ください。' 
-                : 'We have received many wonderful reviews from our clients. Please check them out on our Fresha page.'}
-            </p>
-            <a
-              href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx?reviews=true"
-              target="_blank"
+          {/* Review Links */}
+          <div className="flex items-center justify-center gap-6 mt-12 text-sm tracking-wider text-foreground/60">
+            <a 
+              href="https://www.google.com/maps/place/i%E2%80%99s.+Japanese+Hair+%26+Eyelash+Salon/@49.1479709,-123.3148094,11z/data=!3m1!5s0x5486752f52a2af57:0x4c95e0bd40c091d4!4m8!3m7!1s0x548675287fe0c2a3:0x34629c05451be687!8m2!3d49.1837667!4d-123.1359964!9m1!1b1!16s%2Fg%2F11btwv20kg?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" 
+              target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-colors rounded-md"
+              className="hover:text-foreground transition-colors uppercase"
             >
-              {language === 'ja' ? 'Freshaの口コミを見る' : 'Read Fresha Reviews'}
+              READ GOOGLE REVIEWS
+            </a>
+            <span className="text-foreground/30">|</span>
+            <a 
+              href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx?reviews=true" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors uppercase"
+            >
+              READ FRESHA REVIEWS
             </a>
           </div>
         </div>
