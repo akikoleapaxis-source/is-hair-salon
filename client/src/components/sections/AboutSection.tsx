@@ -37,30 +37,30 @@ export default function AboutSection() {
             </div>
 
             {/* Features */}
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-5">
-              <div>
-                <h3 className="text-xs uppercase tracking-wider mb-2 font-medium">
+            <div className="mt-10 flex flex-col gap-8">
+              <div className="w-full">
+                <h3 className="text-sm uppercase tracking-wider mb-3 font-medium">
                   {t('about.short.title')}
                 </h3>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm text-foreground/70 leading-relaxed break-keep text-justify [word-break:auto-phrase]">
                   {t('about.short.desc')}
                 </p>
               </div>
 
-              <div className="sm:col-span-2">
-                <h3 className="text-xs uppercase tracking-wider mb-2 font-medium">
+              <div className="w-full">
+                <h3 className="text-sm uppercase tracking-wider mb-3 font-medium">
                   {t('about.damage.title')}
                 </h3>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm text-foreground/70 leading-relaxed break-keep text-justify [word-break:auto-phrase]">
                   {t('about.damage.desc')}
                 </p>
               </div>
               
-              <div>
-                <h3 className="text-xs uppercase tracking-wider mb-2 font-medium">
+              <div className="w-full">
+                <h3 className="text-sm uppercase tracking-wider mb-3 font-medium">
                   {t('about.straight.title')}
                 </h3>
-                <p className="text-sm text-foreground/70">
+                <p className="text-sm text-foreground/70 leading-relaxed break-keep text-justify [word-break:auto-phrase]">
                   {t('about.straight.desc')}
                 </p>
               </div>
