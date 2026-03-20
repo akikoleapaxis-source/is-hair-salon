@@ -80,14 +80,14 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-1 text-foreground/60 flex-shrink-0" />
                 <span className="text-foreground/70 leading-relaxed">
-                  4000 No 3 Rd Unit 2060<br />
+                  4000 No. 3 Road, Aberdeen Square 3rd Floor #3275 & #3230<br />
                   Richmond, BC V6X 0J8
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-foreground/60 flex-shrink-0" />
-                <a href="tel:+16045551234" className="text-foreground/70 hover:text-primary transition-colors">
-                  (604) 555-1234
+                <a href="tel:6722006067" className="text-foreground/70 hover:text-primary transition-colors">
+                  (672) 200-6067
                 </a>
               </li>
               <li className="flex items-center gap-3">
