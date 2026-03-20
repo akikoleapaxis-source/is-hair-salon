@@ -106,7 +106,7 @@ const translations = {
     // Gallery
     'gallery.label': 'Style Gallery',
     'gallery.title': 'スタイルギャラリー',
-    'gallery.subtitle': 'i\'s.が創り出すリアルなスタイル事例 あなたの「なりたい」イメージがきっと見つかります',
+    'gallery.subtitle': 'i\'s.が創り出すリアルなスタイル事例\nあなたの「なりたい」イメージがきっと見つかります',
     'gallery.desc': '実際の施術例をご覧ください。あなたにぴったりのスタイルが見つかります。',
     'gallery.style': 'スタイル',
     'gallery.cta': 'もっと見る',

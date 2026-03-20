@@ -24,7 +24,7 @@ export default function GallerySection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-5 tracking-[0.1em] uppercase">
               Gallery
             </h2>
-            <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto whitespace-pre-line">
               {t('gallery.subtitle')}
             </p>
           </div>
