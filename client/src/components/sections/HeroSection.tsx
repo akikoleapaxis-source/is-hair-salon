@@ -4,9 +4,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { useEffect, useState } from "react";
 
 const heroImages = [
-  '/images/hero-logo-is.png',
-  '/images/salon-interior-1.jpg',
-  '/images/salon-interior-3.png',
+  '/images/is-gold.png',
+  '/images/salon_interior_professional.png',
+  '/images/salon_interior_detail_professional.png',
 ];
 
 export default function HeroSection() {
