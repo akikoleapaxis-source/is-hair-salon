@@ -95,66 +95,28 @@ export default function ReviewsSection() {
             </div>
           </div>
 
-          {/* Reviews Grid */}
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {reviews.map((review, index) => (
-              <div
-                key={index}
-                className="p-6 border border-border hover:border-primary/30 transition-colors"
-              >
-                {/* Source Badge */}
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex gap-1">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-primary text-primary" />
-                    ))}
-                  </div>
-                  <span className={`text-xs px-2 py-0.5 rounded-full ${
-                    review.source === 'google' 
-                      ? 'bg-blue-100 text-blue-700' 
-                      : 'bg-purple-100 text-purple-700'
-                  }`}>
-                    {review.source === 'google' ? 'Google' : 'Fresha'}
-                  </span>
-                </div>
-
-                {/* Review Text */}
-                <p className="text-sm text-foreground/80 leading-relaxed mb-4">
-                  "{review.text}"
-                </p>
-
-                {/* Meta */}
-                <div className="flex items-center justify-between text-xs text-foreground/60">
-                  <div>
-                    <p className="font-medium text-foreground text-sm">{review.name}</p>
-                    {review.staff && (
-                      <p className="text-xs">Stylist: {review.staff}</p>
-                    )}
-                  </div>
-                  <p className="text-xs">{review.date}</p>
-                </div>
-              </div>
-            ))}
+          {/* Google Reviews Widget (Elfsight) */}
+          <div className="w-full min-h-[300px] bg-white rounded-lg mb-12">
+            <div className="elfsight-app-43424155-2ae2-48e3-8afb-257cc07afbc8" data-elfsight-app-lazy></div>
           </div>
 
-          {/* CTA */}
-          <div className="text-center mt-12 flex items-center justify-center gap-6">
-            <a
-              href="https://www.google.com/maps/place/i's.+Japanese+Hair+%26+Eyelash+Salon/@49.1667,-123.1367,17z"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-xs uppercase tracking-wider text-foreground hover:text-primary border-b border-transparent hover:border-primary transition-colors"
-            >
-              {language === 'ja' ? 'Google レビューを見る' : 'Read Google Reviews'}
-            </a>
-            <span className="text-foreground/30">|</span>
+          {/* Fresha CTA */}
+          <div className="text-center mt-12 bg-gray-50 p-8 rounded-lg border border-gray-100">
+            <h3 className="text-xl font-medium mb-4">
+              {language === 'ja' ? 'Freshaでも2,600件以上の高評価をいただいています！' : 'Over 2,600 Highly Rated Reviews on Fresha!'}
+            </h3>
+            <p className="text-sm text-foreground/70 mb-6">
+              {language === 'ja' 
+                ? 'たくさんのお客様から嬉しいお言葉をいただいております。ぜひFreshaのページでも口コミをご覧ください。' 
+                : 'We have received many wonderful reviews from our clients. Please check them out on our Fresha page.'}
+            </p>
             <a
               href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-xs uppercase tracking-wider text-foreground hover:text-primary border-b border-transparent hover:border-primary transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-colors rounded-md"
             >
-              {language === 'ja' ? 'Fresha レビューを見る' : 'Read Fresha Reviews'}
+              {language === 'ja' ? 'Freshaの口コミを見る' : 'Read Fresha Reviews'}
             </a>
           </div>
         </div>
