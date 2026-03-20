@@ -7,7 +7,7 @@ export default function GallerySection() {
   const galleryImages = [
     "/images/gallery/model-hairstyle.png",
     "/images/gallery/straight_hair_closeup_professional.png",
-    "/images/gallery/salon_interior_detail_professional.png",
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/salon_interior_detail_professional_0c9392af.png",
     "/images/gallery/salon_waiting_area_professional.png",
     "/images/gallery/hair-balayage-1.avif",
     "/images/gallery/hair-color-1.avif",

@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 const heroImages = [
   '/images/is-gold.png',
-  '/images/salon_interior_professional.png',
-  '/images/salon_interior_detail_professional.png',
+  'https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/salon_interior_professional_f3b6bbde.png',
+  'https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/salon_interior_detail_professional_0c9392af.png',
 ];
 
 export default function HeroSection() {
