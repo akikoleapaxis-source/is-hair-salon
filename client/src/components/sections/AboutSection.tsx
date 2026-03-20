@@ -11,7 +11,7 @@ export default function AboutSection() {
           {/* Image */}
           <div className="order-2 lg:order-1">
             <img
-              src="/images/short-hair-specialist.jpg"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/bob-hair-woman-2-8vv4DDp4jsZkze9BM45vRJ.webp"
               alt="Professional Hair Styling"
               className="w-full h-[400px] lg:h-[480px] object-cover"
             />
