@@ -11,7 +11,7 @@ export const SALON_CITY = "Richmond";
 export const SALON_PROVINCE = "British Columbia";
 export const SALON_COUNTRY = "Canada";
 export const SALON_POSTAL_CODE = "V6X 0J8";
-export const SALON_PHONE = "+1 (604) XXX-XXXX"; // To be updated
+export const SALON_PHONE = "(672) 200-6067";
 export const SALON_EMAIL = "info@is-salon.com"; // To be updated
 
 // Business Hours
