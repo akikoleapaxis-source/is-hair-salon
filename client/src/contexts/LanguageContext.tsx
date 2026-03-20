@@ -112,7 +112,7 @@ const translations = {
     'gallery.cta': 'もっと見る',
     
     // Testimonials
-    'reviews.subtitle': '実際にサロンをご利用いただいたお客様からの、リアルな声をご紹介します。',
+    'reviews.subtitle': '実際にサロンをご利用いただいたお客様からのリアルな声をご紹介します',
     'testimonials.label': 'Customer Reviews',
     'testimonials.title': 'お客様の声',
     'testimonials.review1': 'ショートヘアのカットをお願いしました。骨格に合わせた提案で、想像以上の仕上がりに大満足です！日本語で細かく相談できるのも安心でした。',
