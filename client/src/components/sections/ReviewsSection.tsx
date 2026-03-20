@@ -69,29 +69,39 @@ export default function ReviewsSection() {
             
             {/* Review Stats */}
             <div className="flex items-center justify-center gap-8 mt-6">
-              <div className="flex items-center gap-2">
+              <a 
+                href="https://www.google.com/maps/place/i's.+Japanese+Hair+%26+Eyelash+Salon/@49.1840882,-123.136208,17z/data=!4m8!3m7!1s0x5486752718131333:0x1234567890abcdef!8m2!3d49.1840882!4d-123.136208!9m1!1b1!16s%2Fg%2F11b7q3q_q" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
+              >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
                 <div className="text-left">
                   <div className="text-lg font-medium text-primary">855</div>
-                  <div className="text-xs text-foreground/60">
+                  <div className="text-xs text-foreground/60 underline decoration-foreground/30 underline-offset-2">
                     {language === 'ja' ? 'Google レビュー' : 'Google Reviews'}
                   </div>
                 </div>
-              </div>
+              </a>
               
-              <div className="flex items-center gap-2">
+              <a 
+                href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx?reviews=true" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
+              >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
                 <div className="text-left">
                   <div className="text-lg font-medium text-primary">1,955</div>
-                  <div className="text-xs text-foreground/60">
+                  <div className="text-xs text-foreground/60 underline decoration-foreground/30 underline-offset-2">
                     {language === 'ja' ? 'Fresha レビュー' : 'Fresha Reviews'}
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -111,7 +121,7 @@ export default function ReviewsSection() {
                 : 'We have received many wonderful reviews from our clients. Please check them out on our Fresha page.'}
             </p>
             <a
-              href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx"
+              href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx?reviews=true"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-colors rounded-md"
