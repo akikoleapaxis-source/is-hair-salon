@@ -29,9 +29,17 @@ export default function AccessSection() {
                   <MapPin className="w-5 h-5 mt-1 text-primary flex-shrink-0" />
                   <div>
                     <h3 className="text-sm uppercase tracking-wider mb-2 font-medium">Address</h3>
-                    <p className="text-foreground/70 leading-relaxed">
+                    <p className="text-foreground/70 leading-relaxed font-medium">
                       {SALON_ADDRESS}
                     </p>
+                    <div className="mt-3 p-3 bg-primary/5 border border-primary/20 rounded-md">
+                      <p className="text-sm font-medium text-primary mb-1">
+                        ⚠️ {t('access.location.attention')}
+                      </p>
+                      <p className="text-sm text-foreground/80">
+                        {t('access.location.note')}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -40,8 +48,10 @@ export default function AccessSection() {
                   <div>
                     <h3 className="text-sm uppercase tracking-wider mb-2 font-medium">Hours</h3>
                     <div className="text-foreground/70 space-y-1">
-                      <p>Monday - Sunday: 10:00 - 20:00</p>
-                      <p className="text-sm text-primary">Open 7 days a week</p>
+                      <p>{t('access.hours.weekday')}</p>
+                      <p>{t('access.hours.sat')}</p>
+                      <p>{t('access.hours.sun')}</p>
+                      <p className="text-sm text-primary font-medium mt-2">{t('access.hours.closed')}</p>
                     </div>
                   </div>
                 </div>
