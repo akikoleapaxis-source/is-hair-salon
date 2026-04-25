@@ -47,7 +47,12 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-36">
           {/* Logo */}
           <Link href="/" className="flex items-center cursor-pointer group -ml-16 mt-2">
-            <img src="/images/is-logo-new.png" alt="i's Hair Salon" className="h-30 w-auto" />
+            <img 
+              src="/images/is-logo-new.png" 
+              alt="i's Hair Salon" 
+              className="h-30 w-auto" 
+              style={{ filter: 'brightness(0) sepia(1) hue-rotate(340deg) saturate(1.5) brightness(0.3) contrast(1.2)' }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -70,7 +75,7 @@ export default function Navigation() {
             
             <Button 
               asChild 
-              className="ml-4 bg-black text-white hover:bg-black/80 uppercase tracking-wider text-sm"
+              className="ml-4 bg-[#4A3B32] text-white hover:bg-[#4A3B32]/80 uppercase tracking-wider text-sm"
             >
               <a href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx" target="_blank" rel="noopener noreferrer">
                 Book
@@ -128,7 +133,7 @@ export default function Navigation() {
             <div className="px-4 pt-4 flex gap-2">
               <Button 
                 asChild 
-                className="flex-1 bg-black text-white hover:bg-black/80 uppercase tracking-wider"
+                className="flex-1 bg-[#4A3B32] text-white hover:bg-[#4A3B32]/80 uppercase tracking-wider"
               >
                 <a href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx" target="_blank" rel="noopener noreferrer">
                   Book

@@ -69,7 +69,7 @@ export default function HeroSection() {
             <Button 
               asChild 
               size="lg" 
-              className="bg-black text-white hover:bg-black/80 px-10 py-5 text-sm tracking-wide uppercase font-normal"
+              className="bg-[#4A3B32] text-white hover:bg-[#4A3B32]/80 px-10 py-5 text-sm tracking-wide uppercase font-normal"
             >
               <a href={FRESHA_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book Appointment
