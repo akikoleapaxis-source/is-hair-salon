@@ -1,6 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { FRESHA_BOOKING_URL } from "@/lib/constants";
 import SEO from "@/components/SEO";
 
@@ -13,6 +15,8 @@ import straighteningData from "@/content/menu/straightening.json";
 import treatmentData from "@/content/menu/treatment.json";
 
 export default function Menu() {
+  const [isNanoBubbleOpen, setIsNanoBubbleOpen] = useState(false);
+
   // Combine all menu data and sort by order
   const menuCategories = [
     haircutData,
@@ -56,10 +60,13 @@ export default function Menu() {
                     {category.items.map((item, itemIndex) => (
                       <div
                         key={itemIndex}
-                        className="flex items-center justify-between py-2 border-b border-border last:border-0"
+                        className={`flex items-center justify-between py-2 border-b border-border last:border-0 ${(item as any).isNanoBubble ? 'cursor-pointer hover:bg-muted/50 transition-colors rounded px-2 -mx-2' : ''}`}
+                        onClick={() => (item as any).isNanoBubble && setIsNanoBubbleOpen(true)}
                       >
                         <div>
-                          <h3 className="font-medium text-xs md:text-sm">{item.name}</h3>
+                          <h3 className={`font-medium text-xs md:text-sm ${(item as any).isNanoBubble ? 'text-primary underline decoration-primary/30 underline-offset-4' : ''}`}>
+                            {item.name}
+                          </h3>
                           <p className="text-xs text-muted-foreground">{item.description}</p>
                         </div>
                         <div className="text-sm md:text-base font-semibold text-primary">{item.price}</div>
@@ -87,6 +94,43 @@ export default function Menu() {
           </div>
         </section>
       </main>
+
+      {/* Nano Bubble Modal */}
+      <Dialog open={isNanoBubbleOpen} onOpenChange={setIsNanoBubbleOpen}>
+        <DialogContent className="sm:max-w-[500px]">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-light mb-2">Nano Bubble System</DialogTitle>
+            <DialogDescription className="text-base text-foreground/80">
+              Experience the ultimate deep cleansing with our state-of-the-art Nano Bubble shampoo system.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 mt-4">
+            <div className="aspect-video bg-secondary rounded-lg overflow-hidden relative">
+              <img 
+                src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&auto=format&fit=crop" 
+                alt="Nano Bubble System"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            <div className="space-y-3 text-sm text-foreground/70 leading-relaxed">
+              <p>
+                <strong>What is Nano Bubble?</strong><br />
+                Nano bubbles are ultra-fine bubbles that are smaller than the pores of your scalp. They penetrate deep into the pores to remove dirt, sebum, and chemical residues that regular shampooing cannot reach.
+              </p>
+              <p>
+                <strong>Benefits:</strong>
+              </p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li>Deeply cleanses scalp pores</li>
+                <li>Improves blood circulation</li>
+                <li>Enhances the effectiveness of treatments and colors</li>
+                <li>Leaves hair feeling incredibly light and soft</li>
+              </ul>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
+
       <Footer />
     </div>
   );

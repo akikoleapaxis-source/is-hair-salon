@@ -80,7 +80,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-1 text-foreground/60 flex-shrink-0" />
                 <span className="text-foreground/70 leading-relaxed">
-                  4000 No. 3 Road, Aberdeen Square 3rd Floor #3275 & #3230<br />
+                  4000 No. 3 Road, Aberdeen Square 3rd Floor (Unit 3275 Hair / 3230 Eyelash)<br />
                   Richmond, BC V6X 0J8
                 </span>
               </li>

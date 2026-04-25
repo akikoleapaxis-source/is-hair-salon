@@ -6,7 +6,7 @@ export const APP_DESCRIPTION = "Vancouver, Richmond hair and eyelash salon with 
 
 // Salon Information
 export const SALON_NAME = "i's. Japanese Hair & Eyelash Salon";
-export const SALON_ADDRESS = "4000 No. 3 Road, Aberdeen Square 3rd Floor #3275 & #3230";
+export const SALON_ADDRESS = "4000 No. 3 Road, Aberdeen Square 3rd Floor (Unit 3275 Hair / 3230 Eyelash)";
 export const SALON_CITY = "Richmond";
 export const SALON_PROVINCE = "British Columbia";
 export const SALON_COUNTRY = "Canada";
