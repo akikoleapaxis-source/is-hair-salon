@@ -15,22 +15,22 @@
   --radius-sm: 0rem;
 
   --color-background: oklch(0.98 0.01 100); /* Washi Paper White */
-  --color-foreground: oklch(0.15 0 0); /* Sumi Ink Black */
+  --color-foreground: #4A3B32; /* Dark Brown */
 
   --color-card: oklch(0.98 0.01 100);
-  --color-card-foreground: oklch(0.15 0 0);
+  --color-card-foreground: #4A3B32;
 
   --color-popover: oklch(0.98 0.01 100);
-  --color-popover-foreground: oklch(0.15 0 0);
+  --color-popover-foreground: #4A3B32;
 
-  --color-primary: oklch(0.15 0 0); /* Sumi Ink Black */
+  --color-primary: #4A3B32; /* Dark Brown */
   --color-primary-foreground: oklch(0.98 0.01 100);
 
   --color-secondary: oklch(0.95 0 0);
-  --color-secondary-foreground: oklch(0.15 0 0);
+  --color-secondary-foreground: #4A3B32;
 
   --color-muted: oklch(0.95 0 0);
-  --color-muted-foreground: oklch(0.45 0 0);
+  --color-muted-foreground: #4A3B32;
 
   --color-accent: oklch(0.45 0.25 260); /* Electric Indigo */
   --color-accent-foreground: oklch(0.98 0.01 100);
@@ -38,9 +38,9 @@
   --color-destructive: oklch(0.5 0.2 25);
   --color-destructive-foreground: oklch(0.98 0.01 100);
 
-  --color-border: oklch(0.15 0 0); /* Sharp borders */
-  --color-input: oklch(0.15 0 0);
-  --color-ring: oklch(0.15 0 0);
+  --color-border: #4A3B32; /* Sharp borders */
+  --color-input: #4A3B32;
+  --color-ring: #4A3B32;
 
   --color-chart-1: oklch(0.45 0.25 260);
   --color-chart-2: oklch(0.15 0 0);
