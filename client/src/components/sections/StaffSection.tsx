@@ -17,16 +17,12 @@ export default function StaffSection() {
         <a className="block">
           {/* Photo */}
           <div className="aspect-[3/4] overflow-hidden bg-muted mb-3 relative">
-            {/* Placeholder for staff photo */}
-            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-muted to-secondary">
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto rounded-full bg-white/50 flex items-center justify-center">
-                  <span className="text-2xl font-light text-primary">
-                    {member.nameJa.charAt(0)}
-                  </span>
-                </div>
-              </div>
-            </div>
+            {/* Staff photo */}
+            <img 
+              src={member.image} 
+              alt={language === 'ja' ? member.nameJa : member.name} 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
             
             {/* Hover overlay */}
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 gap-3 p-4 z-10">
