@@ -16,13 +16,13 @@ export const SALON_EMAIL = "info@is-salon.com"; // To be updated
 
 // Business Hours
 export const BUSINESS_HOURS = {
-  monday: { open: "10:00", close: "19:00", dayJa: "月曜日" },
-  tuesday: { open: "Closed", close: "Closed", dayJa: "火曜日" },
-  wednesday: { open: "10:00", close: "19:00", dayJa: "水曜日" },
-  thursday: { open: "10:00", close: "19:00", dayJa: "木曜日" },
-  friday: { open: "10:00", close: "19:00", dayJa: "金曜日" },
-  saturday: { open: "10:00", close: "18:00", dayJa: "土曜日" },
-  sunday: { open: "10:00", close: "18:00", dayJa: "日曜日" },
+  monday: { open: "10:00", close: "20:00", dayJa: "月曜日" },
+  tuesday: { open: "10:00", close: "20:00", dayJa: "火曜日" },
+  wednesday: { open: "10:00", close: "20:00", dayJa: "水曜日" },
+  thursday: { open: "10:00", close: "20:00", dayJa: "木曜日" },
+  friday: { open: "10:00", close: "20:00", dayJa: "金曜日" },
+  saturday: { open: "10:00", close: "20:00", dayJa: "土曜日" },
+  sunday: { open: "10:00", close: "20:00", dayJa: "日曜日" },
 };
 
 // Social Media
