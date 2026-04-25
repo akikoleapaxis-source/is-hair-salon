@@ -41,14 +41,15 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="container relative z-10">
-        <div className="max-w-4xl mx-auto text-center text-gray-800">
+        <div className="max-w-4xl mx-auto text-center text-[#4A3B32]">
           {/* Main heading - uppercase, thin, letter-spaced */}
           <div className="mb-5" style={{ lineHeight: '1' }}>
             <div className="flex justify-center -mb-16 md:-mb-20 lg:-mb-24">
               <img 
                 src="/images/is-logo-text.png" 
                 alt="i's." 
-                className="h-40 md:h-52 lg:h-64 w-auto brightness-0"
+                className="h-40 md:h-52 lg:h-64 w-auto brightness-0 opacity-80"
+                style={{ filter: 'brightness(0) sepia(1) hue-rotate(340deg) saturate(1.5) brightness(0.3) contrast(1.2)' }}
               />
             </div>
             <div className="text-xl md:text-2xl lg:text-3xl font-light tracking-[0.05em]" style={{ fontFamily: 'Cormorant, serif' }}>
@@ -81,8 +82,8 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <a href="#about" className="block animate-bounce">
-          <svg 
-            className="w-6 h-6 text-gray-800 opacity-70" 
+            <svg 
+              className="w-6 h-6 text-[#4A3B32] opacity-70" 
             fill="none" 
             strokeLinecap="round" 
             strokeLinejoin="round" 
