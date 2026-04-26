@@ -11,14 +11,14 @@ export default function Navigation() {
   const navItems = [
     { href: "/", label: "Home", isAnchor: false },
     { href: "#about", label: "Concept", isAnchor: true },
-    { href: "#services", label: "Services", isAnchor: true },
+    { href: "/signature", label: "Signature", isAnchor: false },
     { href: "/stylists", label: "Stylists", isAnchor: false },
     { href: "#gallery", label: "Gallery", isAnchor: true },
     { href: "/menu", label: "Menu", isAnchor: false },
     { href: "/news", label: "News", isAnchor: false },
     { href: "/faq", label: "FAQ", isAnchor: false },
     { href: "/products", label: "Products", isAnchor: false },
-    { href: "#access", label: "Access", isAnchor: true },
+    { href: "/signature", label: "Signature", isAnchor: false },
   ];
 
   const handleNavClick = (href: string, isAnchor: boolean) => {

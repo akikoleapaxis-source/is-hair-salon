@@ -3,27 +3,46 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 
 export default function Products() {
-  const marbbImages = [
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_13_b0f94f8e.jpg", // Machine image (No text)
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_12_44a5c498.jpg", // Title
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_11_bd5e3ff9.jpg", // What's the marbb??
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_9_336a52de.jpg",  // What marbb Does for you
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_8_81c27c05.jpg",  // Water-Only Hair Treatment #1
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_7_c11445dc.jpg",  // Water-Only Hair Treatment #2
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_10_9df2b975.jpg", // Trusted Japanese Technology
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_1_889ac65a.jpg",  // You can try out Marbb...
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_4_e575fc94.jpg",  // #1 Boco-Boko Purify
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_3_31f23039.jpg",  // #2 Moco-Moko
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_2_5104f572.jpg",  // #3 Tsuru-Tsuru
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_6_4e9302c2.jpg",  // Price for water treatment
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_5_121577d1.jpg",  // Good deal combo menu
+  const products = [
+    {
+      id: 1,
+      name: "Premium Shampoo",
+      description: "A gentle, nourishing shampoo that cleanses while maintaining your hair's natural moisture balance.",
+      price: "$35.00",
+      image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=800&auto=format&fit=crop",
+      category: "Hair Care"
+    },
+    {
+      id: 2,
+      name: "Deep Treatment Mask",
+      description: "Intensive repair mask for damaged or chemically treated hair. Restores shine and elasticity.",
+      price: "$45.00",
+      image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=800&auto=format&fit=crop",
+      category: "Treatment"
+    },
+    {
+      id: 3,
+      name: "Styling Oil",
+      description: "Lightweight finishing oil that tames frizz and adds a beautiful, healthy gloss without weighing hair down.",
+      price: "$40.00",
+      image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop",
+      category: "Styling"
+    },
+    {
+      id: 4,
+      name: "Scalp Essence",
+      description: "Nourishing essence to promote a healthy scalp environment and support strong, beautiful hair growth.",
+      price: "$50.00",
+      image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=800&auto=format&fit=crop",
+      category: "Scalp Care"
+    }
   ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <SEO 
-        title="Products - marbb Nano Bubble Water System" 
-        description="Experience the marbb nano bubble water system at i's. Hair Salon. Deeply cleanses your scalp and hair with microbubbles for a fresh, healthy scalp and beautiful shine."
+        title="Products - i's. Hair Salon" 
+        description="Discover our curated selection of premium hair care products available exclusively at our salon in Richmond, Vancouver."
       />
       <Navigation />
       <main className="flex-1">
@@ -34,43 +53,54 @@ export default function Products() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-[0.1em] uppercase">
                 Products
               </h1>
-              <p className="text-sm md:text-base text-foreground max-w-2xl mx-auto">
-                サロンで導入している最新のテクノロジー「marbb（マーブ）」ナノバブルウォーターシステムをご紹介します
+              <p className="text-sm md:text-base text-foreground max-w-2xl mx-auto mb-4">
+                サロン専売品のご案内
+              </p>
+              <p className="text-xs md:text-sm text-muted-foreground max-w-2xl mx-auto">
+                *These products are available for purchase exclusively at our salon.
+                <br />
+                （こちらの商品はサロン店頭でのみご購入いただけます）
               </p>
             </div>
           </div>
         </section>
 
-        {/* Products Gallery */}
+        {/* Products Grid */}
         <section className="section-spacing bg-background">
-          <div className="container px-0 md:px-4">
-            <div className="flex flex-col items-center max-w-4xl mx-auto space-y-4 md:space-y-8">
-              {marbbImages.map((image, index) => (
-                <div
-                  key={index}
-                  className="w-full"
-                >
-                  <img
-                    src={image}
-                    alt={`marbb nano bubble water system slide ${index + 1}`}
-                    className="w-full h-auto object-contain shadow-sm"
-                    loading={index < 2 ? "eager" : "lazy"}
-                  />
+          <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {products.map((product) => (
+                <div key={product.id} className="group cursor-pointer">
+                  <div className="aspect-[4/5] overflow-hidden bg-secondary mb-6 relative">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="text-xs tracking-wider uppercase bg-white/90 px-3 py-1">
+                        {product.category}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-lg font-medium mb-2">{product.name}</h3>
+                    <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
+                      {product.description}
+                    </p>
+                    <p className="text-sm tracking-wider">{product.price}</p>
+                  </div>
                 </div>
               ))}
             </div>
 
-            {/* Info */}
-            <div className="mt-24 max-w-3xl mx-auto text-center border-t border-border pt-16 px-4">
-              <h3 className="text-xl md:text-2xl font-light mb-6 tracking-wide">marbb（マーブ）について</h3>
-              <p className="text-sm md:text-base text-foreground leading-relaxed">
-                marbbは、炭酸の2000分の1サイズの驚異的な小ささのマイクロバブルを発生させるシステムです。
+            {/* Coming Soon Note */}
+            <div className="mt-24 max-w-2xl mx-auto text-center border-t border-border pt-16">
+              <h3 className="text-xl font-light mb-4 tracking-wide">More Products Coming Soon</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                We are currently preparing our full lineup of premium hair care products.
                 <br />
-                通常のシャンプーでは落としきれない皮脂汚れや残留シャンプーを優しく洗い流し、
-                <br />
-                髪と頭皮を本来の美しい状態へと導きます。
-                <br /><br />
-                ぜひサロンで、その驚きの効果をご体感ください。
+                Please ask your stylist for personalized recommendations during your visit.
               </p>
             </div>
           </div>
