@@ -4,19 +4,19 @@ import SEO from "@/components/SEO";
 
 export default function Products() {
   const marbbImages = [
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_1_889ac65a.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_2_5104f572.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_3_31f23039.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_4_e575fc94.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_5_121577d1.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_6_4e9302c2.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_7_c11445dc.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_8_81c27c05.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_9_336a52de.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_10_9df2b975.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_11_bd5e3ff9.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_12_44a5c498.jpg",
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_13_b0f94f8e.jpg",
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_12_44a5c498.jpg", // Title
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_11_bd5e3ff9.jpg", // What's the marbb??
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_9_336a52de.jpg",  // What marbb Does for you
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_8_81c27c05.jpg",  // Water-Only Hair Treatment #1
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_7_c11445dc.jpg",  // Water-Only Hair Treatment #2
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_10_9df2b975.jpg", // Trusted Japanese Technology
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_1_889ac65a.jpg",  // You can try out Marbb...
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_4_e575fc94.jpg",  // #1 Boco-Boko Purify
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_3_31f23039.jpg",  // #2 Moco-Moko
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_2_5104f572.jpg",  // #3 Tsuru-Tsuru
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_6_4e9302c2.jpg",  // Price for water treatment
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_5_121577d1.jpg",  // Good deal combo menu
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_13_b0f94f8e.jpg", // Machine image
   ];
 
   return (
