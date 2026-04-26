@@ -35,7 +35,7 @@ export default function Signature() {
                 Signature
               </h1>
               <p className="text-sm md:text-base text-foreground max-w-2xl mx-auto">
-                サロンで導入している最新のテクノロジー「marbb（マーブ）」ナノバブルウォーターシステムをご紹介します
+                Introducing the latest technology at our salon: the "marbb" nano bubble water system.
               </p>
             </div>
           </div>
@@ -62,15 +62,15 @@ export default function Signature() {
 
             {/* Info */}
             <div className="mt-24 max-w-3xl mx-auto text-center border-t border-border pt-16 px-4">
-              <h3 className="text-xl md:text-2xl font-light mb-6 tracking-wide">marbb（マーブ）について</h3>
+              <h3 className="text-xl md:text-2xl font-light mb-6 tracking-wide">About marbb</h3>
               <p className="text-sm md:text-base text-foreground leading-relaxed">
-                marbbは、炭酸の2000分の1サイズの驚異的な小ささのマイクロバブルを発生させるシステムです。
+                marbb is a system that generates microbubbles incredibly small—1/2000th the size of carbonated bubbles.
                 <br />
-                通常のシャンプーでは落としきれない皮脂汚れや残留シャンプーを優しく洗い流し、
+                It gently washes away sebum and residual shampoo that regular shampooing cannot remove,
                 <br />
-                髪と頭皮を本来の美しい状態へと導きます。
+                restoring your hair and scalp to their original, beautiful state.
                 <br /><br />
-                ぜひサロンで、その驚きの効果をご体感ください。
+                Please experience its amazing effects at our salon.
               </p>
             </div>
           </div>

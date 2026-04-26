@@ -54,12 +54,10 @@ export default function Products() {
                 Products
               </h1>
               <p className="text-sm md:text-base text-foreground max-w-2xl mx-auto mb-4">
-                サロン専売品のご案内
+                Salon Exclusive Products
               </p>
               <p className="text-xs md:text-sm text-muted-foreground max-w-2xl mx-auto">
                 *These products are available for purchase exclusively at our salon.
-                <br />
-                （こちらの商品はサロン店頭でのみご購入いただけます）
               </p>
             </div>
           </div>
