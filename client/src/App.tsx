@@ -15,7 +15,7 @@ import News from "./pages/News";
 import Recruit from "./pages/Recruit";
 import Products from "./pages/Products";
 import FAQ from "./pages/FAQ";
-import Store from "./pages/Store";
+
 
 function Router() {
   return (
@@ -31,7 +31,7 @@ function Router() {
       <Route path={"/recruit"} component={Recruit} />
       <Route path={"/products"} component={Products} />
       <Route path={"/faq"} component={FAQ} />
-      <Route path={"/store"} component={Store} />
+
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

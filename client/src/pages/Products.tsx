@@ -39,11 +39,13 @@ export default function Products() {
       <Navigation />
       <main className="flex-1">
         {/* Hero */}
-        <section className="py-20 bg-muted/30">
+        <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-secondary">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-6">商品紹介</h1>
-              <p className="text-lg text-muted-foreground">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-[0.1em] uppercase">
+                Products
+              </h1>
+              <p className="text-sm md:text-base text-foreground max-w-2xl mx-auto">
                 サロンで使用している、プロフェッショナル仕様のヘアケア製品をご紹介します
               </p>
             </div>
@@ -51,36 +53,36 @@ export default function Products() {
         </section>
 
         {/* Products */}
-        <section className="py-20">
+        <section className="section-spacing">
           <div className="container">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className="bg-background rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+                  className="group"
                 >
-                  <div className="aspect-square overflow-hidden">
+                  <div className="aspect-square overflow-hidden bg-muted mb-6">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <div className="p-6">
-                    <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm rounded-full mb-3">
+                  <div className="text-center">
+                    <div className="text-xs text-foreground/60 uppercase tracking-wider mb-3">
                       {product.category}
                     </div>
-                    <h3 className="text-xl font-bold mb-2">{product.name}</h3>
-                    <p className="text-muted-foreground">{product.description}</p>
+                    <h3 className="text-lg md:text-xl font-normal mb-3 tracking-wide">{product.name}</h3>
+                    <p className="text-sm text-foreground leading-relaxed">{product.description}</p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Info */}
-            <div className="mt-16 max-w-3xl mx-auto bg-primary/5 rounded-2xl p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4">商品のご購入について</h3>
-              <p className="text-muted-foreground leading-relaxed">
+            <div className="mt-24 max-w-3xl mx-auto text-center border-t border-border pt-16">
+              <h3 className="text-xl md:text-2xl font-light mb-6 tracking-wide">商品のご購入について</h3>
+              <p className="text-sm md:text-base text-foreground leading-relaxed">
                 現在、これらの商品はサロンでのご紹介のみとなっております。
                 <br />
                 ご興味のある方は、ご来店時にスタッフまでお気軽にお問い合わせください。
