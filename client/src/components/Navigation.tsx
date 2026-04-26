@@ -18,7 +18,6 @@ export default function Navigation() {
     { href: "/news", label: "News", isAnchor: false },
     { href: "/faq", label: "FAQ", isAnchor: false },
     { href: "/products", label: "Products", isAnchor: false },
-    { href: "/signature", label: "Signature", isAnchor: false },
   ];
 
   const handleNavClick = (href: string, isAnchor: boolean) => {
