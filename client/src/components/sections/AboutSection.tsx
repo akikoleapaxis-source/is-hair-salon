@@ -23,7 +23,7 @@ export default function AboutSection() {
               Concept
             </h2>
             
-            <div className="space-y-5 text-sm md:text-base leading-relaxed text-foreground/80">
+            <div className="space-y-5 text-sm md:text-base leading-relaxed text-foreground">
               <p>
                 {t('about.description').split('\n').map((line, i) => (
                   <span key={i}>
@@ -42,7 +42,7 @@ export default function AboutSection() {
                 <h3 className="text-sm uppercase tracking-wider mb-3 font-medium">
                   {t('about.short.title')}
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed break-keep text-justify [word-break:auto-phrase]">
+                <p className="text-sm text-foreground leading-relaxed break-keep text-justify [word-break:auto-phrase]">
                   {t('about.short.desc')}
                 </p>
               </div>
@@ -51,7 +51,7 @@ export default function AboutSection() {
                 <h3 className="text-sm uppercase tracking-wider mb-3 font-medium">
                   {t('about.damage.title')}
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed break-keep text-justify [word-break:auto-phrase]">
+                <p className="text-sm text-foreground leading-relaxed break-keep text-justify [word-break:auto-phrase]">
                   {t('about.damage.desc')}
                 </p>
               </div>
@@ -60,7 +60,7 @@ export default function AboutSection() {
                 <h3 className="text-sm uppercase tracking-wider mb-3 font-medium">
                   {t('about.straight.title')}
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed break-keep text-justify [word-break:auto-phrase]">
+                <p className="text-sm text-foreground leading-relaxed break-keep text-justify [word-break:auto-phrase]">
                   {t('about.straight.desc')}
                 </p>
               </div>

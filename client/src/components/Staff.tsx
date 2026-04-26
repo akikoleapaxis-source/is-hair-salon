@@ -40,7 +40,7 @@ export default function Staff() {
       ) : (
         // Placeholder Layer
         <div className="w-full h-full flex items-center justify-center">
-          <span className="text-6xl font-display font-light text-foreground/20">
+          <span className="text-6xl font-display font-light text-foreground">
             {staff.name.charAt(0)}
           </span>
         </div>
@@ -110,7 +110,7 @@ export default function Staff() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-5 tracking-[0.1em] uppercase">
               Stylists
             </h2>
-            <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-foreground max-w-2xl mx-auto">
               {language === 'ja' 
                 ? "日本で培った確かな技術とホスピタリティを、バンクーバーから世界へ。"
                 : "Bringing authentic Japanese technique and hospitality from Vancouver to the world."}

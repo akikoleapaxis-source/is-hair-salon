@@ -47,7 +47,7 @@ export default function ServicesSection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-5 tracking-[0.1em] uppercase">
               Services
             </h2>
-            <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-foreground max-w-2xl mx-auto">
               {t('services.subtitle')}
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function ServicesSection() {
                   <h3 className="text-lg md:text-xl font-normal mb-1 tracking-wide">
                     {service.title}
                   </h3>
-                  <p className="text-xs md:text-sm text-foreground/60">
+                  <p className="text-xs md:text-sm text-foreground">
                     {service.description}
                   </p>
                 </div>

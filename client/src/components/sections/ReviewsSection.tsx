@@ -63,7 +63,7 @@ export default function ReviewsSection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-5 tracking-[0.1em] uppercase">
               Reviews
             </h2>
-            <p className="text-sm md:text-base text-foreground/70 mb-6">
+            <p className="text-sm md:text-base text-foreground mb-6">
               {t('reviews.subtitle')}
             </p>
             
@@ -80,7 +80,7 @@ export default function ReviewsSection() {
                 </svg>
                 <div className="text-left">
                   <div className="text-lg font-medium text-primary">855</div>
-                  <div className="text-xs text-foreground/60 underline decoration-foreground/30 underline-offset-2">
+                  <div className="text-xs text-foreground underline decoration-foreground/30 underline-offset-2">
                     {language === 'ja' ? 'Google レビュー' : 'Google Reviews'}
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function ReviewsSection() {
                 </svg>
                 <div className="text-left">
                   <div className="text-lg font-medium text-primary">1,955</div>
-                  <div className="text-xs text-foreground/60 underline decoration-foreground/30 underline-offset-2">
+                  <div className="text-xs text-foreground underline decoration-foreground/30 underline-offset-2">
                     {language === 'ja' ? 'Fresha レビュー' : 'Fresha Reviews'}
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function ReviewsSection() {
           </div>
 
           {/* Review Links */}
-          <div className="flex items-center justify-center gap-6 mt-12 text-sm tracking-wider text-foreground/60">
+          <div className="flex items-center justify-center gap-6 mt-12 text-sm tracking-wider text-foreground">
             <a 
               href="https://www.google.com/maps/place/i%E2%80%99s.+Japanese+Hair+%26+Eyelash+Salon/@49.1479709,-123.3148094,11z/data=!3m1!5s0x5486752f52a2af57:0x4c95e0bd40c091d4!4m8!3m7!1s0x548675287fe0c2a3:0x34629c05451be687!8m2!3d49.1837667!4d-123.1359964!9m1!1b1!16s%2Fg%2F11btwv20kg?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D" 
               target="_blank" 
@@ -120,7 +120,7 @@ export default function ReviewsSection() {
             >
               READ GOOGLE REVIEWS
             </a>
-            <span className="text-foreground/30">|</span>
+            <span className="text-foreground">|</span>
             <a 
               href="https://www.fresha.com/ja/a/is-japanese-hair-eyelash-salon-richmond-4000-no-3-road-z6jqwgsx?reviews=true" 
               target="_blank" 

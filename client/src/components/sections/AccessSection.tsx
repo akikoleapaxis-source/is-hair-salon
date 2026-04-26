@@ -16,7 +16,7 @@ export default function AccessSection() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 tracking-[0.1em] uppercase">
               Access
             </h2>
-            <p className="text-base md:text-lg text-foreground/70">
+            <p className="text-base md:text-lg text-foreground">
               {t('access.subtitle')}
             </p>
           </div>
@@ -29,14 +29,14 @@ export default function AccessSection() {
                   <MapPin className="w-5 h-5 mt-1 text-primary flex-shrink-0" />
                   <div>
                     <h3 className="text-sm uppercase tracking-wider mb-2 font-medium">Address</h3>
-                    <p className="text-foreground/70 leading-relaxed font-medium">
+                    <p className="text-foreground leading-relaxed font-medium">
                       {SALON_ADDRESS}
                     </p>
                     <div className="mt-3 p-3 bg-primary/5 border border-primary/20 rounded-md">
                       <p className="text-sm font-medium text-primary mb-1">
                         ⚠️ {t('access.location.attention')}
                       </p>
-                      <p className="text-sm text-foreground/80">
+                      <p className="text-sm text-foreground">
                         {t('access.location.note')}
                       </p>
                     </div>
@@ -47,7 +47,7 @@ export default function AccessSection() {
                   <Clock className="w-5 h-5 mt-1 text-primary flex-shrink-0" />
                   <div>
                     <h3 className="text-sm uppercase tracking-wider mb-2 font-medium">Hours</h3>
-                    <div className="text-foreground/70 space-y-1">
+                    <div className="text-foreground space-y-1">
                       <p>{t('access.hours.weekday')}</p>
                       <p>{t('access.hours.sat')}</p>
                       <p>{t('access.hours.sun')}</p>
@@ -62,7 +62,7 @@ export default function AccessSection() {
                     <h3 className="text-sm uppercase tracking-wider mb-2 font-medium">Phone</h3>
                     <a
                       href={`tel:${SALON_PHONE}`}
-                      className="text-foreground/70 hover:text-primary transition-colors"
+                      className="text-foreground hover:text-primary transition-colors"
                     >
                       {SALON_PHONE}
                     </a>
@@ -75,7 +75,7 @@ export default function AccessSection() {
                     <h3 className="text-sm uppercase tracking-wider mb-2 font-medium">Email</h3>
                     <a
                       href={`mailto:${SALON_EMAIL}`}
-                      className="text-foreground/70 hover:text-primary transition-colors break-all"
+                      className="text-foreground hover:text-primary transition-colors break-all"
                     >
                       {SALON_EMAIL}
                     </a>

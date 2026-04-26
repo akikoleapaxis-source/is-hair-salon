@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo & Description */}
           <div>
             <h3 className="text-2xl font-light tracking-[0.2em] mb-6" style={{ fontFamily: 'Cormorant, serif' }}>i's.</h3>
-            <p className="text-sm text-foreground/70 leading-relaxed mb-6">
+            <p className="text-sm text-foreground leading-relaxed mb-6">
               {t('footer.description')}
             </p>
             <div className="flex gap-4">
@@ -19,7 +19,7 @@ export default function Footer() {
                 href="https://www.instagram.com/is.japanese_hair.eyelash_salon/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -28,7 +28,7 @@ export default function Footer() {
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -41,32 +41,32 @@ export default function Footer() {
             <h4 className="text-sm uppercase tracking-wider mb-6 font-medium">Quick Links</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="/#about" className="text-foreground/70 hover:text-primary transition-colors">
+                <a href="/#about" className="text-foreground hover:text-primary transition-colors">
                   Concept
                 </a>
               </li>
               <li>
-                <a href="/#services" className="text-foreground/70 hover:text-primary transition-colors">
+                <a href="/#services" className="text-foreground hover:text-primary transition-colors">
                   Services
                 </a>
               </li>
               <li>
-                <a href="/#staff" className="text-foreground/70 hover:text-primary transition-colors">
+                <a href="/#staff" className="text-foreground hover:text-primary transition-colors">
                   Stylists
                 </a>
               </li>
               <li>
-                <a href="/#gallery" className="text-foreground/70 hover:text-primary transition-colors">
+                <a href="/#gallery" className="text-foreground hover:text-primary transition-colors">
                   Gallery
                 </a>
               </li>
               <li>
-                <a href="/menu" className="text-foreground/70 hover:text-primary transition-colors">
+                <a href="/menu" className="text-foreground hover:text-primary transition-colors">
                   Menu
                 </a>
               </li>
               <li>
-                <a href="/news" className="text-foreground/70 hover:text-primary transition-colors">
+                <a href="/news" className="text-foreground hover:text-primary transition-colors">
                   News
                 </a>
               </li>
@@ -78,21 +78,21 @@ export default function Footer() {
             <h4 className="text-sm uppercase tracking-wider mb-6 font-medium">Contact</h4>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 mt-1 text-foreground/60 flex-shrink-0" />
-                <span className="text-foreground/70 leading-relaxed">
+                <MapPin className="w-4 h-4 mt-1 text-foreground flex-shrink-0" />
+                <span className="text-foreground leading-relaxed">
                   4000 No. 3 Road, Aberdeen Square 3rd Floor (Unit 3275 Hair / 3230 Eyelash)<br />
                   Richmond, BC V6X 0J8
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-foreground/60 flex-shrink-0" />
-                <a href="tel:6722006067" className="text-foreground/70 hover:text-primary transition-colors">
+                <Phone className="w-4 h-4 text-foreground flex-shrink-0" />
+                <a href="tel:6722006067" className="text-foreground hover:text-primary transition-colors">
                   (672) 200-6067
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-foreground/60 flex-shrink-0" />
-                <a href="mailto:info@is-salon.com" className="text-foreground/70 hover:text-primary transition-colors">
+                <Mail className="w-4 h-4 text-foreground flex-shrink-0" />
+                <a href="mailto:info@is-salon.com" className="text-foreground hover:text-primary transition-colors">
                   info@is-salon.com
                 </a>
               </li>
@@ -101,7 +101,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center">
-          <p className="text-xs text-foreground/50 uppercase tracking-wider">
+          <p className="text-xs text-foreground uppercase tracking-wider">
             © {new Date().getFullYear()} i's Hair Salon. All rights reserved.
           </p>
         </div>

@@ -57,7 +57,7 @@ export default function StaffSection() {
             <h3 className="text-base md:text-lg font-normal mb-1 tracking-wide group-hover:text-primary transition-colors">
               {language === 'ja' ? member.nameJa : member.name}
             </h3>
-            <p className="text-xs md:text-sm text-foreground/60 mb-2">
+            <p className="text-xs md:text-sm text-foreground mb-2">
               {language === 'ja' ? member.roleJa : member.role}
             </p>
             
@@ -67,7 +67,7 @@ export default function StaffSection() {
                 href={member.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs text-foreground/50 hover:text-primary transition-colors"
+                className="inline-flex items-center gap-1 text-xs text-foreground hover:text-primary transition-colors"
                 onClick={(e) => e.stopPropagation()}
               >
                 <Instagram className="w-3 h-3" />
@@ -89,7 +89,7 @@ export default function StaffSection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-4 tracking-[0.1em] uppercase">
               Stylists
             </h2>
-            <p className="text-sm md:text-base text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-foreground max-w-2xl mx-auto">
               {t('staff.subtitle')}
             </p>
           </div>
