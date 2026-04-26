@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 
 export default function Products() {
   const marbbImages = [
+    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_13_b0f94f8e.jpg", // Machine image (No text)
     "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_12_44a5c498.jpg", // Title
     "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_11_bd5e3ff9.jpg", // What's the marbb??
     "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_9_336a52de.jpg",  // What marbb Does for you
@@ -16,7 +17,6 @@ export default function Products() {
     "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_2_5104f572.jpg",  // #3 Tsuru-Tsuru
     "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_6_4e9302c2.jpg",  // Price for water treatment
     "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_5_121577d1.jpg",  // Good deal combo menu
-    "https://d2xsxph8kpxj0f.cloudfront.net/310519663110495411/E9BnciLVcgD7N43YwoNiqj/LINE_ALBUM_Micronanobubble_260425_13_b0f94f8e.jpg", // Machine image
   ];
 
   return (
